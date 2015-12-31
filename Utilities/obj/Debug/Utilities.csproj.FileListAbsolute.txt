@@ -1,0 +1,4 @@
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\Utilities\bin\Debug\Utilities.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\Utilities\bin\Debug\Utilities.pdb
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\Utilities\obj\Debug\Utilities.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\Utilities\obj\Debug\Utilities.pdb

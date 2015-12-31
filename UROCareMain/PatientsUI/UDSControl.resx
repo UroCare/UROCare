@@ -1,0 +1,2274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="_patientGroup.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_patientNameText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_patientNameText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_patientNameText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 23</value>
+  </data>
+  <data name="_patientNameText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_patientNameText.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.Name" xml:space="preserve">
+    <value>_patientNameText</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="_patientNameLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_patientNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_patientNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_patientNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 25</value>
+  </data>
+  <data name="_patientNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="_patientNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="_patientNameLabel.Text" xml:space="preserve">
+    <value>Patient Name</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.Name" xml:space="preserve">
+    <value>_patientNameLabel</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="_guNoTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_guNoTextBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_guNoTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 23</value>
+  </data>
+  <data name="_guNoTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 20</value>
+  </data>
+  <data name="_guNoTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.Name" xml:space="preserve">
+    <value>_guNoTextBox</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="_guNumberLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_guNumberLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_guNumberLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_guNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 25</value>
+  </data>
+  <data name="_guNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="_guNumberLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="_guNumberLabel.Text" xml:space="preserve">
+    <value>G.U. Number</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.Name" xml:space="preserve">
+    <value>_guNumberLabel</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_patientGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 18</value>
+  </data>
+  <data name="_patientGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>627, 56</value>
+  </data>
+  <data name="_patientGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_patientGroup.Text" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="&gt;&gt;_patientGroup.Name" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_patientGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_patientGroup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_patientGroup.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="_udsDetailGroupBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_adviseTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_adviseTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 627</value>
+  </data>
+  <data name="_adviseTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_adviseTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>858, 50</value>
+  </data>
+  <data name="_adviseTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_adviseTextBox.Name" xml:space="preserve">
+    <value>_adviseTextBox</value>
+  </data>
+  <data name="&gt;&gt;_adviseTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_adviseTextBox.Parent" xml:space="preserve">
+    <value>_udsDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_adviseTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="_adviseLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_adviseLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_adviseLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_adviseLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 630</value>
+  </data>
+  <data name="_adviseLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 13</value>
+  </data>
+  <data name="_adviseLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_adviseLabel.Text" xml:space="preserve">
+    <value>Advise</value>
+  </data>
+  <data name="_adviseLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_adviseLabel.Name" xml:space="preserve">
+    <value>_adviseLabel</value>
+  </data>
+  <data name="&gt;&gt;_adviseLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_adviseLabel.Parent" xml:space="preserve">
+    <value>_udsDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_adviseLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="_conclusionTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_conclusionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 569</value>
+  </data>
+  <data name="_conclusionTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_conclusionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>858, 50</value>
+  </data>
+  <data name="_conclusionTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_conclusionTextBox.Name" xml:space="preserve">
+    <value>_conclusionTextBox</value>
+  </data>
+  <data name="&gt;&gt;_conclusionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_conclusionTextBox.Parent" xml:space="preserve">
+    <value>_udsDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_conclusionTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="_conclusionLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_conclusionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_conclusionLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_conclusionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 572</value>
+  </data>
+  <data name="_conclusionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="_conclusionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_conclusionLabel.Text" xml:space="preserve">
+    <value>Conclusion</value>
+  </data>
+  <data name="_conclusionLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_conclusionLabel.Name" xml:space="preserve">
+    <value>_conclusionLabel</value>
+  </data>
+  <data name="&gt;&gt;_conclusionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_conclusionLabel.Parent" xml:space="preserve">
+    <value>_udsDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_conclusionLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="_associatedIllnessTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_associatedIllnessTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_associatedIllnessTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 80</value>
+  </data>
+  <data name="_associatedIllnessTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_associatedIllnessTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>858, 44</value>
+  </data>
+  <data name="_associatedIllnessTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_associatedIllnessTextBox.Name" xml:space="preserve">
+    <value>_associatedIllnessTextBox</value>
+  </data>
+  <data name="&gt;&gt;_associatedIllnessTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_associatedIllnessTextBox.Parent" xml:space="preserve">
+    <value>_udsDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_associatedIllnessTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="_associatedIllnessLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_associatedIllnessLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_associatedIllnessLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_associatedIllnessLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 83</value>
+  </data>
+  <data name="_associatedIllnessLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="_associatedIllnessLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_associatedIllnessLabel.Text" xml:space="preserve">
+    <value>Associated Illness</value>
+  </data>
+  <data name="_associatedIllnessLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_associatedIllnessLabel.Name" xml:space="preserve">
+    <value>_associatedIllnessLabel</value>
+  </data>
+  <data name="&gt;&gt;_associatedIllnessLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_associatedIllnessLabel.Parent" xml:space="preserve">
+    <value>_udsDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_associatedIllnessLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="_tabControl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_tabControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <metadata name="_informationTab1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_uroflowGroupBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_uroflowGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <metadata name="_uroflowRemarksTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_uroflowRemarksTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_uroflowRemarksTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 158</value>
+  </data>
+  <data name="_uroflowRemarksTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_uroflowRemarksTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>799, 40</value>
+  </data>
+  <data name="_uroflowRemarksTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_uroflowRemarksTextBox.Name" xml:space="preserve">
+    <value>_uroflowRemarksTextBox</value>
+  </data>
+  <data name="&gt;&gt;_uroflowRemarksTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_uroflowRemarksTextBox.Parent" xml:space="preserve">
+    <value>_uroflowGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_uroflowRemarksTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="_uroflowRemarksLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_uroflowRemarksLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_uroflowRemarksLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_uroflowRemarksLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 161</value>
+  </data>
+  <data name="_uroflowRemarksLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="_uroflowRemarksLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="_uroflowRemarksLabel.Text" xml:space="preserve">
+    <value>Remarks</value>
+  </data>
+  <data name="_uroflowRemarksLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_uroflowRemarksLabel.Name" xml:space="preserve">
+    <value>_uroflowRemarksLabel</value>
+  </data>
+  <data name="&gt;&gt;_uroflowRemarksLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_uroflowRemarksLabel.Parent" xml:space="preserve">
+    <value>_uroflowGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_uroflowRemarksLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="_residualVolumeTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_residualVolumeTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_residualVolumeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 111</value>
+  </data>
+  <data name="_residualVolumeTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_residualVolumeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>799, 40</value>
+  </data>
+  <data name="_residualVolumeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_residualVolumeTextBox.Name" xml:space="preserve">
+    <value>_residualVolumeTextBox</value>
+  </data>
+  <data name="&gt;&gt;_residualVolumeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_residualVolumeTextBox.Parent" xml:space="preserve">
+    <value>_uroflowGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_residualVolumeTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="_residualVolume.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_residualVolume.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_residualVolume.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_residualVolume.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 114</value>
+  </data>
+  <data name="_residualVolume.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="_residualVolume.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_residualVolume.Text" xml:space="preserve">
+    <value>Residual Volume</value>
+  </data>
+  <data name="_residualVolume.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_residualVolume.Name" xml:space="preserve">
+    <value>_residualVolume</value>
+  </data>
+  <data name="&gt;&gt;_residualVolume.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_residualVolume.Parent" xml:space="preserve">
+    <value>_uroflowGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_residualVolume.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="_voidedVolumeTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_voidedVolumeTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_voidedVolumeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 65</value>
+  </data>
+  <data name="_voidedVolumeTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_voidedVolumeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>799, 40</value>
+  </data>
+  <data name="_voidedVolumeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_voidedVolumeTextBox.Name" xml:space="preserve">
+    <value>_voidedVolumeTextBox</value>
+  </data>
+  <data name="&gt;&gt;_voidedVolumeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_voidedVolumeTextBox.Parent" xml:space="preserve">
+    <value>_uroflowGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_voidedVolumeTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="_voidedVolumeLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_voidedVolumeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_voidedVolumeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_voidedVolumeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 68</value>
+  </data>
+  <data name="_voidedVolumeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
+  </data>
+  <data name="_voidedVolumeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_voidedVolumeLabel.Text" xml:space="preserve">
+    <value>Voided Volume</value>
+  </data>
+  <data name="_voidedVolumeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_voidedVolumeLabel.Name" xml:space="preserve">
+    <value>_voidedVolumeLabel</value>
+  </data>
+  <data name="&gt;&gt;_voidedVolumeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_voidedVolumeLabel.Parent" xml:space="preserve">
+    <value>_uroflowGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_voidedVolumeLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="_peakFlowRateTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_peakFlowRateTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_peakFlowRateTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 19</value>
+  </data>
+  <data name="_peakFlowRateTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_peakFlowRateTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>799, 40</value>
+  </data>
+  <data name="_peakFlowRateTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_peakFlowRateTextBox.Name" xml:space="preserve">
+    <value>_peakFlowRateTextBox</value>
+  </data>
+  <data name="&gt;&gt;_peakFlowRateTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_peakFlowRateTextBox.Parent" xml:space="preserve">
+    <value>_uroflowGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_peakFlowRateTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="_peakFlowRateLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_peakFlowRateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_peakFlowRateLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_peakFlowRateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 22</value>
+  </data>
+  <data name="_peakFlowRateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="_peakFlowRateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_peakFlowRateLabel.Text" xml:space="preserve">
+    <value>Peak Flow Rate</value>
+  </data>
+  <data name="_peakFlowRateLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_peakFlowRateLabel.Name" xml:space="preserve">
+    <value>_peakFlowRateLabel</value>
+  </data>
+  <data name="&gt;&gt;_peakFlowRateLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_peakFlowRateLabel.Parent" xml:space="preserve">
+    <value>_uroflowGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_peakFlowRateLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="_uroflowGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 189</value>
+  </data>
+  <data name="_uroflowGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>920, 208</value>
+  </data>
+  <data name="_uroflowGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_uroflowGroupBox.Text" xml:space="preserve">
+    <value>Uroflow</value>
+  </data>
+  <data name="&gt;&gt;_uroflowGroupBox.Name" xml:space="preserve">
+    <value>_uroflowGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_uroflowGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_uroflowGroupBox.Parent" xml:space="preserve">
+    <value>_informationTab1</value>
+  </data>
+  <data name="&gt;&gt;_uroflowGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="_examinationGroupBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_examinationGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <metadata name="_examOtherTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_examOtherTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_examOtherTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 119</value>
+  </data>
+  <data name="_examOtherTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_examOtherTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>799, 40</value>
+  </data>
+  <data name="_examOtherTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_examOtherTextBox.Name" xml:space="preserve">
+    <value>_examOtherTextBox</value>
+  </data>
+  <data name="&gt;&gt;_examOtherTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_examOtherTextBox.Parent" xml:space="preserve">
+    <value>_examinationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_examOtherTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="_examOtherLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_examOtherLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_examOtherLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_examOtherLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 122</value>
+  </data>
+  <data name="_examOtherLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="_examOtherLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_examOtherLabel.Text" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="_examOtherLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_examOtherLabel.Name" xml:space="preserve">
+    <value>_examOtherLabel</value>
+  </data>
+  <data name="&gt;&gt;_examOtherLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_examOtherLabel.Parent" xml:space="preserve">
+    <value>_examinationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_examOtherLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="_bcrTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_bcrTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_bcrTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 68</value>
+  </data>
+  <data name="_bcrTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_bcrTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>799, 40</value>
+  </data>
+  <data name="_bcrTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_bcrTextBox.Name" xml:space="preserve">
+    <value>_bcrTextBox</value>
+  </data>
+  <data name="&gt;&gt;_bcrTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_bcrTextBox.Parent" xml:space="preserve">
+    <value>_examinationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_bcrTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="_bcrLabelBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_bcrLabelBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_bcrLabelBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_bcrLabelBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 71</value>
+  </data>
+  <data name="_bcrLabelBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="_bcrLabelBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_bcrLabelBox.Text" xml:space="preserve">
+    <value>B.C.R.</value>
+  </data>
+  <data name="_bcrLabelBox.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_bcrLabelBox.Name" xml:space="preserve">
+    <value>_bcrLabelBox</value>
+  </data>
+  <data name="&gt;&gt;_bcrLabelBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_bcrLabelBox.Parent" xml:space="preserve">
+    <value>_examinationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_bcrLabelBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="_analToneTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_analToneTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_analToneTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 19</value>
+  </data>
+  <data name="_analToneTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_analToneTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>799, 40</value>
+  </data>
+  <data name="_analToneTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_analToneTextBox.Name" xml:space="preserve">
+    <value>_analToneTextBox</value>
+  </data>
+  <data name="&gt;&gt;_analToneTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_analToneTextBox.Parent" xml:space="preserve">
+    <value>_examinationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_analToneTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="_analToneLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_analToneLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_analToneLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_analToneLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 22</value>
+  </data>
+  <data name="_analToneLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="_analToneLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_analToneLabel.Text" xml:space="preserve">
+    <value>Anal Tone</value>
+  </data>
+  <data name="_analToneLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_analToneLabel.Name" xml:space="preserve">
+    <value>_analToneLabel</value>
+  </data>
+  <data name="&gt;&gt;_analToneLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_analToneLabel.Parent" xml:space="preserve">
+    <value>_examinationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_analToneLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_examinationGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 12</value>
+  </data>
+  <data name="_examinationGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>920, 171</value>
+  </data>
+  <data name="_examinationGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_examinationGroupBox.Text" xml:space="preserve">
+    <value>Examination</value>
+  </data>
+  <data name="&gt;&gt;_examinationGroupBox.Name" xml:space="preserve">
+    <value>_examinationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_examinationGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_examinationGroupBox.Parent" xml:space="preserve">
+    <value>_informationTab1</value>
+  </data>
+  <data name="&gt;&gt;_examinationGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_informationTab1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="_informationTab1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="_informationTab1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>939, 403</value>
+  </data>
+  <data name="_informationTab1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_informationTab1.Text" xml:space="preserve">
+    <value>Information - I</value>
+  </data>
+  <data name="&gt;&gt;_informationTab1.Name" xml:space="preserve">
+    <value>_informationTab1</value>
+  </data>
+  <data name="&gt;&gt;_informationTab1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_informationTab1.Parent" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;_informationTab1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="_informationTab2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_voidingPhaseGroupBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_residualUrineTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_residualUrineTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>593, 41</value>
+  </data>
+  <data name="_residualUrineTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_residualUrineTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
+  </data>
+  <data name="_residualUrineTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;_residualUrineTextBox.Name" xml:space="preserve">
+    <value>_residualUrineTextBox</value>
+  </data>
+  <data name="&gt;&gt;_residualUrineTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_residualUrineTextBox.Parent" xml:space="preserve">
+    <value>_voidingPhaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_residualUrineTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="_residualUrineLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_residualUrineLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_residualUrineLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_residualUrineLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 44</value>
+  </data>
+  <data name="_residualUrineLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="_residualUrineLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="_residualUrineLabel.Text" xml:space="preserve">
+    <value>Residual Urine</value>
+  </data>
+  <data name="_residualUrineLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_residualUrineLabel.Name" xml:space="preserve">
+    <value>_residualUrineLabel</value>
+  </data>
+  <data name="&gt;&gt;_residualUrineLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_residualUrineLabel.Parent" xml:space="preserve">
+    <value>_voidingPhaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_residualUrineLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="_voidingPhasePeakFlowRateTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_voidingPhasePeakFlowRateTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>593, 15</value>
+  </data>
+  <data name="_voidingPhasePeakFlowRateTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_voidingPhasePeakFlowRateTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
+  </data>
+  <data name="_voidingPhasePeakFlowRateTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhasePeakFlowRateTextBox.Name" xml:space="preserve">
+    <value>_voidingPhasePeakFlowRateTextBox</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhasePeakFlowRateTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhasePeakFlowRateTextBox.Parent" xml:space="preserve">
+    <value>_voidingPhaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhasePeakFlowRateTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="_voidingPhasePeakFlowRateLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_voidingPhasePeakFlowRateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_voidingPhasePeakFlowRateLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_voidingPhasePeakFlowRateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 18</value>
+  </data>
+  <data name="_voidingPhasePeakFlowRateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="_voidingPhasePeakFlowRateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="_voidingPhasePeakFlowRateLabel.Text" xml:space="preserve">
+    <value>Peak Flow Rate</value>
+  </data>
+  <data name="_voidingPhasePeakFlowRateLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhasePeakFlowRateLabel.Name" xml:space="preserve">
+    <value>_voidingPhasePeakFlowRateLabel</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhasePeakFlowRateLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhasePeakFlowRateLabel.Parent" xml:space="preserve">
+    <value>_voidingPhaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhasePeakFlowRateLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="_voidingPhaseRemarks.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_voidingPhaseRemarks.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_voidingPhaseRemarks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 119</value>
+  </data>
+  <data name="_voidingPhaseRemarks.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_voidingPhaseRemarks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>797, 40</value>
+  </data>
+  <data name="_voidingPhaseRemarks.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseRemarks.Name" xml:space="preserve">
+    <value>_voidingPhaseRemarks</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseRemarks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseRemarks.Parent" xml:space="preserve">
+    <value>_voidingPhaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseRemarks.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="_voidingPhaseRemarksLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_voidingPhaseRemarksLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_voidingPhaseRemarksLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_voidingPhaseRemarksLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 122</value>
+  </data>
+  <data name="_voidingPhaseRemarksLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="_voidingPhaseRemarksLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="_voidingPhaseRemarksLabel.Text" xml:space="preserve">
+    <value>Remarks</value>
+  </data>
+  <data name="_voidingPhaseRemarksLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseRemarksLabel.Name" xml:space="preserve">
+    <value>_voidingPhaseRemarksLabel</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseRemarksLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseRemarksLabel.Parent" xml:space="preserve">
+    <value>_voidingPhaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseRemarksLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="_voidingPhaseOtherTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_voidingPhaseOtherTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_voidingPhaseOtherTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 72</value>
+  </data>
+  <data name="_voidingPhaseOtherTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_voidingPhaseOtherTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>797, 40</value>
+  </data>
+  <data name="_voidingPhaseOtherTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseOtherTextBox.Name" xml:space="preserve">
+    <value>_voidingPhaseOtherTextBox</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseOtherTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseOtherTextBox.Parent" xml:space="preserve">
+    <value>_voidingPhaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseOtherTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="_voidingPhaseOtherLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_voidingPhaseOtherLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_voidingPhaseOtherLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_voidingPhaseOtherLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 75</value>
+  </data>
+  <data name="_voidingPhaseOtherLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="_voidingPhaseOtherLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_voidingPhaseOtherLabel.Text" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="_voidingPhaseOtherLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseOtherLabel.Name" xml:space="preserve">
+    <value>_voidingPhaseOtherLabel</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseOtherLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseOtherLabel.Parent" xml:space="preserve">
+    <value>_voidingPhaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseOtherLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="_sphActivityTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_sphActivityTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_sphActivityTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 45</value>
+  </data>
+  <data name="_sphActivityTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_sphActivityTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 20</value>
+  </data>
+  <data name="_sphActivityTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_sphActivityTextBox.Name" xml:space="preserve">
+    <value>_sphActivityTextBox</value>
+  </data>
+  <data name="&gt;&gt;_sphActivityTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_sphActivityTextBox.Parent" xml:space="preserve">
+    <value>_voidingPhaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_sphActivityTextBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <metadata name="_sphActivityLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_sphActivityLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_sphActivityLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_sphActivityLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 48</value>
+  </data>
+  <data name="_sphActivityLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="_sphActivityLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_sphActivityLabel.Text" xml:space="preserve">
+    <value>Sphicteric Activity</value>
+  </data>
+  <data name="_sphActivityLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_sphActivityLabel.Name" xml:space="preserve">
+    <value>_sphActivityLabel</value>
+  </data>
+  <data name="&gt;&gt;_sphActivityLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_sphActivityLabel.Parent" xml:space="preserve">
+    <value>_voidingPhaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_sphActivityLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="_detrusorPressureTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_detrusorPressureTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_detrusorPressureTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 19</value>
+  </data>
+  <data name="_detrusorPressureTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_detrusorPressureTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 20</value>
+  </data>
+  <data name="_detrusorPressureTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_detrusorPressureTextBox.Name" xml:space="preserve">
+    <value>_detrusorPressureTextBox</value>
+  </data>
+  <data name="&gt;&gt;_detrusorPressureTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_detrusorPressureTextBox.Parent" xml:space="preserve">
+    <value>_voidingPhaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_detrusorPressureTextBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <metadata name="_detrusorPressureLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_detrusorPressureLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_detrusorPressureLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_detrusorPressureLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 22</value>
+  </data>
+  <data name="_detrusorPressureLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="_detrusorPressureLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_detrusorPressureLabel.Text" xml:space="preserve">
+    <value>Detrusor Pressure</value>
+  </data>
+  <data name="_detrusorPressureLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_detrusorPressureLabel.Name" xml:space="preserve">
+    <value>_detrusorPressureLabel</value>
+  </data>
+  <data name="&gt;&gt;_detrusorPressureLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_detrusorPressureLabel.Parent" xml:space="preserve">
+    <value>_voidingPhaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_detrusorPressureLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="_voidingPhaseGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 231</value>
+  </data>
+  <data name="_voidingPhaseGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>918, 166</value>
+  </data>
+  <data name="_voidingPhaseGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_voidingPhaseGroupBox.Text" xml:space="preserve">
+    <value>Voiding Phase</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseGroupBox.Name" xml:space="preserve">
+    <value>_voidingPhaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseGroupBox.Parent" xml:space="preserve">
+    <value>_informationTab2</value>
+  </data>
+  <data name="&gt;&gt;_voidingPhaseGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="_fillingCystometryGroupBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_stressIncTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_stressIncTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>593, 99</value>
+  </data>
+  <data name="_stressIncTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_stressIncTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
+  </data>
+  <data name="_stressIncTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;_stressIncTextBox.Name" xml:space="preserve">
+    <value>_stressIncTextBox</value>
+  </data>
+  <data name="&gt;&gt;_stressIncTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_stressIncTextBox.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_stressIncTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="_stressIncLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_stressIncLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_stressIncLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_stressIncLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>503, 102</value>
+  </data>
+  <data name="_stressIncLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="_stressIncLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="_stressIncLabel.Text" xml:space="preserve">
+    <value>Stress Inc</value>
+  </data>
+  <data name="_stressIncLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_stressIncLabel.Name" xml:space="preserve">
+    <value>_stressIncLabel</value>
+  </data>
+  <data name="&gt;&gt;_stressIncLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_stressIncLabel.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_stressIncLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="_dlppTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_dlppTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>593, 72</value>
+  </data>
+  <data name="_dlppTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_dlppTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
+  </data>
+  <data name="_dlppTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;_dlppTextBox.Name" xml:space="preserve">
+    <value>_dlppTextBox</value>
+  </data>
+  <data name="&gt;&gt;_dlppTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_dlppTextBox.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_dlppTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="_dlppLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_dlppLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_dlppLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_dlppLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>503, 75</value>
+  </data>
+  <data name="_dlppLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="_dlppLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="_dlppLabel.Text" xml:space="preserve">
+    <value>DLPP</value>
+  </data>
+  <data name="_dlppLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_dlppLabel.Name" xml:space="preserve">
+    <value>_dlppLabel</value>
+  </data>
+  <data name="&gt;&gt;_dlppLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_dlppLabel.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_dlppLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="_stabilityTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_stabilityTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>593, 45</value>
+  </data>
+  <data name="_stabilityTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_stabilityTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
+  </data>
+  <data name="_stabilityTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;_stabilityTextBox.Name" xml:space="preserve">
+    <value>_stabilityTextBox</value>
+  </data>
+  <data name="&gt;&gt;_stabilityTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_stabilityTextBox.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_stabilityTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="_stabilityLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_stabilityLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_stabilityLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_stabilityLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>503, 48</value>
+  </data>
+  <data name="_stabilityLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="_stabilityLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="_stabilityLabel.Text" xml:space="preserve">
+    <value>Stability</value>
+  </data>
+  <data name="_stabilityLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_stabilityLabel.Name" xml:space="preserve">
+    <value>_stabilityLabel</value>
+  </data>
+  <data name="&gt;&gt;_stabilityLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_stabilityLabel.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_stabilityLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="_capacityTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_capacityTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>593, 19</value>
+  </data>
+  <data name="_capacityTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_capacityTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
+  </data>
+  <data name="_capacityTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;_capacityTextBox.Name" xml:space="preserve">
+    <value>_capacityTextBox</value>
+  </data>
+  <data name="&gt;&gt;_capacityTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_capacityTextBox.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_capacityTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="_capacityLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_capacityLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_capacityLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_capacityLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>503, 22</value>
+  </data>
+  <data name="_capacityLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="_capacityLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="_capacityLabel.Text" xml:space="preserve">
+    <value>Capacity</value>
+  </data>
+  <data name="_capacityLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_capacityLabel.Name" xml:space="preserve">
+    <value>_capacityLabel</value>
+  </data>
+  <data name="&gt;&gt;_capacityLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_capacityLabel.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_capacityLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="_vlppTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_vlppTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 99</value>
+  </data>
+  <data name="_vlppTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_vlppTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
+  </data>
+  <data name="_vlppTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;_vlppTextBox.Name" xml:space="preserve">
+    <value>_vlppTextBox</value>
+  </data>
+  <data name="&gt;&gt;_vlppTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_vlppTextBox.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_vlppTextBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <metadata name="_vlppLable.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_vlppLable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_vlppLable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_vlppLable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 102</value>
+  </data>
+  <data name="_vlppLable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="_vlppLable.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="_vlppLable.Text" xml:space="preserve">
+    <value>VLPP</value>
+  </data>
+  <data name="_vlppLable.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_vlppLable.Name" xml:space="preserve">
+    <value>_vlppLable</value>
+  </data>
+  <data name="&gt;&gt;_vlppLable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_vlppLable.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_vlppLable.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="_fillRemarksTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_fillRemarksTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_fillRemarksTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 168</value>
+  </data>
+  <data name="_fillRemarksTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_fillRemarksTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>797, 40</value>
+  </data>
+  <data name="_fillRemarksTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;_fillRemarksTextBox.Name" xml:space="preserve">
+    <value>_fillRemarksTextBox</value>
+  </data>
+  <data name="&gt;&gt;_fillRemarksTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fillRemarksTextBox.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fillRemarksTextBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <metadata name="_fillRemarksLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_fillRemarksLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_fillRemarksLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_fillRemarksLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 171</value>
+  </data>
+  <data name="_fillRemarksLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="_fillRemarksLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="_fillRemarksLabel.Text" xml:space="preserve">
+    <value>Remarks</value>
+  </data>
+  <data name="_fillRemarksLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_fillRemarksLabel.Name" xml:space="preserve">
+    <value>_fillRemarksLabel</value>
+  </data>
+  <data name="&gt;&gt;_fillRemarksLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fillRemarksLabel.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fillRemarksLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <metadata name="_sensationTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_sensationTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 72</value>
+  </data>
+  <data name="_sensationTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_sensationTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
+  </data>
+  <data name="_sensationTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_sensationTextBox.Name" xml:space="preserve">
+    <value>_sensationTextBox</value>
+  </data>
+  <data name="&gt;&gt;_sensationTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_sensationTextBox.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_sensationTextBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <metadata name="_sensationLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_sensationLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_sensationLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_sensationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 75</value>
+  </data>
+  <data name="_sensationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="_sensationLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="_sensationLabel.Text" xml:space="preserve">
+    <value>Sensation</value>
+  </data>
+  <data name="_sensationLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_sensationLabel.Name" xml:space="preserve">
+    <value>_sensationLabel</value>
+  </data>
+  <data name="&gt;&gt;_sensationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_sensationLabel.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_sensationLabel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <metadata name="_fillOtherTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_fillOtherTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_fillOtherTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 124</value>
+  </data>
+  <data name="_fillOtherTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_fillOtherTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>797, 40</value>
+  </data>
+  <data name="_fillOtherTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_fillOtherTextBox.Name" xml:space="preserve">
+    <value>_fillOtherTextBox</value>
+  </data>
+  <data name="&gt;&gt;_fillOtherTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fillOtherTextBox.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fillOtherTextBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <metadata name="_fillOtherLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_fillOtherLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_fillOtherLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_fillOtherLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 127</value>
+  </data>
+  <data name="_fillOtherLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="_fillOtherLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_fillOtherLabel.Text" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="_fillOtherLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_fillOtherLabel.Name" xml:space="preserve">
+    <value>_fillOtherLabel</value>
+  </data>
+  <data name="&gt;&gt;_fillOtherLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fillOtherLabel.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fillOtherLabel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <metadata name="_complianceTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_complianceTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 45</value>
+  </data>
+  <data name="_complianceTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_complianceTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
+  </data>
+  <data name="_complianceTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_complianceTextBox.Name" xml:space="preserve">
+    <value>_complianceTextBox</value>
+  </data>
+  <data name="&gt;&gt;_complianceTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_complianceTextBox.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_complianceTextBox.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <metadata name="_complianceLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_complianceLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_complianceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_complianceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 48</value>
+  </data>
+  <data name="_complianceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
+  </data>
+  <data name="_complianceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_complianceLabel.Text" xml:space="preserve">
+    <value>Compliance</value>
+  </data>
+  <data name="_complianceLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_complianceLabel.Name" xml:space="preserve">
+    <value>_complianceLabel</value>
+  </data>
+  <data name="&gt;&gt;_complianceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_complianceLabel.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_complianceLabel.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <metadata name="_fillingRateTxtBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_fillingRateTxtBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 19</value>
+  </data>
+  <data name="_fillingRateTxtBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_fillingRateTxtBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
+  </data>
+  <data name="_fillingRateTxtBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_fillingRateTxtBox.Name" xml:space="preserve">
+    <value>_fillingRateTxtBox</value>
+  </data>
+  <data name="&gt;&gt;_fillingRateTxtBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fillingRateTxtBox.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fillingRateTxtBox.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <metadata name="_fillingRateLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_fillingRateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_fillingRateLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_fillingRateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 22</value>
+  </data>
+  <data name="_fillingRateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="_fillingRateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_fillingRateLabel.Text" xml:space="preserve">
+    <value>Filling Rate</value>
+  </data>
+  <data name="_fillingRateLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_fillingRateLabel.Name" xml:space="preserve">
+    <value>_fillingRateLabel</value>
+  </data>
+  <data name="&gt;&gt;_fillingRateLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fillingRateLabel.Parent" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fillingRateLabel.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="_fillingCystometryGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 9</value>
+  </data>
+  <data name="_fillingCystometryGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>920, 216</value>
+  </data>
+  <data name="_fillingCystometryGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_fillingCystometryGroupBox.Text" xml:space="preserve">
+    <value>Filling Cystometry</value>
+  </data>
+  <data name="&gt;&gt;_fillingCystometryGroupBox.Name" xml:space="preserve">
+    <value>_fillingCystometryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fillingCystometryGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fillingCystometryGroupBox.Parent" xml:space="preserve">
+    <value>_informationTab2</value>
+  </data>
+  <data name="&gt;&gt;_fillingCystometryGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_informationTab2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="_informationTab2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="_informationTab2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>939, 403</value>
+  </data>
+  <data name="_informationTab2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_informationTab2.Text" xml:space="preserve">
+    <value>Information - II</value>
+  </data>
+  <data name="&gt;&gt;_informationTab2.Name" xml:space="preserve">
+    <value>_informationTab2</value>
+  </data>
+  <data name="&gt;&gt;_informationTab2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_informationTab2.Parent" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;_informationTab2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 134</value>
+  </data>
+  <data name="_tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>947, 429</value>
+  </data>
+  <data name="_tabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.Name" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.Parent" xml:space="preserve">
+    <value>_udsDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="_complaintsTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_complaintsTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_complaintsTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 27</value>
+  </data>
+  <data name="_complaintsTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_complaintsTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>858, 44</value>
+  </data>
+  <data name="_complaintsTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_complaintsTextBox.Name" xml:space="preserve">
+    <value>_complaintsTextBox</value>
+  </data>
+  <data name="&gt;&gt;_complaintsTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_complaintsTextBox.Parent" xml:space="preserve">
+    <value>_udsDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_complaintsTextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="_complaintsLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_complaintsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_complaintsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_complaintsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 30</value>
+  </data>
+  <data name="_complaintsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="_complaintsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_complaintsLabel.Text" xml:space="preserve">
+    <value>Complaints</value>
+  </data>
+  <data name="_complaintsLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_complaintsLabel.Name" xml:space="preserve">
+    <value>_complaintsLabel</value>
+  </data>
+  <data name="&gt;&gt;_complaintsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_complaintsLabel.Parent" xml:space="preserve">
+    <value>_udsDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_complaintsLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_udsDetailGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="_udsDetailGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 90</value>
+  </data>
+  <data name="_udsDetailGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="_udsDetailGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>990, 690</value>
+  </data>
+  <data name="_udsDetailGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_udsDetailGroupBox.Text" xml:space="preserve">
+    <value>U.D.S. Details</value>
+  </data>
+  <data name="&gt;&gt;_udsDetailGroupBox.Name" xml:space="preserve">
+    <value>_udsDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_udsDetailGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_udsDetailGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_udsDetailGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 87</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1039, 790</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UDSControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

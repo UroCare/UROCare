@@ -1,0 +1,1847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="UROCareModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="UROCareModelStoreContainer">
+          <EntitySet Name="Andrology" EntityType="UROCareModel.Store.Andrology" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Doctors_List" EntityType="UROCareModel.Store.Doctors_List" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ESWL" EntityType="UROCareModel.Store.ESWL" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Follow_Up" EntityType="UROCareModel.Store.Follow_Up" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Investigation" EntityType="UROCareModel.Store.Investigation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="IPD" EntityType="UROCareModel.Store.IPD" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Operation_Dtls" EntityType="UROCareModel.Store.Operation_Dtls" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Param_Dtls" EntityType="UROCareModel.Store.Param_Dtls" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Param_Master" EntityType="UROCareModel.Store.Param_Master" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Patient_Examination" EntityType="UROCareModel.Store.Patient_Examination" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Patient_Info" EntityType="UROCareModel.Store.Patient_Info" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Prescription_Template" EntityType="UROCareModel.Store.Prescription_Template" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Treatement_Dtls" EntityType="UROCareModel.Store.Treatement_Dtls" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Treatment_Advised" EntityType="UROCareModel.Store.Treatment_Advised" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UDS" EntityType="UROCareModel.Store.UDS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Urology_History" EntityType="UROCareModel.Store.Urology_History" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="User_Master" EntityType="UROCareModel.Store.User_Master" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="XRayImages" EntityType="UROCareModel.Store.XRayImages" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Andrology_Patient_Info1" Association="UROCareModel.Store.FK_Andrology_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Andrology" EntitySet="Andrology" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ESWL_Patient_Info1" Association="UROCareModel.Store.FK_ESWL_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="ESWL" EntitySet="ESWL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Follow_Up_Patient_Info" Association="UROCareModel.Store.FK_Follow_Up_Patient_Info">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Follow_Up" EntitySet="Follow_Up" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Investigation_Patient_Info1" Association="UROCareModel.Store.FK_Investigation_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Investigation" EntitySet="Investigation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IPD_Patient_Info1" Association="UROCareModel.Store.FK_IPD_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="IPD" EntitySet="IPD" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Operation_Dtls_Patient_Info1" Association="UROCareModel.Store.FK_Operation_Dtls_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Operation_Dtls" EntitySet="Operation_Dtls" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Patient_Examination_Patient_Info1" Association="UROCareModel.Store.FK_Patient_Examination_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Patient_Examination" EntitySet="Patient_Examination" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Patient_Info_Doctors_List" Association="UROCareModel.Store.FK_Patient_Info_Doctors_List">
+            <End Role="Doctors_List" EntitySet="Doctors_List" />
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Treatement_Dtls_Patient_Info1" Association="UROCareModel.Store.FK_Treatement_Dtls_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Treatement_Dtls" EntitySet="Treatement_Dtls" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Treatment_Advised_Patient_Info1" Association="UROCareModel.Store.FK_Treatment_Advised_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Treatment_Advised" EntitySet="Treatment_Advised" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UDS_Patient_Info1" Association="UROCareModel.Store.FK_UDS_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="UDS" EntitySet="UDS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Urology_History_Patient_Info1" Association="UROCareModel.Store.FK_Urology_History_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Urology_History" EntitySet="Urology_History" />
+          </AssociationSet>
+          <AssociationSet Name="FK_XRayImages_Patient_Info" Association="UROCareModel.Store.FK_XRayImages_Patient_Info">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="XRayImages" EntitySet="XRayImages" />
+          </AssociationSet>
+          <AssociationSet Name="Operation_Dtls$Doctors_ListOperation_Dtls" Association="UROCareModel.Store.Operation_Dtls$Doctors_ListOperation_Dtls">
+            <End Role="Doctors_List" EntitySet="Doctors_List" />
+            <End Role="Operation_Dtls" EntitySet="Operation_Dtls" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Andrology">
+          <Key>
+            <PropertyRef Name="Andrology_ID" />
+          </Key>
+          <Property Name="Andrology_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="int" Nullable="false" />
+          <Property Name="Gu_No" Type="int" Nullable="false" />
+          <Property Name="Gu_Year" Type="int" Nullable="false" />
+          <Property Name="Complaint" Type="nvarchar" MaxLength="150" />
+          <Property Name="Married_Since" Type="nvarchar" MaxLength="30" />
+          <Property Name="Signi_Illness" Type="nvarchar" MaxLength="150" />
+          <Property Name="Treatment_Taken" Type="nvarchar" MaxLength="150" />
+          <Property Name="Alcoholism" Type="nvarchar" MaxLength="50" />
+          <Property Name="Fever" Type="nvarchar" MaxLength="50" />
+          <Property Name="Smoking" Type="nvarchar" MaxLength="50" />
+          <Property Name="Mumps_Orchits" Type="nvarchar" MaxLength="50" />
+          <Property Name="Erection" Type="nvarchar" MaxLength="50" />
+          <Property Name="Ejaculation" Type="nvarchar" MaxLength="50" />
+          <Property Name="General_Exam" Type="nvarchar" MaxLength="50" />
+          <Property Name="Virilization" Type="nvarchar" MaxLength="50" />
+          <Property Name="PA" Type="nvarchar" MaxLength="50" />
+          <Property Name="PR" Type="nvarchar" MaxLength="50" />
+          <Property Name="VAS" Type="nvarchar" MaxLength="50" />
+          <Property Name="Varicocele" Type="nvarchar" MaxLength="50" />
+          <Property Name="Testis" Type="nvarchar" MaxLength="50" />
+          <Property Name="Epididymis" Type="nvarchar" MaxLength="50" />
+          <Property Name="Semen_Analysis" Type="nvarchar" MaxLength="50" />
+          <Property Name="SR_FSH" Type="nvarchar" MaxLength="50" />
+          <Property Name="LH" Type="nvarchar" MaxLength="50" />
+          <Property Name="Testosterone" Type="nvarchar" MaxLength="50" />
+          <Property Name="Prolactin" Type="nvarchar" MaxLength="50" />
+          <Property Name="Testi_Biopsy" Type="nvarchar" MaxLength="150" />
+          <Property Name="Others" Type="nvarchar" MaxLength="150" />
+          <Property Name="Treatment_Given" Type="nvarchar" MaxLength="150" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Create_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modify_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modify_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="Doctors_List">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Doctor_Name" Type="nvarchar" Nullable="false" MaxLength="80" />
+          <Property Name="At_Post" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Taluka" Type="nvarchar" MaxLength="50" />
+          <Property Name="District" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="15" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="10" />
+          <Property Name="Birth_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Dr_Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Create_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modify_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modify_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="ESWL">
+          <Key>
+            <PropertyRef Name="ESWL_ID" />
+          </Key>
+          <Property Name="ESWL_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="int" Nullable="false" />
+          <Property Name="Gu_No" Type="int" Nullable="false" />
+          <Property Name="Gu_Year" Type="int" Nullable="false" />
+          <Property Name="SR_No" Type="int" Nullable="false" />
+          <Property Name="ESWL_Dte" Type="datetime2" Precision="0" />
+          <Property Name="ESWL_Size" Type="nvarchar" MaxLength="50" />
+          <Property Name="Side" Type="nvarchar" MaxLength="50" />
+          <Property Name="Site" Type="nvarchar" MaxLength="50" />
+          <Property Name="Shock_Waves" Type="nvarchar" MaxLength="50" />
+          <Property Name="ESWL_Level" Type="nvarchar" MaxLength="50" />
+          <Property Name="Fluroscopy" Type="nvarchar" MaxLength="50" />
+          <Property Name="Analgesic" Type="nvarchar" MaxLength="50" />
+          <Property Name="IV_Fluids" Type="nvarchar" MaxLength="50" />
+          <Property Name="Complications" Type="nvarchar" MaxLength="150" />
+          <Property Name="Comments" Type="nvarchar" MaxLength="150" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Create_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modify_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modify_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="Follow_Up">
+          <Key>
+            <PropertyRef Name="Followup_ID" />
+          </Key>
+          <Property Name="Followup_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="int" Nullable="false" />
+          <Property Name="Gu_No" Type="int" Nullable="false" />
+          <Property Name="Gu_Year" Type="int" Nullable="false" />
+          <Property Name="SR_No" Type="int" Nullable="false" />
+          <Property Name="Follow_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Complaints" Type="nvarchar" MaxLength="250" />
+          <Property Name="Evaluation" Type="nvarchar" MaxLength="250" />
+          <Property Name="Treatment" Type="nvarchar" MaxLength="250" />
+          <Property Name="Next_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Create_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modify_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modify_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="Investigation">
+          <Key>
+            <PropertyRef Name="Investigation_ID" />
+          </Key>
+          <Property Name="Investigation_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="int" Nullable="false" />
+          <Property Name="Gu_No" Type="int" Nullable="false" />
+          <Property Name="Gu_Year" Type="int" Nullable="false" />
+          <Property Name="Urine" Type="nvarchar" MaxLength="250" />
+          <Property Name="HB" Type="nvarchar" MaxLength="6" />
+          <Property Name="TC" Type="nvarchar" MaxLength="7" />
+          <Property Name="DC" Type="nvarchar" MaxLength="8" />
+          <Property Name="SR_NA_Plus" Type="nvarchar" MaxLength="5" />
+          <Property Name="SR_K_Plus" Type="nvarchar" MaxLength="5" />
+          <Property Name="SR_CA_Plus" Type="nvarchar" MaxLength="5" />
+          <Property Name="SR_Uric_Acid" Type="nvarchar" MaxLength="5" />
+          <Property Name="HIV" Type="nvarchar" MaxLength="20" />
+          <Property Name="SR_Creat" Type="nvarchar" MaxLength="5" />
+          <Property Name="HBS_AG" Type="nvarchar" MaxLength="20" />
+          <Property Name="BUL" Type="nvarchar" MaxLength="5" />
+          <Property Name="ESR" Type="nvarchar" MaxLength="20" />
+          <Property Name="Urine_Chyle" Type="nvarchar" MaxLength="80" />
+          <Property Name="BSL" Type="nvarchar" MaxLength="80" />
+          <Property Name="USG" Type="nvarchar" MaxLength="250" />
+          <Property Name="KUB" Type="nvarchar" MaxLength="250" />
+          <Property Name="IVP" Type="nvarchar" MaxLength="250" />
+          <Property Name="RGU" Type="nvarchar" MaxLength="250" />
+          <Property Name="MCU" Type="nvarchar" MaxLength="250" />
+          <Property Name="NCHCT" Type="nvarchar" MaxLength="250" />
+          <Property Name="DTPA_Reno" Type="nvarchar" MaxLength="250" />
+          <Property Name="TRUS" Type="nvarchar" MaxLength="250" />
+          <Property Name="Sr_PSA" Type="nvarchar" MaxLength="50" />
+          <Property Name="CT_Scan" Type="nvarchar" MaxLength="250" />
+          <Property Name="Urine_CS" Type="nvarchar" MaxLength="250" />
+          <Property Name="Volume" Type="nvarchar" MaxLength="50" />
+          <Property Name="PH" Type="nvarchar" MaxLength="50" />
+          <Property Name="Calcium" Type="nvarchar" MaxLength="50" />
+          <Property Name="Uric_Acid" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sodium" Type="nvarchar" MaxLength="50" />
+          <Property Name="Oxalate" Type="nvarchar" MaxLength="50" />
+          <Property Name="Citrate" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sulfate" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phosphorous" Type="nvarchar" MaxLength="50" />
+          <Property Name="Stone_Analysis" Type="nvarchar" MaxLength="250" />
+          <Property Name="Bone_Scan" Type="nvarchar" MaxLength="250" />
+          <Property Name="MRI" Type="nvarchar" MaxLength="250" />
+          <Property Name="Others" Type="nvarchar" MaxLength="250" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Create_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modify_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modify_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="IPD">
+          <Key>
+            <PropertyRef Name="IPD_ID" />
+          </Key>
+          <Property Name="IPD_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="int" Nullable="false" />
+          <Property Name="Gu_No" Type="int" Nullable="false" />
+          <Property Name="Gu_Year" Type="int" Nullable="false" />
+          <Property Name="SR_No" Type="int" Nullable="false" />
+          <Property Name="IPD_No" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="Admission_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Discharge_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Complaints" Type="nvarchar" MaxLength="250" />
+          <Property Name="Advice" Type="nvarchar" MaxLength="250" />
+          <Property Name="Followup_Dte" Type="datetime2" Precision="0" />
+          <Property Name="IPD_Diagnosis" Type="nvarchar" MaxLength="250" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Create_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modify_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modify_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="Operation_Dtls">
+          <Key>
+            <PropertyRef Name="Operation_ID" />
+          </Key>
+          <Property Name="Operation_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="int" Nullable="false" />
+          <Property Name="Gu_No" Type="int" Nullable="false" />
+          <Property Name="Gu_Year" Type="int" Nullable="false" />
+          <Property Name="SR_No" Type="int" Nullable="false" />
+          <Property Name="Operation_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Anesthesia" Type="nvarchar" MaxLength="70" />
+          <Property Name="Anaesthesiologist" Type="int" />
+          <Property Name="Opern_Procedure" Type="nvarchar" MaxLength="100" />
+          <Property Name="Details" Type="nvarchar" MaxLength="250" />
+          <Property Name="Remarks" Type="nvarchar" MaxLength="150" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Created_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modified_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modified_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="Param_Dtls">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Param_ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Param_Name" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Param_Master">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Param_Id" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Param_Value" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Patient_Examination">
+          <Key>
+            <PropertyRef Name="Examination_ID" />
+          </Key>
+          <Property Name="Examination_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Patiend_ID" Type="int" Nullable="false" />
+          <Property Name="Gu_No" Type="int" Nullable="false" />
+          <Property Name="Gu_Year" Type="int" Nullable="false" />
+          <Property Name="G_E" Type="nvarchar" MaxLength="100" />
+          <Property Name="Pulse" Type="nvarchar" MaxLength="20" />
+          <Property Name="BP" Type="nvarchar" MaxLength="10" />
+          <Property Name="Weight" Type="nvarchar" MaxLength="3" />
+          <Property Name="Abdomen" Type="nvarchar" MaxLength="150" />
+          <Property Name="Genitalia" Type="nvarchar" MaxLength="150" />
+          <Property Name="Anal_Tone" Type="nvarchar" MaxLength="80" />
+          <Property Name="BCR" Type="nvarchar" MaxLength="80" />
+          <Property Name="Prostate" Type="nvarchar" MaxLength="100" />
+          <Property Name="PR_Others" Type="nvarchar" MaxLength="100" />
+          <Property Name="P_S" Type="nvarchar" MaxLength="80" />
+          <Property Name="P_V" Type="nvarchar" MaxLength="80" />
+          <Property Name="CNS" Type="nvarchar" MaxLength="80" />
+          <Property Name="CVS" Type="nvarchar" MaxLength="80" />
+          <Property Name="R_S" Type="nvarchar" MaxLength="80" />
+          <Property Name="Others" Type="nvarchar" MaxLength="80" />
+          <Property Name="Remarks" Type="nvarchar" MaxLength="150" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Create_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modify_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modify_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="Patient_Info">
+          <Key>
+            <PropertyRef Name="Patient_ID" />
+          </Key>
+          <Property Name="Patient_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Gu_No" Type="int" Nullable="false" />
+          <Property Name="Gu_Year" Type="int" Nullable="false" />
+          <Property Name="Reg_Date" Type="datetime2" Nullable="false" Precision="0" />
+          <Property Name="Salutation" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Patient_Name" Type="nvarchar" Nullable="false" MaxLength="80" />
+          <Property Name="Age_Yr" Type="smallint" />
+          <Property Name="Age_Mnth" Type="smallint" />
+          <Property Name="Sex" Type="smallint" />
+          <Property Name="Occupation" Type="nvarchar" MaxLength="50" />
+          <Property Name="DR_No" Type="int" />
+          <Property Name="At_Post" Type="nvarchar" Nullable="false" MaxLength="80" />
+          <Property Name="Town" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="District" Type="nvarchar" MaxLength="50" />
+          <Property Name="State" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="50" />
+          <Property Name="OPD_Diagnosis" Type="nvarchar" MaxLength="250" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Create_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modify_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modify_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="Prescription_Template">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Template_Name" Type="nvarchar" Nullable="false" MaxLength="80" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Created_Dte" Type="datetime" Nullable="false" />
+          <Property Name="Modified_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modified_Dte" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Treatement_Dtls">
+          <Key>
+            <PropertyRef Name="Treatment_ID" />
+          </Key>
+          <Property Name="Treatment_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="int" Nullable="false" />
+          <Property Name="Gu_No" Type="int" Nullable="false" />
+          <Property Name="Gu_Year" Type="int" Nullable="false" />
+          <Property Name="SR_No" Type="int" Nullable="false" />
+          <Property Name="Treatment_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Treatment_Given" Type="nvarchar" MaxLength="250" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Create_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modify_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modify_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="Treatment_Advised">
+          <Key>
+            <PropertyRef Name="Treatment_Advised_ID" />
+          </Key>
+          <Property Name="Treatment_Advised_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="int" Nullable="false" />
+          <Property Name="Gu_No" Type="int" Nullable="false" />
+          <Property Name="Gu_Year" Type="int" Nullable="false" />
+          <Property Name="Treatment_Adv" Type="nvarchar" MaxLength="250" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Create_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modify_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modify_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="UDS">
+          <Key>
+            <PropertyRef Name="UDS_ID" />
+          </Key>
+          <Property Name="UDS_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="int" Nullable="false" />
+          <Property Name="Gu_No" Type="int" Nullable="false" />
+          <Property Name="Gu_Year" Type="int" Nullable="false" />
+          <Property Name="Complaints" Type="nvarchar" MaxLength="200" />
+          <Property Name="Assoc_Illness" Type="nvarchar" MaxLength="200" />
+          <Property Name="Anal_Tone" Type="nvarchar" MaxLength="200" />
+          <Property Name="BCR" Type="nvarchar" MaxLength="200" />
+          <Property Name="Exam_Other" Type="nvarchar" MaxLength="200" />
+          <Property Name="Peak_Flow_Rate" Type="nvarchar" MaxLength="200" />
+          <Property Name="Voided_Volume" Type="nvarchar" MaxLength="200" />
+          <Property Name="Residual_Volume" Type="nvarchar" MaxLength="200" />
+          <Property Name="Uroflow_Rmks" Type="nvarchar" MaxLength="200" />
+          <Property Name="Filling_Rate" Type="nvarchar" MaxLength="80" />
+          <Property Name="Capacity" Type="nvarchar" MaxLength="80" />
+          <Property Name="Compliance" Type="nvarchar" MaxLength="80" />
+          <Property Name="Stability" Type="nvarchar" MaxLength="80" />
+          <Property Name="Sensation" Type="nvarchar" MaxLength="80" />
+          <Property Name="DLPP" Type="nvarchar" MaxLength="80" />
+          <Property Name="VLPP" Type="nvarchar" MaxLength="80" />
+          <Property Name="Stress_Inc" Type="nvarchar" MaxLength="80" />
+          <Property Name="Fill_Other" Type="nvarchar" MaxLength="200" />
+          <Property Name="Fill_Rmks" Type="nvarchar" MaxLength="200" />
+          <Property Name="Detrusor_Press" Type="nvarchar" MaxLength="80" />
+          <Property Name="VoidPhase_Flow_Rate" Type="nvarchar" MaxLength="80" />
+          <Property Name="Sph_Activity" Type="nvarchar" MaxLength="80" />
+          <Property Name="Residual_Urine" Type="nvarchar" MaxLength="80" />
+          <Property Name="Void_Other" Type="nvarchar" MaxLength="200" />
+          <Property Name="Void_Rmks" Type="nvarchar" MaxLength="200" />
+          <Property Name="Conclusion" Type="nvarchar" MaxLength="200" />
+          <Property Name="Advise" Type="nvarchar" MaxLength="200" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Create_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modify_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modify_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="Urology_History">
+          <Key>
+            <PropertyRef Name="History_ID" />
+          </Key>
+          <Property Name="History_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="int" Nullable="false" />
+          <Property Name="Gu_No" Type="int" Nullable="false" />
+          <Property Name="Gu_Year" Type="int" Nullable="false" />
+          <Property Name="Chief_Compl" Type="nvarchar" MaxLength="250" />
+          <Property Name="Frequency" Type="nvarchar" MaxLength="70" />
+          <Property Name="Hesitancy" Type="nvarchar" MaxLength="70" />
+          <Property Name="Nocturia" Type="nvarchar" MaxLength="70" />
+          <Property Name="Poor_Stream" Type="nvarchar" MaxLength="70" />
+          <Property Name="Urgency" Type="nvarchar" MaxLength="70" />
+          <Property Name="Intermittency" Type="nvarchar" MaxLength="70" />
+          <Property Name="Dysuria" Type="nvarchar" MaxLength="70" />
+          <Property Name="Straining" Type="nvarchar" MaxLength="70" />
+          <Property Name="Pyuria" Type="nvarchar" MaxLength="70" />
+          <Property Name="Sense_Incompl_Void" Type="nvarchar" MaxLength="70" />
+          <Property Name="Lithiuria" Type="nvarchar" MaxLength="70" />
+          <Property Name="Terminal_Dribbling" Type="nvarchar" MaxLength="70" />
+          <Property Name="Chyluria" Type="nvarchar" MaxLength="70" />
+          <Property Name="Urge_Inc" Type="nvarchar" MaxLength="70" />
+          <Property Name="Fever" Type="nvarchar" MaxLength="70" />
+          <Property Name="Stress_Inc" Type="nvarchar" MaxLength="70" />
+          <Property Name="IPSS" Type="nvarchar" MaxLength="70" />
+          <Property Name="BPI" Type="nvarchar" MaxLength="70" />
+          <Property Name="Pain" Type="nvarchar" MaxLength="70" />
+          <Property Name="Others" Type="nvarchar" MaxLength="250" />
+          <Property Name="Medication" Type="nvarchar" MaxLength="70" />
+          <Property Name="Personal" Type="nvarchar" MaxLength="150" />
+          <Property Name="Surgery" Type="nvarchar" MaxLength="150" />
+          <Property Name="MH" Type="nvarchar" MaxLength="150" />
+          <Property Name="Allergies" Type="nvarchar" MaxLength="150" />
+          <Property Name="OB_GY" Type="nvarchar" MaxLength="150" />
+          <Property Name="Past" Type="nvarchar" MaxLength="250" />
+          <Property Name="Family" Type="nvarchar" MaxLength="150" />
+          <Property Name="Hematuria" Type="nvarchar" MaxLength="70" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Create_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modify_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modify_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="User_Master">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="User_Id" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="User_Name" Type="nvarchar" Nullable="false" MaxLength="80" />
+          <Property Name="User_Pwd" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Active_User" Type="nvarchar" MaxLength="1" />
+          <Property Name="Role" Type="int" Nullable="false" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Create_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modify_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modify_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="XRayImages">
+          <Key>
+            <PropertyRef Name="Image_ID" />
+          </Key>
+          <Property Name="Image_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="int" Nullable="false" />
+          <Property Name="GU_No" Type="int" Nullable="false" />
+          <Property Name="GU_Year" Type="int" Nullable="false" />
+          <Property Name="Sr_No" Type="int" Nullable="false" />
+          <Property Name="Image_Type" Type="int" />
+          <Property Name="Image_Date" Type="datetime2" Precision="0" />
+          <Property Name="Comments" Type="nvarchar" MaxLength="255" />
+          <Property Name="Image_Captured" Type="varbinary(max)" />
+          <Property Name="Created_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Created_Dte" Type="datetime2" Precision="0" />
+          <Property Name="Modified_By" Type="nvarchar" MaxLength="30" />
+          <Property Name="Modified_Dte" Type="datetime2" Precision="0" />
+        </EntityType>
+        <Association Name="FK_Andrology_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Store.Patient_Info" Multiplicity="1" />
+          <End Role="Andrology" Type="UROCareModel.Store.Andrology" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Andrology">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ESWL_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Store.Patient_Info" Multiplicity="1" />
+          <End Role="ESWL" Type="UROCareModel.Store.ESWL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="ESWL">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Follow_Up_Patient_Info">
+          <End Role="Patient_Info" Type="UROCareModel.Store.Patient_Info" Multiplicity="1" />
+          <End Role="Follow_Up" Type="UROCareModel.Store.Follow_Up" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Follow_Up">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Investigation_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Store.Patient_Info" Multiplicity="1" />
+          <End Role="Investigation" Type="UROCareModel.Store.Investigation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Investigation">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IPD_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Store.Patient_Info" Multiplicity="1" />
+          <End Role="IPD" Type="UROCareModel.Store.IPD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="IPD">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Operation_Dtls_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Store.Patient_Info" Multiplicity="1" />
+          <End Role="Operation_Dtls" Type="UROCareModel.Store.Operation_Dtls" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Operation_Dtls">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Patient_Examination_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Store.Patient_Info" Multiplicity="1" />
+          <End Role="Patient_Examination" Type="UROCareModel.Store.Patient_Examination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Patient_Examination">
+              <PropertyRef Name="Patiend_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Patient_Info_Doctors_List">
+          <End Role="Doctors_List" Type="UROCareModel.Store.Doctors_List" Multiplicity="0..1" />
+          <End Role="Patient_Info" Type="UROCareModel.Store.Patient_Info" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Doctors_List">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Patient_Info">
+              <PropertyRef Name="DR_No" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Treatement_Dtls_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Store.Patient_Info" Multiplicity="1" />
+          <End Role="Treatement_Dtls" Type="UROCareModel.Store.Treatement_Dtls" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Treatement_Dtls">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Treatment_Advised_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Store.Patient_Info" Multiplicity="1" />
+          <End Role="Treatment_Advised" Type="UROCareModel.Store.Treatment_Advised" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Treatment_Advised">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UDS_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Store.Patient_Info" Multiplicity="1" />
+          <End Role="UDS" Type="UROCareModel.Store.UDS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="UDS">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Urology_History_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Store.Patient_Info" Multiplicity="1" />
+          <End Role="Urology_History" Type="UROCareModel.Store.Urology_History" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Urology_History">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_XRayImages_Patient_Info">
+          <End Role="Patient_Info" Type="UROCareModel.Store.Patient_Info" Multiplicity="1" />
+          <End Role="XRayImages" Type="UROCareModel.Store.XRayImages" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="XRayImages">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Operation_Dtls$Doctors_ListOperation_Dtls">
+          <End Role="Doctors_List" Type="UROCareModel.Store.Doctors_List" Multiplicity="0..1" />
+          <End Role="Operation_Dtls" Type="UROCareModel.Store.Operation_Dtls" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Doctors_List">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Operation_Dtls">
+              <PropertyRef Name="Anaesthesiologist" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="UROCareModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="UROCareEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Andrologies" EntityType="UROCareModel.Andrology" />
+          <EntitySet Name="Doctors_List" EntityType="UROCareModel.Doctors_List" />
+          <EntitySet Name="ESWLs" EntityType="UROCareModel.ESWL" />
+          <EntitySet Name="Follow_Up" EntityType="UROCareModel.Follow_Up" />
+          <EntitySet Name="Investigations" EntityType="UROCareModel.Investigation" />
+          <EntitySet Name="IPDs" EntityType="UROCareModel.IPD" />
+          <EntitySet Name="Operation_Dtls" EntityType="UROCareModel.Operation_Dtls" />
+          <EntitySet Name="Param_Dtls" EntityType="UROCareModel.Param_Dtls" />
+          <EntitySet Name="Param_Master" EntityType="UROCareModel.Param_Master" />
+          <EntitySet Name="Patient_Examination" EntityType="UROCareModel.Patient_Examination" />
+          <EntitySet Name="Patient_Info" EntityType="UROCareModel.Patient_Info" />
+          <EntitySet Name="Prescription_Template" EntityType="UROCareModel.Prescription_Template" />
+          <EntitySet Name="Treatement_Dtls" EntityType="UROCareModel.Treatement_Dtls" />
+          <EntitySet Name="Treatment_Advised" EntityType="UROCareModel.Treatment_Advised" />
+          <EntitySet Name="UDS" EntityType="UROCareModel.UD" />
+          <EntitySet Name="Urology_History" EntityType="UROCareModel.Urology_History" />
+          <EntitySet Name="User_Master" EntityType="UROCareModel.User_Master" />
+          <EntitySet Name="XRayImages" EntityType="UROCareModel.XRayImage" />
+          <AssociationSet Name="FK_Andrology_Patient_Info1" Association="UROCareModel.FK_Andrology_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Andrology" EntitySet="Andrologies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Patient_Info_Doctors_List" Association="UROCareModel.FK_Patient_Info_Doctors_List">
+            <End Role="Doctors_List" EntitySet="Doctors_List" />
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+          </AssociationSet>
+          <AssociationSet Name="Operation_Dtls_Doctors_ListOperation_Dtls" Association="UROCareModel.Operation_Dtls_Doctors_ListOperation_Dtls">
+            <End Role="Doctors_List" EntitySet="Doctors_List" />
+            <End Role="Operation_Dtls" EntitySet="Operation_Dtls" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ESWL_Patient_Info1" Association="UROCareModel.FK_ESWL_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="ESWL" EntitySet="ESWLs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Follow_Up_Patient_Info" Association="UROCareModel.FK_Follow_Up_Patient_Info">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Follow_Up" EntitySet="Follow_Up" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Investigation_Patient_Info1" Association="UROCareModel.FK_Investigation_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Investigation" EntitySet="Investigations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IPD_Patient_Info1" Association="UROCareModel.FK_IPD_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="IPD" EntitySet="IPDs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Operation_Dtls_Patient_Info1" Association="UROCareModel.FK_Operation_Dtls_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Operation_Dtls" EntitySet="Operation_Dtls" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Patient_Examination_Patient_Info1" Association="UROCareModel.FK_Patient_Examination_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Patient_Examination" EntitySet="Patient_Examination" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Treatement_Dtls_Patient_Info1" Association="UROCareModel.FK_Treatement_Dtls_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Treatement_Dtls" EntitySet="Treatement_Dtls" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Treatment_Advised_Patient_Info1" Association="UROCareModel.FK_Treatment_Advised_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Treatment_Advised" EntitySet="Treatment_Advised" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UDS_Patient_Info1" Association="UROCareModel.FK_UDS_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="UDS" EntitySet="UDS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Urology_History_Patient_Info1" Association="UROCareModel.FK_Urology_History_Patient_Info1">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="Urology_History" EntitySet="Urology_History" />
+          </AssociationSet>
+          <AssociationSet Name="FK_XRayImages_Patient_Info" Association="UROCareModel.FK_XRayImages_Patient_Info">
+            <End Role="Patient_Info" EntitySet="Patient_Info" />
+            <End Role="XRayImages" EntitySet="XRayImages" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Andrology">
+          <Key>
+            <PropertyRef Name="Andrology_ID" />
+          </Key>
+          <Property Name="Andrology_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="Int32" Nullable="false" />
+          <Property Name="Gu_No" Type="Int32" Nullable="false" />
+          <Property Name="Gu_Year" Type="Int32" Nullable="false" />
+          <Property Name="Complaint" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Married_Since" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Signi_Illness" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Treatment_Taken" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Alcoholism" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Fever" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Smoking" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Mumps_Orchits" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Erection" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Ejaculation" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="General_Exam" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Virilization" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PA" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PR" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="VAS" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Varicocele" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Testis" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Epididymis" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Semen_Analysis" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SR_FSH" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LH" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Testosterone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Prolactin" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Testi_Biopsy" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Others" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Treatment_Given" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Create_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modify_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modify_Dte" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Patient_Info" Relationship="UROCareModel.FK_Andrology_Patient_Info1" FromRole="Andrology" ToRole="Patient_Info" />
+        </EntityType>
+        <EntityType Name="Doctors_List">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Doctor_Name" Type="String" Nullable="false" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="At_Post" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Taluka" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="District" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Phone" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="Mobile" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="Birth_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Dr_Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Create_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modify_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modify_Dte" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Patient_Info" Relationship="UROCareModel.FK_Patient_Info_Doctors_List" FromRole="Doctors_List" ToRole="Patient_Info" />
+          <NavigationProperty Name="Operation_Dtls" Relationship="UROCareModel.Operation_Dtls_Doctors_ListOperation_Dtls" FromRole="Doctors_List" ToRole="Operation_Dtls" />
+        </EntityType>
+        <EntityType Name="ESWL">
+          <Key>
+            <PropertyRef Name="ESWL_ID" />
+          </Key>
+          <Property Name="ESWL_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="Int32" Nullable="false" />
+          <Property Name="Gu_No" Type="Int32" Nullable="false" />
+          <Property Name="Gu_Year" Type="Int32" Nullable="false" />
+          <Property Name="SR_No" Type="Int32" Nullable="false" />
+          <Property Name="ESWL_Dte" Type="DateTime" Precision="0" />
+          <Property Name="ESWL_Size" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Side" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Site" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Shock_Waves" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ESWL_Level" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Fluroscopy" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Analgesic" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IV_Fluids" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Complications" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Comments" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Create_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modify_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modify_Dte" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Patient_Info" Relationship="UROCareModel.FK_ESWL_Patient_Info1" FromRole="ESWL" ToRole="Patient_Info" />
+        </EntityType>
+        <EntityType Name="Follow_Up">
+          <Key>
+            <PropertyRef Name="Followup_ID" />
+          </Key>
+          <Property Name="Followup_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="Int32" Nullable="false" />
+          <Property Name="Gu_No" Type="Int32" Nullable="false" />
+          <Property Name="Gu_Year" Type="Int32" Nullable="false" />
+          <Property Name="SR_No" Type="Int32" Nullable="false" />
+          <Property Name="Follow_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Complaints" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Evaluation" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Treatment" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Next_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Create_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modify_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modify_Dte" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Patient_Info" Relationship="UROCareModel.FK_Follow_Up_Patient_Info" FromRole="Follow_Up" ToRole="Patient_Info" />
+        </EntityType>
+        <EntityType Name="Investigation">
+          <Key>
+            <PropertyRef Name="Investigation_ID" />
+          </Key>
+          <Property Name="Investigation_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="Int32" Nullable="false" />
+          <Property Name="Gu_No" Type="Int32" Nullable="false" />
+          <Property Name="Gu_Year" Type="Int32" Nullable="false" />
+          <Property Name="Urine" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="HB" Type="String" MaxLength="6" Unicode="true" FixedLength="false" />
+          <Property Name="TC" Type="String" MaxLength="7" Unicode="true" FixedLength="false" />
+          <Property Name="DC" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+          <Property Name="SR_NA_Plus" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+          <Property Name="SR_K_Plus" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+          <Property Name="SR_CA_Plus" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+          <Property Name="SR_Uric_Acid" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+          <Property Name="HIV" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="SR_Creat" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+          <Property Name="HBS_AG" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="BUL" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+          <Property Name="ESR" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Urine_Chyle" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="BSL" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="USG" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="KUB" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="IVP" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="RGU" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="MCU" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="NCHCT" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="DTPA_Reno" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="TRUS" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Sr_PSA" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CT_Scan" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Urine_CS" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Volume" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PH" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Calcium" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Uric_Acid" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Sodium" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Oxalate" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Citrate" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Sulfate" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Phosphorous" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Stone_Analysis" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Bone_Scan" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="MRI" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Others" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Create_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modify_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modify_Dte" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Patient_Info" Relationship="UROCareModel.FK_Investigation_Patient_Info1" FromRole="Investigation" ToRole="Patient_Info" />
+        </EntityType>
+        <EntityType Name="IPD">
+          <Key>
+            <PropertyRef Name="IPD_ID" />
+          </Key>
+          <Property Name="IPD_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="Int32" Nullable="false" />
+          <Property Name="Gu_No" Type="Int32" Nullable="false" />
+          <Property Name="Gu_Year" Type="Int32" Nullable="false" />
+          <Property Name="SR_No" Type="Int32" Nullable="false" />
+          <Property Name="IPD_No" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Admission_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Discharge_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Complaints" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Advice" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Followup_Dte" Type="DateTime" Precision="0" />
+          <Property Name="IPD_Diagnosis" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Create_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modify_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modify_Dte" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Patient_Info" Relationship="UROCareModel.FK_IPD_Patient_Info1" FromRole="IPD" ToRole="Patient_Info" />
+        </EntityType>
+        <EntityType Name="Operation_Dtls">
+          <Key>
+            <PropertyRef Name="Operation_ID" />
+          </Key>
+          <Property Name="Operation_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="Int32" Nullable="false" />
+          <Property Name="Gu_No" Type="Int32" Nullable="false" />
+          <Property Name="Gu_Year" Type="Int32" Nullable="false" />
+          <Property Name="SR_No" Type="Int32" Nullable="false" />
+          <Property Name="Operation_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Anesthesia" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Anaesthesiologist" Type="Int32" />
+          <Property Name="Opern_Procedure" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Details" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Remarks" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Created_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modified_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modified_Dte" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Doctors_List" Relationship="UROCareModel.Operation_Dtls_Doctors_ListOperation_Dtls" FromRole="Operation_Dtls" ToRole="Doctors_List" />
+          <NavigationProperty Name="Patient_Info" Relationship="UROCareModel.FK_Operation_Dtls_Patient_Info1" FromRole="Operation_Dtls" ToRole="Patient_Info" />
+        </EntityType>
+        <EntityType Name="Param_Dtls">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Param_ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Param_Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Param_Master">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Param_Id" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Param_Value" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Patient_Examination">
+          <Key>
+            <PropertyRef Name="Examination_ID" />
+          </Key>
+          <Property Name="Examination_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Patiend_ID" Type="Int32" Nullable="false" />
+          <Property Name="Gu_No" Type="Int32" Nullable="false" />
+          <Property Name="Gu_Year" Type="Int32" Nullable="false" />
+          <Property Name="G_E" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Pulse" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="BP" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="Weight" Type="String" MaxLength="3" Unicode="true" FixedLength="false" />
+          <Property Name="Abdomen" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Genitalia" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Anal_Tone" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="BCR" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Prostate" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="PR_Others" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="P_S" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="P_V" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="CNS" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="CVS" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="R_S" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Others" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Remarks" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Create_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modify_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modify_Dte" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Patient_Info" Relationship="UROCareModel.FK_Patient_Examination_Patient_Info1" FromRole="Patient_Examination" ToRole="Patient_Info" />
+        </EntityType>
+        <EntityType Name="Patient_Info">
+          <Key>
+            <PropertyRef Name="Patient_ID" />
+          </Key>
+          <Property Name="Patient_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Gu_No" Type="Int32" Nullable="false" />
+          <Property Name="Gu_Year" Type="Int32" Nullable="false" />
+          <Property Name="Reg_Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Salutation" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Patient_Name" Type="String" Nullable="false" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Age_Yr" Type="Int16" />
+          <Property Name="Age_Mnth" Type="Int16" />
+          <Property Name="Sex" Type="Int16" />
+          <Property Name="Occupation" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DR_No" Type="Int32" />
+          <Property Name="At_Post" Type="String" Nullable="false" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Town" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="District" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="State" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Phone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Mobile" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="OPD_Diagnosis" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Create_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modify_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modify_Dte" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Andrologies" Relationship="UROCareModel.FK_Andrology_Patient_Info1" FromRole="Patient_Info" ToRole="Andrology" />
+          <NavigationProperty Name="Doctors_List" Relationship="UROCareModel.FK_Patient_Info_Doctors_List" FromRole="Patient_Info" ToRole="Doctors_List" />
+          <NavigationProperty Name="ESWLs" Relationship="UROCareModel.FK_ESWL_Patient_Info1" FromRole="Patient_Info" ToRole="ESWL" />
+          <NavigationProperty Name="Follow_Up" Relationship="UROCareModel.FK_Follow_Up_Patient_Info" FromRole="Patient_Info" ToRole="Follow_Up" />
+          <NavigationProperty Name="Investigations" Relationship="UROCareModel.FK_Investigation_Patient_Info1" FromRole="Patient_Info" ToRole="Investigation" />
+          <NavigationProperty Name="IPDs" Relationship="UROCareModel.FK_IPD_Patient_Info1" FromRole="Patient_Info" ToRole="IPD" />
+          <NavigationProperty Name="Operation_Dtls" Relationship="UROCareModel.FK_Operation_Dtls_Patient_Info1" FromRole="Patient_Info" ToRole="Operation_Dtls" />
+          <NavigationProperty Name="Patient_Examination" Relationship="UROCareModel.FK_Patient_Examination_Patient_Info1" FromRole="Patient_Info" ToRole="Patient_Examination" />
+          <NavigationProperty Name="Treatement_Dtls" Relationship="UROCareModel.FK_Treatement_Dtls_Patient_Info1" FromRole="Patient_Info" ToRole="Treatement_Dtls" />
+          <NavigationProperty Name="Treatment_Advised" Relationship="UROCareModel.FK_Treatment_Advised_Patient_Info1" FromRole="Patient_Info" ToRole="Treatment_Advised" />
+          <NavigationProperty Name="UDS" Relationship="UROCareModel.FK_UDS_Patient_Info1" FromRole="Patient_Info" ToRole="UDS" />
+          <NavigationProperty Name="Urology_History" Relationship="UROCareModel.FK_Urology_History_Patient_Info1" FromRole="Patient_Info" ToRole="Urology_History" />
+          <NavigationProperty Name="XRayImages" Relationship="UROCareModel.FK_XRayImages_Patient_Info" FromRole="Patient_Info" ToRole="XRayImages" />
+        </EntityType>
+        <EntityType Name="Prescription_Template">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Template_Name" Type="String" Nullable="false" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Created_Dte" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Modified_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modified_Dte" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Treatement_Dtls">
+          <Key>
+            <PropertyRef Name="Treatment_ID" />
+          </Key>
+          <Property Name="Treatment_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="Int32" Nullable="false" />
+          <Property Name="Gu_No" Type="Int32" Nullable="false" />
+          <Property Name="Gu_Year" Type="Int32" Nullable="false" />
+          <Property Name="SR_No" Type="Int32" Nullable="false" />
+          <Property Name="Treatment_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Treatment_Given" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Create_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modify_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modify_Dte" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Patient_Info" Relationship="UROCareModel.FK_Treatement_Dtls_Patient_Info1" FromRole="Treatement_Dtls" ToRole="Patient_Info" />
+        </EntityType>
+        <EntityType Name="Treatment_Advised">
+          <Key>
+            <PropertyRef Name="Treatment_Advised_ID" />
+          </Key>
+          <Property Name="Treatment_Advised_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="Int32" Nullable="false" />
+          <Property Name="Gu_No" Type="Int32" Nullable="false" />
+          <Property Name="Gu_Year" Type="Int32" Nullable="false" />
+          <Property Name="Treatment_Adv" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Create_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modify_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modify_Dte" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Patient_Info" Relationship="UROCareModel.FK_Treatment_Advised_Patient_Info1" FromRole="Treatment_Advised" ToRole="Patient_Info" />
+        </EntityType>
+        <EntityType Name="UD">
+          <Key>
+            <PropertyRef Name="UDS_ID" />
+          </Key>
+          <Property Name="UDS_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="Int32" Nullable="false" />
+          <Property Name="Gu_No" Type="Int32" Nullable="false" />
+          <Property Name="Gu_Year" Type="Int32" Nullable="false" />
+          <Property Name="Complaints" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Assoc_Illness" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Anal_Tone" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="BCR" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Exam_Other" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Peak_Flow_Rate" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Voided_Volume" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Residual_Volume" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Uroflow_Rmks" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Filling_Rate" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Capacity" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Compliance" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Stability" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Sensation" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="DLPP" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="VLPP" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Stress_Inc" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Fill_Other" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Fill_Rmks" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Detrusor_Press" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="VoidPhase_Flow_Rate" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Sph_Activity" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Residual_Urine" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Void_Other" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Void_Rmks" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Conclusion" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Advise" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Create_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modify_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modify_Dte" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Patient_Info" Relationship="UROCareModel.FK_UDS_Patient_Info1" FromRole="UDS" ToRole="Patient_Info" />
+        </EntityType>
+        <EntityType Name="Urology_History">
+          <Key>
+            <PropertyRef Name="History_ID" />
+          </Key>
+          <Property Name="History_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="Int32" Nullable="false" />
+          <Property Name="Gu_No" Type="Int32" Nullable="false" />
+          <Property Name="Gu_Year" Type="Int32" Nullable="false" />
+          <Property Name="Chief_Compl" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Frequency" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Hesitancy" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Nocturia" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Poor_Stream" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Urgency" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Intermittency" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Dysuria" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Straining" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Pyuria" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Sense_Incompl_Void" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Lithiuria" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Terminal_Dribbling" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Chyluria" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Urge_Inc" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Fever" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Stress_Inc" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="IPSS" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="BPI" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Pain" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Others" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Medication" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Personal" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Surgery" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="MH" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Allergies" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="OB_GY" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Past" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Family" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Hematuria" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Create_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modify_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modify_Dte" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Patient_Info" Relationship="UROCareModel.FK_Urology_History_Patient_Info1" FromRole="Urology_History" ToRole="Patient_Info" />
+        </EntityType>
+        <EntityType Name="User_Master">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="User_Id" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="User_Name" Type="String" Nullable="false" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="User_Pwd" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Active_User" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="Role" Type="Int32" Nullable="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Create_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modify_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modify_Dte" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="XRayImage">
+          <Key>
+            <PropertyRef Name="Image_ID" />
+          </Key>
+          <Property Name="Image_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Patient_ID" Type="Int32" Nullable="false" />
+          <Property Name="GU_No" Type="Int32" Nullable="false" />
+          <Property Name="GU_Year" Type="Int32" Nullable="false" />
+          <Property Name="Sr_No" Type="Int32" Nullable="false" />
+          <Property Name="Image_Type" Type="Int32" />
+          <Property Name="Image_Date" Type="DateTime" Precision="0" />
+          <Property Name="Comments" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Image_Captured" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Created_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Created_Dte" Type="DateTime" Precision="0" />
+          <Property Name="Modified_By" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Modified_Dte" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Patient_Info" Relationship="UROCareModel.FK_XRayImages_Patient_Info" FromRole="XRayImages" ToRole="Patient_Info" />
+        </EntityType>
+        <Association Name="FK_Andrology_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Patient_Info" Multiplicity="1" />
+          <End Role="Andrology" Type="UROCareModel.Andrology" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Andrology">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Patient_Info_Doctors_List">
+          <End Role="Doctors_List" Type="UROCareModel.Doctors_List" Multiplicity="0..1" />
+          <End Role="Patient_Info" Type="UROCareModel.Patient_Info" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Doctors_List">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Patient_Info">
+              <PropertyRef Name="DR_No" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Operation_Dtls_Doctors_ListOperation_Dtls">
+          <End Role="Doctors_List" Type="UROCareModel.Doctors_List" Multiplicity="0..1" />
+          <End Role="Operation_Dtls" Type="UROCareModel.Operation_Dtls" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Doctors_List">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Operation_Dtls">
+              <PropertyRef Name="Anaesthesiologist" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ESWL_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Patient_Info" Multiplicity="1" />
+          <End Role="ESWL" Type="UROCareModel.ESWL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="ESWL">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Follow_Up_Patient_Info">
+          <End Role="Patient_Info" Type="UROCareModel.Patient_Info" Multiplicity="1" />
+          <End Role="Follow_Up" Type="UROCareModel.Follow_Up" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Follow_Up">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Investigation_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Patient_Info" Multiplicity="1" />
+          <End Role="Investigation" Type="UROCareModel.Investigation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Investigation">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IPD_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Patient_Info" Multiplicity="1" />
+          <End Role="IPD" Type="UROCareModel.IPD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="IPD">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Operation_Dtls_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Patient_Info" Multiplicity="1" />
+          <End Role="Operation_Dtls" Type="UROCareModel.Operation_Dtls" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Operation_Dtls">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Patient_Examination_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Patient_Info" Multiplicity="1" />
+          <End Role="Patient_Examination" Type="UROCareModel.Patient_Examination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Patient_Examination">
+              <PropertyRef Name="Patiend_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Treatement_Dtls_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Patient_Info" Multiplicity="1" />
+          <End Role="Treatement_Dtls" Type="UROCareModel.Treatement_Dtls" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Treatement_Dtls">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Treatment_Advised_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Patient_Info" Multiplicity="1" />
+          <End Role="Treatment_Advised" Type="UROCareModel.Treatment_Advised" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Treatment_Advised">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UDS_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Patient_Info" Multiplicity="1" />
+          <End Role="UDS" Type="UROCareModel.UD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="UDS">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Urology_History_Patient_Info1">
+          <End Role="Patient_Info" Type="UROCareModel.Patient_Info" Multiplicity="1" />
+          <End Role="Urology_History" Type="UROCareModel.Urology_History" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="Urology_History">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_XRayImages_Patient_Info">
+          <End Role="Patient_Info" Type="UROCareModel.Patient_Info" Multiplicity="1" />
+          <End Role="XRayImages" Type="UROCareModel.XRayImage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient_Info">
+              <PropertyRef Name="Patient_ID" />
+            </Principal>
+            <Dependent Role="XRayImages">
+              <PropertyRef Name="Patient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="UROCareModelStoreContainer" CdmEntityContainer="UROCareEntities">
+          <EntitySetMapping Name="Andrologies">
+            <EntityTypeMapping TypeName="UROCareModel.Andrology">
+              <MappingFragment StoreEntitySet="Andrology">
+                <ScalarProperty Name="Andrology_ID" ColumnName="Andrology_ID" />
+                <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+                <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+                <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+                <ScalarProperty Name="Complaint" ColumnName="Complaint" />
+                <ScalarProperty Name="Married_Since" ColumnName="Married_Since" />
+                <ScalarProperty Name="Signi_Illness" ColumnName="Signi_Illness" />
+                <ScalarProperty Name="Treatment_Taken" ColumnName="Treatment_Taken" />
+                <ScalarProperty Name="Alcoholism" ColumnName="Alcoholism" />
+                <ScalarProperty Name="Fever" ColumnName="Fever" />
+                <ScalarProperty Name="Smoking" ColumnName="Smoking" />
+                <ScalarProperty Name="Mumps_Orchits" ColumnName="Mumps_Orchits" />
+                <ScalarProperty Name="Erection" ColumnName="Erection" />
+                <ScalarProperty Name="Ejaculation" ColumnName="Ejaculation" />
+                <ScalarProperty Name="General_Exam" ColumnName="General_Exam" />
+                <ScalarProperty Name="Virilization" ColumnName="Virilization" />
+                <ScalarProperty Name="PA" ColumnName="PA" />
+                <ScalarProperty Name="PR" ColumnName="PR" />
+                <ScalarProperty Name="VAS" ColumnName="VAS" />
+                <ScalarProperty Name="Varicocele" ColumnName="Varicocele" />
+                <ScalarProperty Name="Testis" ColumnName="Testis" />
+                <ScalarProperty Name="Epididymis" ColumnName="Epididymis" />
+                <ScalarProperty Name="Semen_Analysis" ColumnName="Semen_Analysis" />
+                <ScalarProperty Name="SR_FSH" ColumnName="SR_FSH" />
+                <ScalarProperty Name="LH" ColumnName="LH" />
+                <ScalarProperty Name="Testosterone" ColumnName="Testosterone" />
+                <ScalarProperty Name="Prolactin" ColumnName="Prolactin" />
+                <ScalarProperty Name="Testi_Biopsy" ColumnName="Testi_Biopsy" />
+                <ScalarProperty Name="Others" ColumnName="Others" />
+                <ScalarProperty Name="Treatment_Given" ColumnName="Treatment_Given" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+                <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+                <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Doctors_List">
+            <EntityTypeMapping TypeName="UROCareModel.Doctors_List">
+              <MappingFragment StoreEntitySet="Doctors_List">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Doctor_Name" ColumnName="Doctor_Name" />
+                <ScalarProperty Name="At_Post" ColumnName="At_Post" />
+                <ScalarProperty Name="Taluka" ColumnName="Taluka" />
+                <ScalarProperty Name="District" ColumnName="District" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Birth_Dte" ColumnName="Birth_Dte" />
+                <ScalarProperty Name="Dr_Email" ColumnName="Dr_Email" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+                <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+                <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ESWLs">
+            <EntityTypeMapping TypeName="UROCareModel.ESWL">
+              <MappingFragment StoreEntitySet="ESWL">
+                <ScalarProperty Name="ESWL_ID" ColumnName="ESWL_ID" />
+                <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+                <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+                <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+                <ScalarProperty Name="SR_No" ColumnName="SR_No" />
+                <ScalarProperty Name="ESWL_Dte" ColumnName="ESWL_Dte" />
+                <ScalarProperty Name="ESWL_Size" ColumnName="ESWL_Size" />
+                <ScalarProperty Name="Side" ColumnName="Side" />
+                <ScalarProperty Name="Site" ColumnName="Site" />
+                <ScalarProperty Name="Shock_Waves" ColumnName="Shock_Waves" />
+                <ScalarProperty Name="ESWL_Level" ColumnName="ESWL_Level" />
+                <ScalarProperty Name="Fluroscopy" ColumnName="Fluroscopy" />
+                <ScalarProperty Name="Analgesic" ColumnName="Analgesic" />
+                <ScalarProperty Name="IV_Fluids" ColumnName="IV_Fluids" />
+                <ScalarProperty Name="Complications" ColumnName="Complications" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+                <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+                <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Follow_Up">
+            <EntityTypeMapping TypeName="UROCareModel.Follow_Up">
+              <MappingFragment StoreEntitySet="Follow_Up">
+                <ScalarProperty Name="Followup_ID" ColumnName="Followup_ID" />
+                <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+                <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+                <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+                <ScalarProperty Name="SR_No" ColumnName="SR_No" />
+                <ScalarProperty Name="Follow_Dte" ColumnName="Follow_Dte" />
+                <ScalarProperty Name="Complaints" ColumnName="Complaints" />
+                <ScalarProperty Name="Evaluation" ColumnName="Evaluation" />
+                <ScalarProperty Name="Treatment" ColumnName="Treatment" />
+                <ScalarProperty Name="Next_Dte" ColumnName="Next_Dte" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+                <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+                <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Investigations">
+            <EntityTypeMapping TypeName="UROCareModel.Investigation">
+              <MappingFragment StoreEntitySet="Investigation">
+                <ScalarProperty Name="Investigation_ID" ColumnName="Investigation_ID" />
+                <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+                <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+                <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+                <ScalarProperty Name="Urine" ColumnName="Urine" />
+                <ScalarProperty Name="HB" ColumnName="HB" />
+                <ScalarProperty Name="TC" ColumnName="TC" />
+                <ScalarProperty Name="DC" ColumnName="DC" />
+                <ScalarProperty Name="SR_NA_Plus" ColumnName="SR_NA_Plus" />
+                <ScalarProperty Name="SR_K_Plus" ColumnName="SR_K_Plus" />
+                <ScalarProperty Name="SR_CA_Plus" ColumnName="SR_CA_Plus" />
+                <ScalarProperty Name="SR_Uric_Acid" ColumnName="SR_Uric_Acid" />
+                <ScalarProperty Name="HIV" ColumnName="HIV" />
+                <ScalarProperty Name="SR_Creat" ColumnName="SR_Creat" />
+                <ScalarProperty Name="HBS_AG" ColumnName="HBS_AG" />
+                <ScalarProperty Name="BUL" ColumnName="BUL" />
+                <ScalarProperty Name="ESR" ColumnName="ESR" />
+                <ScalarProperty Name="Urine_Chyle" ColumnName="Urine_Chyle" />
+                <ScalarProperty Name="BSL" ColumnName="BSL" />
+                <ScalarProperty Name="USG" ColumnName="USG" />
+                <ScalarProperty Name="KUB" ColumnName="KUB" />
+                <ScalarProperty Name="IVP" ColumnName="IVP" />
+                <ScalarProperty Name="RGU" ColumnName="RGU" />
+                <ScalarProperty Name="MCU" ColumnName="MCU" />
+                <ScalarProperty Name="NCHCT" ColumnName="NCHCT" />
+                <ScalarProperty Name="DTPA_Reno" ColumnName="DTPA_Reno" />
+                <ScalarProperty Name="TRUS" ColumnName="TRUS" />
+                <ScalarProperty Name="Sr_PSA" ColumnName="Sr_PSA" />
+                <ScalarProperty Name="CT_Scan" ColumnName="CT_Scan" />
+                <ScalarProperty Name="Urine_CS" ColumnName="Urine_CS" />
+                <ScalarProperty Name="Volume" ColumnName="Volume" />
+                <ScalarProperty Name="PH" ColumnName="PH" />
+                <ScalarProperty Name="Calcium" ColumnName="Calcium" />
+                <ScalarProperty Name="Uric_Acid" ColumnName="Uric_Acid" />
+                <ScalarProperty Name="Sodium" ColumnName="Sodium" />
+                <ScalarProperty Name="Oxalate" ColumnName="Oxalate" />
+                <ScalarProperty Name="Citrate" ColumnName="Citrate" />
+                <ScalarProperty Name="Sulfate" ColumnName="Sulfate" />
+                <ScalarProperty Name="Phosphorous" ColumnName="Phosphorous" />
+                <ScalarProperty Name="Stone_Analysis" ColumnName="Stone_Analysis" />
+                <ScalarProperty Name="Bone_Scan" ColumnName="Bone_Scan" />
+                <ScalarProperty Name="MRI" ColumnName="MRI" />
+                <ScalarProperty Name="Others" ColumnName="Others" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+                <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+                <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IPDs">
+            <EntityTypeMapping TypeName="UROCareModel.IPD">
+              <MappingFragment StoreEntitySet="IPD">
+                <ScalarProperty Name="IPD_ID" ColumnName="IPD_ID" />
+                <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+                <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+                <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+                <ScalarProperty Name="SR_No" ColumnName="SR_No" />
+                <ScalarProperty Name="IPD_No" ColumnName="IPD_No" />
+                <ScalarProperty Name="Admission_Dte" ColumnName="Admission_Dte" />
+                <ScalarProperty Name="Discharge_Dte" ColumnName="Discharge_Dte" />
+                <ScalarProperty Name="Complaints" ColumnName="Complaints" />
+                <ScalarProperty Name="Advice" ColumnName="Advice" />
+                <ScalarProperty Name="Followup_Dte" ColumnName="Followup_Dte" />
+                <ScalarProperty Name="IPD_Diagnosis" ColumnName="IPD_Diagnosis" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+                <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+                <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Operation_Dtls">
+            <EntityTypeMapping TypeName="UROCareModel.Operation_Dtls">
+              <MappingFragment StoreEntitySet="Operation_Dtls">
+                <ScalarProperty Name="Operation_ID" ColumnName="Operation_ID" />
+                <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+                <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+                <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+                <ScalarProperty Name="SR_No" ColumnName="SR_No" />
+                <ScalarProperty Name="Operation_Dte" ColumnName="Operation_Dte" />
+                <ScalarProperty Name="Anesthesia" ColumnName="Anesthesia" />
+                <ScalarProperty Name="Anaesthesiologist" ColumnName="Anaesthesiologist" />
+                <ScalarProperty Name="Opern_Procedure" ColumnName="Opern_Procedure" />
+                <ScalarProperty Name="Details" ColumnName="Details" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Created_Dte" ColumnName="Created_Dte" />
+                <ScalarProperty Name="Modified_By" ColumnName="Modified_By" />
+                <ScalarProperty Name="Modified_Dte" ColumnName="Modified_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Param_Dtls">
+            <EntityTypeMapping TypeName="UROCareModel.Param_Dtls">
+              <MappingFragment StoreEntitySet="Param_Dtls">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Param_ID" ColumnName="Param_ID" />
+                <ScalarProperty Name="Param_Name" ColumnName="Param_Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Param_Master">
+            <EntityTypeMapping TypeName="UROCareModel.Param_Master">
+              <MappingFragment StoreEntitySet="Param_Master">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Param_Id" ColumnName="Param_Id" />
+                <ScalarProperty Name="Param_Value" ColumnName="Param_Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Patient_Examination">
+            <EntityTypeMapping TypeName="UROCareModel.Patient_Examination">
+              <MappingFragment StoreEntitySet="Patient_Examination">
+                <ScalarProperty Name="Examination_ID" ColumnName="Examination_ID" />
+                <ScalarProperty Name="Patiend_ID" ColumnName="Patiend_ID" />
+                <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+                <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+                <ScalarProperty Name="G_E" ColumnName="G_E" />
+                <ScalarProperty Name="Pulse" ColumnName="Pulse" />
+                <ScalarProperty Name="BP" ColumnName="BP" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="Abdomen" ColumnName="Abdomen" />
+                <ScalarProperty Name="Genitalia" ColumnName="Genitalia" />
+                <ScalarProperty Name="Anal_Tone" ColumnName="Anal_Tone" />
+                <ScalarProperty Name="BCR" ColumnName="BCR" />
+                <ScalarProperty Name="Prostate" ColumnName="Prostate" />
+                <ScalarProperty Name="PR_Others" ColumnName="PR_Others" />
+                <ScalarProperty Name="P_S" ColumnName="P_S" />
+                <ScalarProperty Name="P_V" ColumnName="P_V" />
+                <ScalarProperty Name="CNS" ColumnName="CNS" />
+                <ScalarProperty Name="CVS" ColumnName="CVS" />
+                <ScalarProperty Name="R_S" ColumnName="R_S" />
+                <ScalarProperty Name="Others" ColumnName="Others" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+                <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+                <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Patient_Info">
+            <EntityTypeMapping TypeName="UROCareModel.Patient_Info">
+              <MappingFragment StoreEntitySet="Patient_Info">
+                <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+                <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+                <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+                <ScalarProperty Name="Reg_Date" ColumnName="Reg_Date" />
+                <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+                <ScalarProperty Name="Patient_Name" ColumnName="Patient_Name" />
+                <ScalarProperty Name="Age_Yr" ColumnName="Age_Yr" />
+                <ScalarProperty Name="Age_Mnth" ColumnName="Age_Mnth" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+                <ScalarProperty Name="DR_No" ColumnName="DR_No" />
+                <ScalarProperty Name="At_Post" ColumnName="At_Post" />
+                <ScalarProperty Name="Town" ColumnName="Town" />
+                <ScalarProperty Name="District" ColumnName="District" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="OPD_Diagnosis" ColumnName="OPD_Diagnosis" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+                <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+                <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Prescription_Template">
+            <EntityTypeMapping TypeName="UROCareModel.Prescription_Template">
+              <MappingFragment StoreEntitySet="Prescription_Template">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Template_Name" ColumnName="Template_Name" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Created_Dte" ColumnName="Created_Dte" />
+                <ScalarProperty Name="Modified_By" ColumnName="Modified_By" />
+                <ScalarProperty Name="Modified_Dte" ColumnName="Modified_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Treatement_Dtls">
+            <EntityTypeMapping TypeName="UROCareModel.Treatement_Dtls">
+              <MappingFragment StoreEntitySet="Treatement_Dtls">
+                <ScalarProperty Name="Treatment_ID" ColumnName="Treatment_ID" />
+                <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+                <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+                <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+                <ScalarProperty Name="SR_No" ColumnName="SR_No" />
+                <ScalarProperty Name="Treatment_Dte" ColumnName="Treatment_Dte" />
+                <ScalarProperty Name="Treatment_Given" ColumnName="Treatment_Given" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+                <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+                <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Treatment_Advised">
+            <EntityTypeMapping TypeName="UROCareModel.Treatment_Advised">
+              <MappingFragment StoreEntitySet="Treatment_Advised">
+                <ScalarProperty Name="Treatment_Advised_ID" ColumnName="Treatment_Advised_ID" />
+                <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+                <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+                <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+                <ScalarProperty Name="Treatment_Adv" ColumnName="Treatment_Adv" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+                <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+                <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UDS">
+            <EntityTypeMapping TypeName="UROCareModel.UD">
+              <MappingFragment StoreEntitySet="UDS">
+                <ScalarProperty Name="UDS_ID" ColumnName="UDS_ID" />
+                <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+                <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+                <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+                <ScalarProperty Name="Complaints" ColumnName="Complaints" />
+                <ScalarProperty Name="Assoc_Illness" ColumnName="Assoc_Illness" />
+                <ScalarProperty Name="Anal_Tone" ColumnName="Anal_Tone" />
+                <ScalarProperty Name="BCR" ColumnName="BCR" />
+                <ScalarProperty Name="Exam_Other" ColumnName="Exam_Other" />
+                <ScalarProperty Name="Peak_Flow_Rate" ColumnName="Peak_Flow_Rate" />
+                <ScalarProperty Name="Voided_Volume" ColumnName="Voided_Volume" />
+                <ScalarProperty Name="Residual_Volume" ColumnName="Residual_Volume" />
+                <ScalarProperty Name="Uroflow_Rmks" ColumnName="Uroflow_Rmks" />
+                <ScalarProperty Name="Filling_Rate" ColumnName="Filling_Rate" />
+                <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+                <ScalarProperty Name="Compliance" ColumnName="Compliance" />
+                <ScalarProperty Name="Stability" ColumnName="Stability" />
+                <ScalarProperty Name="Sensation" ColumnName="Sensation" />
+                <ScalarProperty Name="DLPP" ColumnName="DLPP" />
+                <ScalarProperty Name="VLPP" ColumnName="VLPP" />
+                <ScalarProperty Name="Stress_Inc" ColumnName="Stress_Inc" />
+                <ScalarProperty Name="Fill_Other" ColumnName="Fill_Other" />
+                <ScalarProperty Name="Fill_Rmks" ColumnName="Fill_Rmks" />
+                <ScalarProperty Name="Detrusor_Press" ColumnName="Detrusor_Press" />
+                <ScalarProperty Name="VoidPhase_Flow_Rate" ColumnName="VoidPhase_Flow_Rate" />
+                <ScalarProperty Name="Sph_Activity" ColumnName="Sph_Activity" />
+                <ScalarProperty Name="Residual_Urine" ColumnName="Residual_Urine" />
+                <ScalarProperty Name="Void_Other" ColumnName="Void_Other" />
+                <ScalarProperty Name="Void_Rmks" ColumnName="Void_Rmks" />
+                <ScalarProperty Name="Conclusion" ColumnName="Conclusion" />
+                <ScalarProperty Name="Advise" ColumnName="Advise" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+                <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+                <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Urology_History">
+            <EntityTypeMapping TypeName="UROCareModel.Urology_History">
+              <MappingFragment StoreEntitySet="Urology_History">
+                <ScalarProperty Name="History_ID" ColumnName="History_ID" />
+                <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+                <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+                <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+                <ScalarProperty Name="Chief_Compl" ColumnName="Chief_Compl" />
+                <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+                <ScalarProperty Name="Hesitancy" ColumnName="Hesitancy" />
+                <ScalarProperty Name="Nocturia" ColumnName="Nocturia" />
+                <ScalarProperty Name="Poor_Stream" ColumnName="Poor_Stream" />
+                <ScalarProperty Name="Urgency" ColumnName="Urgency" />
+                <ScalarProperty Name="Intermittency" ColumnName="Intermittency" />
+                <ScalarProperty Name="Dysuria" ColumnName="Dysuria" />
+                <ScalarProperty Name="Straining" ColumnName="Straining" />
+                <ScalarProperty Name="Pyuria" ColumnName="Pyuria" />
+                <ScalarProperty Name="Sense_Incompl_Void" ColumnName="Sense_Incompl_Void" />
+                <ScalarProperty Name="Lithiuria" ColumnName="Lithiuria" />
+                <ScalarProperty Name="Terminal_Dribbling" ColumnName="Terminal_Dribbling" />
+                <ScalarProperty Name="Chyluria" ColumnName="Chyluria" />
+                <ScalarProperty Name="Urge_Inc" ColumnName="Urge_Inc" />
+                <ScalarProperty Name="Fever" ColumnName="Fever" />
+                <ScalarProperty Name="Stress_Inc" ColumnName="Stress_Inc" />
+                <ScalarProperty Name="IPSS" ColumnName="IPSS" />
+                <ScalarProperty Name="BPI" ColumnName="BPI" />
+                <ScalarProperty Name="Pain" ColumnName="Pain" />
+                <ScalarProperty Name="Others" ColumnName="Others" />
+                <ScalarProperty Name="Medication" ColumnName="Medication" />
+                <ScalarProperty Name="Personal" ColumnName="Personal" />
+                <ScalarProperty Name="Surgery" ColumnName="Surgery" />
+                <ScalarProperty Name="MH" ColumnName="MH" />
+                <ScalarProperty Name="Allergies" ColumnName="Allergies" />
+                <ScalarProperty Name="OB_GY" ColumnName="OB_GY" />
+                <ScalarProperty Name="Past" ColumnName="Past" />
+                <ScalarProperty Name="Family" ColumnName="Family" />
+                <ScalarProperty Name="Hematuria" ColumnName="Hematuria" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+                <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+                <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User_Master">
+            <EntityTypeMapping TypeName="UROCareModel.User_Master">
+              <MappingFragment StoreEntitySet="User_Master">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+                <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+                <ScalarProperty Name="User_Pwd" ColumnName="User_Pwd" />
+                <ScalarProperty Name="Active_User" ColumnName="Active_User" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+                <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+                <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="XRayImages">
+            <EntityTypeMapping TypeName="UROCareModel.XRayImage">
+              <MappingFragment StoreEntitySet="XRayImages">
+                <ScalarProperty Name="Image_ID" ColumnName="Image_ID" />
+                <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+                <ScalarProperty Name="GU_No" ColumnName="GU_No" />
+                <ScalarProperty Name="GU_Year" ColumnName="GU_Year" />
+                <ScalarProperty Name="Sr_No" ColumnName="Sr_No" />
+                <ScalarProperty Name="Image_Type" ColumnName="Image_Type" />
+                <ScalarProperty Name="Image_Date" ColumnName="Image_Date" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="Image_Captured" ColumnName="Image_Captured" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Created_Dte" ColumnName="Created_Dte" />
+                <ScalarProperty Name="Modified_By" ColumnName="Modified_By" />
+                <ScalarProperty Name="Modified_Dte" ColumnName="Modified_Dte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

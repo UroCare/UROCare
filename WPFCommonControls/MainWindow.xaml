@@ -1,0 +1,17 @@
+﻿<Window x:Class="SHCPL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" xmlns:my="clr-namespace:SHCPL.WPFCommonControls">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+            <Button Content="Click" Height="20" Width="40" Click="OnbuttonClick"></Button>
+        <my:SnapCanvas x:Name="_snapCanvas" Grid.Row="0"
+                                  AllowDragging="True"
+                                  SnapThreshold="20"
+                                  AllowDragOutOfView="False">
+            <my:GadgetContainer Canvas.Left="363" Canvas.Top="115" x:Name="gadgetContainer1" Height="75" Width="227" />
+        </my:SnapCanvas>
+    </Grid>
+</Window>

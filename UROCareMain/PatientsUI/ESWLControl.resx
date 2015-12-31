@@ -1,0 +1,1136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="_eswlDetails.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_eswlDate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_eswlDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 19</value>
+  </data>
+  <data name="_eswlDate.Mask" xml:space="preserve">
+    <value>00/00/0000</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_eswlDate.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="_eswlDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_eswlDate.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;_eswlDate.Name" xml:space="preserve">
+    <value>_eswlDate</value>
+  </data>
+  <data name="&gt;&gt;_eswlDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_eswlDate.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_eswlDate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="_ivFluids.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_ivFluids.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 134</value>
+  </data>
+  <data name="_ivFluids.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="_ivFluids.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 20</value>
+  </data>
+  <data name="_ivFluids.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;_ivFluids.Name" xml:space="preserve">
+    <value>_ivFluids</value>
+  </data>
+  <data name="&gt;&gt;_ivFluids.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ivFluids.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_ivFluids.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="_fluroscopy.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_fluroscopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 105</value>
+  </data>
+  <data name="_fluroscopy.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="_fluroscopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 20</value>
+  </data>
+  <data name="_fluroscopy.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;_fluroscopy.Name" xml:space="preserve">
+    <value>_fluroscopy</value>
+  </data>
+  <data name="&gt;&gt;_fluroscopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fluroscopy.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_fluroscopy.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="_shockWaves.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_shockWaves.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 77</value>
+  </data>
+  <data name="_shockWaves.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="_shockWaves.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 20</value>
+  </data>
+  <data name="_shockWaves.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;_shockWaves.Name" xml:space="preserve">
+    <value>_shockWaves</value>
+  </data>
+  <data name="&gt;&gt;_shockWaves.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_shockWaves.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_shockWaves.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="_sideTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_sideTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 50</value>
+  </data>
+  <data name="_sideTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="_sideTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 20</value>
+  </data>
+  <data name="_sideTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;_sideTextBox.Name" xml:space="preserve">
+    <value>_sideTextBox</value>
+  </data>
+  <data name="&gt;&gt;_sideTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_sideTextBox.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_sideTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="_ivFluidsLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_ivFluidsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_ivFluidsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>520, 138</value>
+  </data>
+  <data name="_ivFluidsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="_ivFluidsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="_ivFluidsLabel.Text" xml:space="preserve">
+    <value>I.V. Fluids</value>
+  </data>
+  <data name="_ivFluidsLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_ivFluidsLabel.Name" xml:space="preserve">
+    <value>_ivFluidsLabel</value>
+  </data>
+  <data name="&gt;&gt;_ivFluidsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ivFluidsLabel.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_ivFluidsLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="_fluroscopyLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_fluroscopyLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_fluroscopyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>520, 109</value>
+  </data>
+  <data name="_fluroscopyLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="_fluroscopyLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="_fluroscopyLabel.Text" xml:space="preserve">
+    <value>Fluroscopy</value>
+  </data>
+  <data name="_fluroscopyLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_fluroscopyLabel.Name" xml:space="preserve">
+    <value>_fluroscopyLabel</value>
+  </data>
+  <data name="&gt;&gt;_fluroscopyLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fluroscopyLabel.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_fluroscopyLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="_shockWavesLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_shockWavesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_shockWavesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>520, 81</value>
+  </data>
+  <data name="_shockWavesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="_shockWavesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="_shockWavesLabel.Text" xml:space="preserve">
+    <value>Shock Waves</value>
+  </data>
+  <data name="_shockWavesLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_shockWavesLabel.Name" xml:space="preserve">
+    <value>_shockWavesLabel</value>
+  </data>
+  <data name="&gt;&gt;_shockWavesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_shockWavesLabel.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_shockWavesLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="_sideLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_sideLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_sideLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>520, 54</value>
+  </data>
+  <data name="_sideLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 13</value>
+  </data>
+  <data name="_sideLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="_sideLabel.Text" xml:space="preserve">
+    <value>Side</value>
+  </data>
+  <data name="_sideLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_sideLabel.Name" xml:space="preserve">
+    <value>_sideLabel</value>
+  </data>
+  <data name="&gt;&gt;_sideLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_sideLabel.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_sideLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <metadata name="_analgesicTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_analgesicTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 134</value>
+  </data>
+  <data name="_analgesicTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="_analgesicTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 20</value>
+  </data>
+  <data name="_analgesicTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;_analgesicTextBox.Name" xml:space="preserve">
+    <value>_analgesicTextBox</value>
+  </data>
+  <data name="&gt;&gt;_analgesicTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_analgesicTextBox.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_analgesicTextBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="_levelTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_levelTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 105</value>
+  </data>
+  <data name="_levelTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="_levelTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 20</value>
+  </data>
+  <data name="_levelTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;_levelTextBox.Name" xml:space="preserve">
+    <value>_levelTextBox</value>
+  </data>
+  <data name="&gt;&gt;_levelTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_levelTextBox.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_levelTextBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <metadata name="_siteTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_siteTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 77</value>
+  </data>
+  <data name="_siteTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="_siteTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 20</value>
+  </data>
+  <data name="_siteTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;_siteTextBox.Name" xml:space="preserve">
+    <value>_siteTextBox</value>
+  </data>
+  <data name="&gt;&gt;_siteTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_siteTextBox.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_siteTextBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <metadata name="_eswlSizeTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_eswlSizeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 50</value>
+  </data>
+  <data name="_eswlSizeTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="_eswlSizeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 20</value>
+  </data>
+  <data name="_eswlSizeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;_eswlSizeTextBox.Name" xml:space="preserve">
+    <value>_eswlSizeTextBox</value>
+  </data>
+  <data name="&gt;&gt;_eswlSizeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_eswlSizeTextBox.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_eswlSizeTextBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <metadata name="_analgesicLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_analgesicLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_analgesicLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_analgesicLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 138</value>
+  </data>
+  <data name="_analgesicLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="_analgesicLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="_analgesicLabel.Text" xml:space="preserve">
+    <value>Analgesic</value>
+  </data>
+  <data name="_analgesicLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_analgesicLabel.Name" xml:space="preserve">
+    <value>_analgesicLabel</value>
+  </data>
+  <data name="&gt;&gt;_analgesicLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_analgesicLabel.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_analgesicLabel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <metadata name="_levelLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_levelLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_levelLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_levelLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 109</value>
+  </data>
+  <data name="_levelLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="_levelLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="_levelLabel.Text" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="_levelLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_levelLabel.Name" xml:space="preserve">
+    <value>_levelLabel</value>
+  </data>
+  <data name="&gt;&gt;_levelLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_levelLabel.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_levelLabel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <metadata name="_siteLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_siteLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_siteLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_siteLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 81</value>
+  </data>
+  <data name="_siteLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="_siteLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="_siteLabel.Text" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="_siteLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_siteLabel.Name" xml:space="preserve">
+    <value>_siteLabel</value>
+  </data>
+  <data name="&gt;&gt;_siteLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_siteLabel.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_siteLabel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <metadata name="_eswlSizeLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_eswlSizeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_eswlSizeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_eswlSizeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 54</value>
+  </data>
+  <data name="_eswlSizeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="_eswlSizeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="_eswlSizeLabel.Text" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="_eswlSizeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_eswlSizeLabel.Name" xml:space="preserve">
+    <value>_eswlSizeLabel</value>
+  </data>
+  <data name="&gt;&gt;_eswlSizeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_eswlSizeLabel.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_eswlSizeLabel.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <metadata name="_eswlList.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_eswlList.Items" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkMAwAAAFFTeXN0
+        ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2Vu
+        PWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0HAAAA
+        BFRleHQKSW1hZ2VJbmRleAlCYWNrQ29sb3IHQ2hlY2tlZARGb250CUZvcmVDb2xvchdVc2VJdGVtU3R5
+        bGVGb3JTdWJJdGVtcwEABAAEBAAIFFN5c3RlbS5EcmF3aW5nLkNvbG9yAwAAAAETU3lzdGVtLkRyYXdp
+        bmcuRm9udAMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAAQIAAAAGBAAAAAD/////Bfv///8UU3lz
+        dGVtLkRyYXdpbmcuQ29sb3IEAAAABG5hbWUFdmFsdWUKa25vd25Db2xvcgVzdGF0ZQEAAAAJBwcDAAAA
+        CgAAAAAAAAAAGAABAAAJBgAAAAH5////+////woAAAAAAAAAABoAAQABBQYAAAATU3lzdGVtLkRyYXdp
+        bmcuRm9udAQAAAAETmFtZQRTaXplBVN0eWxlBFVuaXQBAAQECxhTeXN0ZW0uRHJhd2luZy5Gb250U3R5
+        bGUDAAAAG1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAMAAAADAAAABggAAAAUTWljcm9zb2Z0IFNh
+        bnMgU2VyaWYAAARBBff///8YU3lzdGVtLkRyYXdpbmcuRm9udFN0eWxlAQAAAAd2YWx1ZV9fAAgDAAAA
+        AAAAAAX2////G1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAEAAAAHdmFsdWVfXwAIAwAAAAMAAAAL
+</value>
+  </data>
+  <data name="_eswlList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 305</value>
+  </data>
+  <data name="_eswlList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>961, 367</value>
+  </data>
+  <data name="_eswlList.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_eswlList.Name" xml:space="preserve">
+    <value>_eswlList</value>
+  </data>
+  <data name="&gt;&gt;_eswlList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_eswlList.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_eswlList.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <metadata name="_complicationsTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_complicationsTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 166</value>
+  </data>
+  <data name="_complicationsTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="_complicationsTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_complicationsTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>875, 55</value>
+  </data>
+  <data name="_complicationsTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_complicationsTextBox.Name" xml:space="preserve">
+    <value>_complicationsTextBox</value>
+  </data>
+  <data name="&gt;&gt;_complicationsTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_complicationsTextBox.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_complicationsTextBox.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <metadata name="_comments.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_comments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 231</value>
+  </data>
+  <data name="_comments.MaxLength" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="_comments.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_comments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>875, 55</value>
+  </data>
+  <data name="_comments.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_comments.Name" xml:space="preserve">
+    <value>_comments</value>
+  </data>
+  <data name="&gt;&gt;_comments.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_comments.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_comments.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <metadata name="_commentsLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_commentsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_commentsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_commentsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 231</value>
+  </data>
+  <data name="_commentsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="_commentsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_commentsLabel.Text" xml:space="preserve">
+    <value>Others</value>
+  </data>
+  <data name="_commentsLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_commentsLabel.Name" xml:space="preserve">
+    <value>_commentsLabel</value>
+  </data>
+  <data name="&gt;&gt;_commentsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_commentsLabel.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_commentsLabel.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <metadata name="_complicationsLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_complicationsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_complicationsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_complicationsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 170</value>
+  </data>
+  <data name="_complicationsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="_complicationsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_complicationsLabel.Text" xml:space="preserve">
+    <value>Complications</value>
+  </data>
+  <data name="_complicationsLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_complicationsLabel.Name" xml:space="preserve">
+    <value>_complicationsLabel</value>
+  </data>
+  <data name="&gt;&gt;_complicationsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_complicationsLabel.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_complicationsLabel.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <metadata name="_eswlDateLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_eswlDateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_eswlDateLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_eswlDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 26</value>
+  </data>
+  <data name="_eswlDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="_eswlDateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_eswlDateLabel.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="_eswlDateLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_eswlDateLabel.Name" xml:space="preserve">
+    <value>_eswlDateLabel</value>
+  </data>
+  <data name="&gt;&gt;_eswlDateLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_eswlDateLabel.Parent" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_eswlDateLabel.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="_eswlDetails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 90</value>
+  </data>
+  <data name="_eswlDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>990, 690</value>
+  </data>
+  <data name="_eswlDetails.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_eswlDetails.Text" xml:space="preserve">
+    <value>E.S.W.L. Details</value>
+  </data>
+  <data name="&gt;&gt;_eswlDetails.Name" xml:space="preserve">
+    <value>_eswlDetails</value>
+  </data>
+  <data name="&gt;&gt;_eswlDetails.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_eswlDetails.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_eswlDetails.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_eswlDateColumn.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="_eswlDateColumn.Width" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="_sizeColumn.Text" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="_sizeColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <metadata name="_patientGroup.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_patientNameText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_patientNameLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_guNoTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_guNumberLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="&gt;&gt;_patientNameText.Name" xml:space="preserve">
+    <value>_patientNameText</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.Name" xml:space="preserve">
+    <value>_patientNameLabel</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.Name" xml:space="preserve">
+    <value>_guNoTextBox</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.Name" xml:space="preserve">
+    <value>_guNumberLabel</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_patientGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 18</value>
+  </data>
+  <data name="_patientGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>627, 56</value>
+  </data>
+  <data name="_patientGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_patientGroup.Text" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="&gt;&gt;_patientGroup.Name" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_patientGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_patientGroup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_patientGroup.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="_patientNameText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_patientNameText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_patientNameText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 23</value>
+  </data>
+  <data name="_patientNameText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 20</value>
+  </data>
+  <data name="_patientNameText.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.Name" xml:space="preserve">
+    <value>_patientNameText</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="_patientNameLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_patientNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_patientNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_patientNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 25</value>
+  </data>
+  <data name="_patientNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="_patientNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="_patientNameLabel.Text" xml:space="preserve">
+    <value>Patient Name</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.Name" xml:space="preserve">
+    <value>_patientNameLabel</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="_guNoTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_guNoTextBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_guNoTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 23</value>
+  </data>
+  <data name="_guNoTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 20</value>
+  </data>
+  <data name="_guNoTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.Name" xml:space="preserve">
+    <value>_guNoTextBox</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="_guNumberLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_guNumberLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_guNumberLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_guNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 25</value>
+  </data>
+  <data name="_guNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="_guNumberLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="_guNumberLabel.Text" xml:space="preserve">
+    <value>G.U. Number</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.Name" xml:space="preserve">
+    <value>_guNumberLabel</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 87</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1039, 790</value>
+  </data>
+  <data name="&gt;&gt;_eswlDateColumn.Name" xml:space="preserve">
+    <value>_eswlDateColumn</value>
+  </data>
+  <data name="&gt;&gt;_eswlDateColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_sizeColumn.Name" xml:space="preserve">
+    <value>_sizeColumn</value>
+  </data>
+  <data name="&gt;&gt;_sizeColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ESWLControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

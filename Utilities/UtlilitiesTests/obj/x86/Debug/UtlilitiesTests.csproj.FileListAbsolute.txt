@@ -1,0 +1,2 @@
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\Utilities\UtlilitiesTests\obj\x86\Debug\UtlilitiesTests.csprojResolveAssemblyReference.cache
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCareOld\Utilities\UtlilitiesTests\obj\x86\Debug\UtlilitiesTests.csprojResolveAssemblyReference.cache

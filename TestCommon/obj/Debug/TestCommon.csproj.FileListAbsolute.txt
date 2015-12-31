@@ -1,0 +1,10 @@
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\TestCommon\bin\Debug\TestCommon.dll.config
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\TestCommon\bin\Debug\TestCommon.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\TestCommon\bin\Debug\TestCommon.pdb
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\TestCommon\bin\Debug\EntityFramework.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\TestCommon\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\TestCommon\bin\Debug\EntityFramework.xml
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\TestCommon\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\TestCommon\obj\Debug\TestCommon.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\TestCommon\obj\Debug\TestCommon.pdb
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\TestCommon\obj\Debug\TestCommon.csprojResolveAssemblyReference.cache

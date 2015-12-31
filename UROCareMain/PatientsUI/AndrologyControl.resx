@@ -1,0 +1,2796 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="_urologicalDetailGroupBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_anyTreatmentTaken.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_anyTreatmentTakenLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_treatmentGiven.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_treatmentGivenLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_testicularBiopsy.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_testicularBiopsyLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_semenAnalysis.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_semenAnalysisLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_prolactin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_prolactinLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_testosterone.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_testosteroneLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_lh.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_srFSH.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_testis.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_epididymis.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_vas.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_varicocele.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_pr.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_pa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_signsOfVirilization.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_generalExamination.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_ejaculation.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_eriction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_mumpsOrchitis.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_fever.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_smoklingTobaco.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_alcoholism.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_anySignificantIllness.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_marriedSince.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_othersTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_chiefComplaint.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_othersLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_lhLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_srFSHLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_testisLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_epididymisLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_vasLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_varicoceleLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_prLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_paLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_signsOfVirilizationLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_generalExaminationLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_ejaculationLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_erictionLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_mumpsOrchitisLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_feverLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_smokingTobacoLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_alcoholismLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_anySignificantIllnessLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_marriedSinceLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_chiefComplaintLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="&gt;&gt;_anyTreatmentTaken.Name" xml:space="preserve">
+    <value>_anyTreatmentTaken</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTaken.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTaken.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTaken.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTakenLabel.Name" xml:space="preserve">
+    <value>_anyTreatmentTakenLabel</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTakenLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTakenLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTakenLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGiven.Name" xml:space="preserve">
+    <value>_treatmentGiven</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGiven.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGiven.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGiven.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGivenLabel.Name" xml:space="preserve">
+    <value>_treatmentGivenLabel</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGivenLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGivenLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGivenLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsy.Name" xml:space="preserve">
+    <value>_testicularBiopsy</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsy.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsy.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsyLabel.Name" xml:space="preserve">
+    <value>_testicularBiopsyLabel</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsyLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsyLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsyLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysis.Name" xml:space="preserve">
+    <value>_semenAnalysis</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysis.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysis.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysisLabel.Name" xml:space="preserve">
+    <value>_semenAnalysisLabel</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysisLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysisLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysisLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_prolactin.Name" xml:space="preserve">
+    <value>_prolactin</value>
+  </data>
+  <data name="&gt;&gt;_prolactin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_prolactin.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_prolactin.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_prolactinLabel.Name" xml:space="preserve">
+    <value>_prolactinLabel</value>
+  </data>
+  <data name="&gt;&gt;_prolactinLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_prolactinLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_prolactinLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_testosterone.Name" xml:space="preserve">
+    <value>_testosterone</value>
+  </data>
+  <data name="&gt;&gt;_testosterone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_testosterone.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_testosterone.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_testosteroneLabel.Name" xml:space="preserve">
+    <value>_testosteroneLabel</value>
+  </data>
+  <data name="&gt;&gt;_testosteroneLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_testosteroneLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_testosteroneLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;_lh.Name" xml:space="preserve">
+    <value>_lh</value>
+  </data>
+  <data name="&gt;&gt;_lh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lh.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_lh.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_srFSH.Name" xml:space="preserve">
+    <value>_srFSH</value>
+  </data>
+  <data name="&gt;&gt;_srFSH.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_srFSH.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_srFSH.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;_testis.Name" xml:space="preserve">
+    <value>_testis</value>
+  </data>
+  <data name="&gt;&gt;_testis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_testis.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_testis.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;_epididymis.Name" xml:space="preserve">
+    <value>_epididymis</value>
+  </data>
+  <data name="&gt;&gt;_epididymis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_epididymis.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_epididymis.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;_vas.Name" xml:space="preserve">
+    <value>_vas</value>
+  </data>
+  <data name="&gt;&gt;_vas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_vas.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_vas.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;_varicocele.Name" xml:space="preserve">
+    <value>_varicocele</value>
+  </data>
+  <data name="&gt;&gt;_varicocele.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_varicocele.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_varicocele.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;_pr.Name" xml:space="preserve">
+    <value>_pr</value>
+  </data>
+  <data name="&gt;&gt;_pr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pr.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_pr.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;_pa.Name" xml:space="preserve">
+    <value>_pa</value>
+  </data>
+  <data name="&gt;&gt;_pa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pa.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_pa.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilization.Name" xml:space="preserve">
+    <value>_signsOfVirilization</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilization.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilization.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilization.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;_generalExamination.Name" xml:space="preserve">
+    <value>_generalExamination</value>
+  </data>
+  <data name="&gt;&gt;_generalExamination.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_generalExamination.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_generalExamination.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;_ejaculation.Name" xml:space="preserve">
+    <value>_ejaculation</value>
+  </data>
+  <data name="&gt;&gt;_ejaculation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ejaculation.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_ejaculation.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;_eriction.Name" xml:space="preserve">
+    <value>_eriction</value>
+  </data>
+  <data name="&gt;&gt;_eriction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_eriction.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_eriction.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitis.Name" xml:space="preserve">
+    <value>_mumpsOrchitis</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitis.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitis.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;_fever.Name" xml:space="preserve">
+    <value>_fever</value>
+  </data>
+  <data name="&gt;&gt;_fever.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fever.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fever.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;_smoklingTobaco.Name" xml:space="preserve">
+    <value>_smoklingTobaco</value>
+  </data>
+  <data name="&gt;&gt;_smoklingTobaco.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_smoklingTobaco.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_smoklingTobaco.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;_alcoholism.Name" xml:space="preserve">
+    <value>_alcoholism</value>
+  </data>
+  <data name="&gt;&gt;_alcoholism.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_alcoholism.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_alcoholism.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllness.Name" xml:space="preserve">
+    <value>_anySignificantIllness</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllness.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllness.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllness.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;_marriedSince.Name" xml:space="preserve">
+    <value>_marriedSince</value>
+  </data>
+  <data name="&gt;&gt;_marriedSince.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_marriedSince.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_marriedSince.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;_othersTextBox.Name" xml:space="preserve">
+    <value>_othersTextBox</value>
+  </data>
+  <data name="&gt;&gt;_othersTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_othersTextBox.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_othersTextBox.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaint.Name" xml:space="preserve">
+    <value>_chiefComplaint</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaint.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaint.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;_othersLabel.Name" xml:space="preserve">
+    <value>_othersLabel</value>
+  </data>
+  <data name="&gt;&gt;_othersLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_othersLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_othersLabel.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;_lhLabel.Name" xml:space="preserve">
+    <value>_lhLabel</value>
+  </data>
+  <data name="&gt;&gt;_lhLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lhLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_lhLabel.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;_srFSHLabel.Name" xml:space="preserve">
+    <value>_srFSHLabel</value>
+  </data>
+  <data name="&gt;&gt;_srFSHLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_srFSHLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_srFSHLabel.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;_testisLabel.Name" xml:space="preserve">
+    <value>_testisLabel</value>
+  </data>
+  <data name="&gt;&gt;_testisLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_testisLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_testisLabel.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;_epididymisLabel.Name" xml:space="preserve">
+    <value>_epididymisLabel</value>
+  </data>
+  <data name="&gt;&gt;_epididymisLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_epididymisLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_epididymisLabel.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;_vasLabel.Name" xml:space="preserve">
+    <value>_vasLabel</value>
+  </data>
+  <data name="&gt;&gt;_vasLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_vasLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_vasLabel.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;_varicoceleLabel.Name" xml:space="preserve">
+    <value>_varicoceleLabel</value>
+  </data>
+  <data name="&gt;&gt;_varicoceleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_varicoceleLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_varicoceleLabel.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;_prLabel.Name" xml:space="preserve">
+    <value>_prLabel</value>
+  </data>
+  <data name="&gt;&gt;_prLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_prLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_prLabel.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;_paLabel.Name" xml:space="preserve">
+    <value>_paLabel</value>
+  </data>
+  <data name="&gt;&gt;_paLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_paLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_paLabel.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilizationLabel.Name" xml:space="preserve">
+    <value>_signsOfVirilizationLabel</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilizationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilizationLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilizationLabel.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;_generalExaminationLabel.Name" xml:space="preserve">
+    <value>_generalExaminationLabel</value>
+  </data>
+  <data name="&gt;&gt;_generalExaminationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_generalExaminationLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_generalExaminationLabel.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;_ejaculationLabel.Name" xml:space="preserve">
+    <value>_ejaculationLabel</value>
+  </data>
+  <data name="&gt;&gt;_ejaculationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ejaculationLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_ejaculationLabel.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;_erictionLabel.Name" xml:space="preserve">
+    <value>_erictionLabel</value>
+  </data>
+  <data name="&gt;&gt;_erictionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_erictionLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_erictionLabel.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitisLabel.Name" xml:space="preserve">
+    <value>_mumpsOrchitisLabel</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitisLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitisLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitisLabel.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;_feverLabel.Name" xml:space="preserve">
+    <value>_feverLabel</value>
+  </data>
+  <data name="&gt;&gt;_feverLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_feverLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_feverLabel.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;_smokingTobacoLabel.Name" xml:space="preserve">
+    <value>_smokingTobacoLabel</value>
+  </data>
+  <data name="&gt;&gt;_smokingTobacoLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_smokingTobacoLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_smokingTobacoLabel.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;_alcoholismLabel.Name" xml:space="preserve">
+    <value>_alcoholismLabel</value>
+  </data>
+  <data name="&gt;&gt;_alcoholismLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_alcoholismLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_alcoholismLabel.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllnessLabel.Name" xml:space="preserve">
+    <value>_anySignificantIllnessLabel</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllnessLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllnessLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllnessLabel.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;_marriedSinceLabel.Name" xml:space="preserve">
+    <value>_marriedSinceLabel</value>
+  </data>
+  <data name="&gt;&gt;_marriedSinceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_marriedSinceLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_marriedSinceLabel.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaintLabel.Name" xml:space="preserve">
+    <value>_chiefComplaintLabel</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaintLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaintLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaintLabel.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_urologicalDetailGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="_urologicalDetailGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 90</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_urologicalDetailGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="_urologicalDetailGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>990, 690</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_urologicalDetailGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_urologicalDetailGroupBox.Text" xml:space="preserve">
+    <value>Urological Details</value>
+  </data>
+  <data name="&gt;&gt;_urologicalDetailGroupBox.Name" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_urologicalDetailGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_urologicalDetailGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_urologicalDetailGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="_anyTreatmentTaken.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_anyTreatmentTaken.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 92</value>
+  </data>
+  <data name="_anyTreatmentTaken.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_anyTreatmentTaken.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_anyTreatmentTaken.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 75</value>
+  </data>
+  <data name="_anyTreatmentTaken.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTaken.Name" xml:space="preserve">
+    <value>_anyTreatmentTaken</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTaken.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTaken.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTaken.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="_anyTreatmentTakenLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_anyTreatmentTakenLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_anyTreatmentTakenLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_anyTreatmentTakenLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 96</value>
+  </data>
+  <data name="_anyTreatmentTakenLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 13</value>
+  </data>
+  <data name="_anyTreatmentTakenLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="_anyTreatmentTakenLabel.Text" xml:space="preserve">
+    <value>Any Treatment Taken</value>
+  </data>
+  <data name="_anyTreatmentTakenLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTakenLabel.Name" xml:space="preserve">
+    <value>_anyTreatmentTakenLabel</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTakenLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTakenLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_anyTreatmentTakenLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="_treatmentGiven.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_treatmentGiven.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 575</value>
+  </data>
+  <data name="_treatmentGiven.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_treatmentGiven.Size" type="System.Drawing.Size, System.Drawing">
+    <value>854, 50</value>
+  </data>
+  <data name="_treatmentGiven.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGiven.Name" xml:space="preserve">
+    <value>_treatmentGiven</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGiven.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGiven.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGiven.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="_treatmentGivenLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_treatmentGivenLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_treatmentGivenLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_treatmentGivenLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_treatmentGivenLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 582</value>
+  </data>
+  <data name="_treatmentGivenLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="_treatmentGivenLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="_treatmentGivenLabel.Text" xml:space="preserve">
+    <value>Treatment Given</value>
+  </data>
+  <data name="_treatmentGivenLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGivenLabel.Name" xml:space="preserve">
+    <value>_treatmentGivenLabel</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGivenLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGivenLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_treatmentGivenLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="_testicularBiopsy.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_testicularBiopsy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_testicularBiopsy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 517</value>
+  </data>
+  <data name="_testicularBiopsy.MaxLength" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="_testicularBiopsy.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_testicularBiopsy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>854, 50</value>
+  </data>
+  <data name="_testicularBiopsy.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsy.Name" xml:space="preserve">
+    <value>_testicularBiopsy</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsy.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsy.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="_testicularBiopsyLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_testicularBiopsyLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_testicularBiopsyLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_testicularBiopsyLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_testicularBiopsyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 521</value>
+  </data>
+  <data name="_testicularBiopsyLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 13</value>
+  </data>
+  <data name="_testicularBiopsyLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="_testicularBiopsyLabel.Text" xml:space="preserve">
+    <value>Testicular Biopsy</value>
+  </data>
+  <data name="_testicularBiopsyLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsyLabel.Name" xml:space="preserve">
+    <value>_testicularBiopsyLabel</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsyLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsyLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_testicularBiopsyLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="_semenAnalysis.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_semenAnalysis.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_semenAnalysis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 460</value>
+  </data>
+  <data name="_semenAnalysis.MaxLength" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="_semenAnalysis.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_semenAnalysis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>854, 50</value>
+  </data>
+  <data name="_semenAnalysis.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysis.Name" xml:space="preserve">
+    <value>_semenAnalysis</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysis.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysis.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="_semenAnalysisLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_semenAnalysisLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_semenAnalysisLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_semenAnalysisLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_semenAnalysisLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 464</value>
+  </data>
+  <data name="_semenAnalysisLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="_semenAnalysisLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_semenAnalysisLabel.Text" xml:space="preserve">
+    <value>Semen Analysis</value>
+  </data>
+  <data name="_semenAnalysisLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysisLabel.Name" xml:space="preserve">
+    <value>_semenAnalysisLabel</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysisLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysisLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_semenAnalysisLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="_prolactin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_prolactin.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_prolactin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 432</value>
+  </data>
+  <data name="_prolactin.MaxLength" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="_prolactin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 20</value>
+  </data>
+  <data name="_prolactin.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;_prolactin.Name" xml:space="preserve">
+    <value>_prolactin</value>
+  </data>
+  <data name="&gt;&gt;_prolactin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_prolactin.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_prolactin.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <metadata name="_prolactinLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_prolactinLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_prolactinLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_prolactinLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_prolactinLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 435</value>
+  </data>
+  <data name="_prolactinLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="_prolactinLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="_prolactinLabel.Text" xml:space="preserve">
+    <value>Prolactin</value>
+  </data>
+  <data name="_prolactinLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_prolactinLabel.Name" xml:space="preserve">
+    <value>_prolactinLabel</value>
+  </data>
+  <data name="&gt;&gt;_prolactinLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_prolactinLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_prolactinLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="_testosterone.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_testosterone.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_testosterone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 432</value>
+  </data>
+  <data name="_testosterone.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_testosterone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="_testosterone.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_testosterone.Name" xml:space="preserve">
+    <value>_testosterone</value>
+  </data>
+  <data name="&gt;&gt;_testosterone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_testosterone.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_testosterone.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <metadata name="_testosteroneLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_testosteroneLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_testosteroneLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_testosteroneLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_testosteroneLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 436</value>
+  </data>
+  <data name="_testosteroneLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="_testosteroneLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="_testosteroneLabel.Text" xml:space="preserve">
+    <value>Testosterone</value>
+  </data>
+  <data name="_testosteroneLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_testosteroneLabel.Name" xml:space="preserve">
+    <value>_testosteroneLabel</value>
+  </data>
+  <data name="&gt;&gt;_testosteroneLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_testosteroneLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_testosteroneLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <metadata name="_lh.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_lh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 406</value>
+  </data>
+  <data name="_lh.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_lh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 20</value>
+  </data>
+  <data name="_lh.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_lh.Name" xml:space="preserve">
+    <value>_lh</value>
+  </data>
+  <data name="&gt;&gt;_lh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lh.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_lh.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <metadata name="_srFSH.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_srFSH.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 406</value>
+  </data>
+  <data name="_srFSH.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_srFSH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="_srFSH.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_srFSH.Name" xml:space="preserve">
+    <value>_srFSH</value>
+  </data>
+  <data name="&gt;&gt;_srFSH.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_srFSH.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_srFSH.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <metadata name="_testis.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_testis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 376</value>
+  </data>
+  <data name="_testis.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_testis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 20</value>
+  </data>
+  <data name="_testis.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_testis.Name" xml:space="preserve">
+    <value>_testis</value>
+  </data>
+  <data name="&gt;&gt;_testis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_testis.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_testis.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <metadata name="_epididymis.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_epididymis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 376</value>
+  </data>
+  <data name="_epididymis.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_epididymis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="_epididymis.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_epididymis.Name" xml:space="preserve">
+    <value>_epididymis</value>
+  </data>
+  <data name="&gt;&gt;_epididymis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_epididymis.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_epididymis.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <metadata name="_vas.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_vas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 345</value>
+  </data>
+  <data name="_vas.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_vas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 20</value>
+  </data>
+  <data name="_vas.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_vas.Name" xml:space="preserve">
+    <value>_vas</value>
+  </data>
+  <data name="&gt;&gt;_vas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_vas.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_vas.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <metadata name="_varicocele.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_varicocele.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 345</value>
+  </data>
+  <data name="_varicocele.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_varicocele.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="_varicocele.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_varicocele.Name" xml:space="preserve">
+    <value>_varicocele</value>
+  </data>
+  <data name="&gt;&gt;_varicocele.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_varicocele.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_varicocele.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <metadata name="_pr.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_pr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 315</value>
+  </data>
+  <data name="_pr.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_pr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 20</value>
+  </data>
+  <data name="_pr.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_pr.Name" xml:space="preserve">
+    <value>_pr</value>
+  </data>
+  <data name="&gt;&gt;_pr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pr.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_pr.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <metadata name="_pa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_pa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 315</value>
+  </data>
+  <data name="_pa.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_pa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="_pa.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_pa.Name" xml:space="preserve">
+    <value>_pa</value>
+  </data>
+  <data name="&gt;&gt;_pa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_pa.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_pa.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <metadata name="_signsOfVirilization.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_signsOfVirilization.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 286</value>
+  </data>
+  <data name="_signsOfVirilization.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_signsOfVirilization.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 20</value>
+  </data>
+  <data name="_signsOfVirilization.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilization.Name" xml:space="preserve">
+    <value>_signsOfVirilization</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilization.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilization.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilization.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <metadata name="_generalExamination.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_generalExamination.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 286</value>
+  </data>
+  <data name="_generalExamination.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_generalExamination.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="_generalExamination.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_generalExamination.Name" xml:space="preserve">
+    <value>_generalExamination</value>
+  </data>
+  <data name="&gt;&gt;_generalExamination.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_generalExamination.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_generalExamination.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <metadata name="_ejaculation.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_ejaculation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 257</value>
+  </data>
+  <data name="_ejaculation.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_ejaculation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 20</value>
+  </data>
+  <data name="_ejaculation.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_ejaculation.Name" xml:space="preserve">
+    <value>_ejaculation</value>
+  </data>
+  <data name="&gt;&gt;_ejaculation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ejaculation.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_ejaculation.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <metadata name="_eriction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_eriction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 257</value>
+  </data>
+  <data name="_eriction.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_eriction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="_eriction.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_eriction.Name" xml:space="preserve">
+    <value>_eriction</value>
+  </data>
+  <data name="&gt;&gt;_eriction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_eriction.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_eriction.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <metadata name="_mumpsOrchitis.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_mumpsOrchitis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 229</value>
+  </data>
+  <data name="_mumpsOrchitis.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_mumpsOrchitis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 20</value>
+  </data>
+  <data name="_mumpsOrchitis.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitis.Name" xml:space="preserve">
+    <value>_mumpsOrchitis</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitis.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitis.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <metadata name="_fever.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_fever.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 229</value>
+  </data>
+  <data name="_fever.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_fever.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="_fever.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_fever.Name" xml:space="preserve">
+    <value>_fever</value>
+  </data>
+  <data name="&gt;&gt;_fever.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_fever.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_fever.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <metadata name="_smoklingTobaco.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_smoklingTobaco.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 200</value>
+  </data>
+  <data name="_smoklingTobaco.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_smoklingTobaco.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 20</value>
+  </data>
+  <data name="_smoklingTobaco.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_smoklingTobaco.Name" xml:space="preserve">
+    <value>_smoklingTobaco</value>
+  </data>
+  <data name="&gt;&gt;_smoklingTobaco.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_smoklingTobaco.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_smoklingTobaco.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <metadata name="_alcoholism.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_alcoholism.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 200</value>
+  </data>
+  <data name="_alcoholism.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_alcoholism.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="_alcoholism.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_alcoholism.Name" xml:space="preserve">
+    <value>_alcoholism</value>
+  </data>
+  <data name="&gt;&gt;_alcoholism.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_alcoholism.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_alcoholism.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <metadata name="_anySignificantIllness.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_anySignificantIllness.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 92</value>
+  </data>
+  <data name="_anySignificantIllness.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_anySignificantIllness.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_anySignificantIllness.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 75</value>
+  </data>
+  <data name="_anySignificantIllness.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllness.Name" xml:space="preserve">
+    <value>_anySignificantIllness</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllness.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllness.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllness.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <metadata name="_marriedSince.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_marriedSince.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 175</value>
+  </data>
+  <data name="_marriedSince.MaxLength" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_marriedSince.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="_marriedSince.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_marriedSince.Name" xml:space="preserve">
+    <value>_marriedSince</value>
+  </data>
+  <data name="&gt;&gt;_marriedSince.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_marriedSince.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_marriedSince.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <metadata name="_othersTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_othersTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_othersTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 631</value>
+  </data>
+  <data name="_othersTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <data name="_othersTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_othersTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>854, 50</value>
+  </data>
+  <data name="_othersTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_othersTextBox.Name" xml:space="preserve">
+    <value>_othersTextBox</value>
+  </data>
+  <data name="&gt;&gt;_othersTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_othersTextBox.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_othersTextBox.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <metadata name="_chiefComplaint.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_chiefComplaint.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_chiefComplaint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="_chiefComplaint.MaxLength" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <data name="_chiefComplaint.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_chiefComplaint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>854, 50</value>
+  </data>
+  <data name="_chiefComplaint.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaint.Name" xml:space="preserve">
+    <value>_chiefComplaint</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaint.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaint.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <metadata name="_othersLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_othersLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_othersLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_othersLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 631</value>
+  </data>
+  <data name="_othersLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="_othersLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_othersLabel.Text" xml:space="preserve">
+    <value>Others</value>
+  </data>
+  <data name="_othersLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_othersLabel.Name" xml:space="preserve">
+    <value>_othersLabel</value>
+  </data>
+  <data name="&gt;&gt;_othersLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_othersLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_othersLabel.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <metadata name="_lhLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_lhLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lhLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_lhLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 410</value>
+  </data>
+  <data name="_lhLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 13</value>
+  </data>
+  <data name="_lhLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_lhLabel.Text" xml:space="preserve">
+    <value>LH</value>
+  </data>
+  <data name="_lhLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_lhLabel.Name" xml:space="preserve">
+    <value>_lhLabel</value>
+  </data>
+  <data name="&gt;&gt;_lhLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lhLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_lhLabel.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <metadata name="_srFSHLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_srFSHLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_srFSHLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_srFSHLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 410</value>
+  </data>
+  <data name="_srFSHLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="_srFSHLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_srFSHLabel.Text" xml:space="preserve">
+    <value>SR FSH</value>
+  </data>
+  <data name="_srFSHLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_srFSHLabel.Name" xml:space="preserve">
+    <value>_srFSHLabel</value>
+  </data>
+  <data name="&gt;&gt;_srFSHLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_srFSHLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_srFSHLabel.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <metadata name="_testisLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_testisLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_testisLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_testisLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 380</value>
+  </data>
+  <data name="_testisLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="_testisLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_testisLabel.Text" xml:space="preserve">
+    <value>Testis</value>
+  </data>
+  <data name="_testisLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_testisLabel.Name" xml:space="preserve">
+    <value>_testisLabel</value>
+  </data>
+  <data name="&gt;&gt;_testisLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_testisLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_testisLabel.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <metadata name="_epididymisLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_epididymisLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_epididymisLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_epididymisLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 380</value>
+  </data>
+  <data name="_epididymisLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="_epididymisLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_epididymisLabel.Text" xml:space="preserve">
+    <value>Epididymis</value>
+  </data>
+  <data name="_epididymisLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_epididymisLabel.Name" xml:space="preserve">
+    <value>_epididymisLabel</value>
+  </data>
+  <data name="&gt;&gt;_epididymisLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_epididymisLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_epididymisLabel.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <metadata name="_vasLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_vasLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_vasLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_vasLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 349</value>
+  </data>
+  <data name="_vasLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 13</value>
+  </data>
+  <data name="_vasLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_vasLabel.Text" xml:space="preserve">
+    <value>VAS</value>
+  </data>
+  <data name="_vasLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_vasLabel.Name" xml:space="preserve">
+    <value>_vasLabel</value>
+  </data>
+  <data name="&gt;&gt;_vasLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_vasLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_vasLabel.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <metadata name="_varicoceleLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_varicoceleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_varicoceleLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_varicoceleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 349</value>
+  </data>
+  <data name="_varicoceleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="_varicoceleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_varicoceleLabel.Text" xml:space="preserve">
+    <value>Varicocele</value>
+  </data>
+  <data name="_varicoceleLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_varicoceleLabel.Name" xml:space="preserve">
+    <value>_varicoceleLabel</value>
+  </data>
+  <data name="&gt;&gt;_varicoceleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_varicoceleLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_varicoceleLabel.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <metadata name="_prLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_prLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_prLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_prLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 319</value>
+  </data>
+  <data name="_prLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="_prLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_prLabel.Text" xml:space="preserve">
+    <value>P/R</value>
+  </data>
+  <data name="_prLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_prLabel.Name" xml:space="preserve">
+    <value>_prLabel</value>
+  </data>
+  <data name="&gt;&gt;_prLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_prLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_prLabel.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <metadata name="_paLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_paLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_paLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_paLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 319</value>
+  </data>
+  <data name="_paLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="_paLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_paLabel.Text" xml:space="preserve">
+    <value>P/A</value>
+  </data>
+  <data name="_paLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_paLabel.Name" xml:space="preserve">
+    <value>_paLabel</value>
+  </data>
+  <data name="&gt;&gt;_paLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_paLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_paLabel.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <metadata name="_signsOfVirilizationLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_signsOfVirilizationLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_signsOfVirilizationLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_signsOfVirilizationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 290</value>
+  </data>
+  <data name="_signsOfVirilizationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 13</value>
+  </data>
+  <data name="_signsOfVirilizationLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_signsOfVirilizationLabel.Text" xml:space="preserve">
+    <value>Signs of Virilization</value>
+  </data>
+  <data name="_signsOfVirilizationLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilizationLabel.Name" xml:space="preserve">
+    <value>_signsOfVirilizationLabel</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilizationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilizationLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_signsOfVirilizationLabel.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <metadata name="_generalExaminationLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_generalExaminationLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_generalExaminationLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_generalExaminationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 290</value>
+  </data>
+  <data name="_generalExaminationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 13</value>
+  </data>
+  <data name="_generalExaminationLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_generalExaminationLabel.Text" xml:space="preserve">
+    <value>General Examination</value>
+  </data>
+  <data name="_generalExaminationLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_generalExaminationLabel.Name" xml:space="preserve">
+    <value>_generalExaminationLabel</value>
+  </data>
+  <data name="&gt;&gt;_generalExaminationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_generalExaminationLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_generalExaminationLabel.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <metadata name="_ejaculationLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_ejaculationLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ejaculationLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_ejaculationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 261</value>
+  </data>
+  <data name="_ejaculationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="_ejaculationLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_ejaculationLabel.Text" xml:space="preserve">
+    <value>Ejaculation</value>
+  </data>
+  <data name="_ejaculationLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_ejaculationLabel.Name" xml:space="preserve">
+    <value>_ejaculationLabel</value>
+  </data>
+  <data name="&gt;&gt;_ejaculationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ejaculationLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_ejaculationLabel.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <metadata name="_erictionLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_erictionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_erictionLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_erictionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 261</value>
+  </data>
+  <data name="_erictionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="_erictionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_erictionLabel.Text" xml:space="preserve">
+    <value>Eriction</value>
+  </data>
+  <data name="_erictionLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_erictionLabel.Name" xml:space="preserve">
+    <value>_erictionLabel</value>
+  </data>
+  <data name="&gt;&gt;_erictionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_erictionLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_erictionLabel.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <metadata name="_mumpsOrchitisLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_mumpsOrchitisLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_mumpsOrchitisLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_mumpsOrchitisLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 233</value>
+  </data>
+  <data name="_mumpsOrchitisLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="_mumpsOrchitisLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_mumpsOrchitisLabel.Text" xml:space="preserve">
+    <value>Mumps/Orchitis</value>
+  </data>
+  <data name="_mumpsOrchitisLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitisLabel.Name" xml:space="preserve">
+    <value>_mumpsOrchitisLabel</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitisLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitisLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_mumpsOrchitisLabel.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <metadata name="_feverLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_feverLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_feverLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_feverLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 233</value>
+  </data>
+  <data name="_feverLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
+  </data>
+  <data name="_feverLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_feverLabel.Text" xml:space="preserve">
+    <value>Fever in 6 Months</value>
+  </data>
+  <data name="_feverLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_feverLabel.Name" xml:space="preserve">
+    <value>_feverLabel</value>
+  </data>
+  <data name="&gt;&gt;_feverLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_feverLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_feverLabel.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <metadata name="_smokingTobacoLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_smokingTobacoLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_smokingTobacoLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_smokingTobacoLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 204</value>
+  </data>
+  <data name="_smokingTobacoLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="_smokingTobacoLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_smokingTobacoLabel.Text" xml:space="preserve">
+    <value>Smoking/Tobaco</value>
+  </data>
+  <data name="_smokingTobacoLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_smokingTobacoLabel.Name" xml:space="preserve">
+    <value>_smokingTobacoLabel</value>
+  </data>
+  <data name="&gt;&gt;_smokingTobacoLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_smokingTobacoLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_smokingTobacoLabel.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <metadata name="_alcoholismLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_alcoholismLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_alcoholismLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_alcoholismLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 204</value>
+  </data>
+  <data name="_alcoholismLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="_alcoholismLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_alcoholismLabel.Text" xml:space="preserve">
+    <value>Alcoholism</value>
+  </data>
+  <data name="_alcoholismLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_alcoholismLabel.Name" xml:space="preserve">
+    <value>_alcoholismLabel</value>
+  </data>
+  <data name="&gt;&gt;_alcoholismLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_alcoholismLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_alcoholismLabel.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <metadata name="_anySignificantIllnessLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_anySignificantIllnessLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_anySignificantIllnessLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_anySignificantIllnessLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 96</value>
+  </data>
+  <data name="_anySignificantIllnessLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 13</value>
+  </data>
+  <data name="_anySignificantIllnessLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_anySignificantIllnessLabel.Text" xml:space="preserve">
+    <value>Any Significant Illness</value>
+  </data>
+  <data name="_anySignificantIllnessLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllnessLabel.Name" xml:space="preserve">
+    <value>_anySignificantIllnessLabel</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllnessLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllnessLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_anySignificantIllnessLabel.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <metadata name="_marriedSinceLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_marriedSinceLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_marriedSinceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_marriedSinceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 179</value>
+  </data>
+  <data name="_marriedSinceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="_marriedSinceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_marriedSinceLabel.Text" xml:space="preserve">
+    <value>Married Since</value>
+  </data>
+  <data name="_marriedSinceLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_marriedSinceLabel.Name" xml:space="preserve">
+    <value>_marriedSinceLabel</value>
+  </data>
+  <data name="&gt;&gt;_marriedSinceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_marriedSinceLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_marriedSinceLabel.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <metadata name="_chiefComplaintLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_chiefComplaintLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_chiefComplaintLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 33</value>
+  </data>
+  <data name="_chiefComplaintLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="_chiefComplaintLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_chiefComplaintLabel.Text" xml:space="preserve">
+    <value>Chief Complaints</value>
+  </data>
+  <data name="_chiefComplaintLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaintLabel.Name" xml:space="preserve">
+    <value>_chiefComplaintLabel</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaintLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaintLabel.Parent" xml:space="preserve">
+    <value>_urologicalDetailGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_chiefComplaintLabel.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <metadata name="_patientGroup.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="_patientNameText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_patientNameText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_patientNameText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 23</value>
+  </data>
+  <data name="_patientNameText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 20</value>
+  </data>
+  <data name="_patientNameText.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.Name" xml:space="preserve">
+    <value>_patientNameText</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_patientNameText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="_patientNameLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_patientNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_patientNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_patientNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 25</value>
+  </data>
+  <data name="_patientNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="_patientNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="_patientNameLabel.Text" xml:space="preserve">
+    <value>Patient Name</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.Name" xml:space="preserve">
+    <value>_patientNameLabel</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_patientNameLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="_guNoTextBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_guNoTextBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_guNoTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 23</value>
+  </data>
+  <data name="_guNoTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 20</value>
+  </data>
+  <data name="_guNoTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.Name" xml:space="preserve">
+    <value>_guNoTextBox</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_guNoTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="_guNumberLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="_guNumberLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_guNumberLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_guNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 25</value>
+  </data>
+  <data name="_guNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="_guNumberLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="_guNumberLabel.Text" xml:space="preserve">
+    <value>G.U. Number</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.Name" xml:space="preserve">
+    <value>_guNumberLabel</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.Parent" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_guNumberLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_patientGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 18</value>
+  </data>
+  <data name="_patientGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>627, 56</value>
+  </data>
+  <data name="_patientGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_patientGroup.Text" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="&gt;&gt;_patientGroup.Name" xml:space="preserve">
+    <value>_patientGroup</value>
+  </data>
+  <data name="&gt;&gt;_patientGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_patientGroup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_patientGroup.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>96, 96</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 87</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1045, 794</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AndrologyControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

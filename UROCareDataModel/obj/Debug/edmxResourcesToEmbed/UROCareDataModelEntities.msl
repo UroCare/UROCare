@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UROCareModelStoreContainer" CdmEntityContainer="UROCareEntities">
+    <EntitySetMapping Name="Andrologies">
+      <EntityTypeMapping TypeName="UROCareModel.Andrology">
+        <MappingFragment StoreEntitySet="Andrology">
+          <ScalarProperty Name="Andrology_ID" ColumnName="Andrology_ID" />
+          <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+          <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+          <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+          <ScalarProperty Name="Complaint" ColumnName="Complaint" />
+          <ScalarProperty Name="Married_Since" ColumnName="Married_Since" />
+          <ScalarProperty Name="Signi_Illness" ColumnName="Signi_Illness" />
+          <ScalarProperty Name="Treatment_Taken" ColumnName="Treatment_Taken" />
+          <ScalarProperty Name="Alcoholism" ColumnName="Alcoholism" />
+          <ScalarProperty Name="Fever" ColumnName="Fever" />
+          <ScalarProperty Name="Smoking" ColumnName="Smoking" />
+          <ScalarProperty Name="Mumps_Orchits" ColumnName="Mumps_Orchits" />
+          <ScalarProperty Name="Erection" ColumnName="Erection" />
+          <ScalarProperty Name="Ejaculation" ColumnName="Ejaculation" />
+          <ScalarProperty Name="General_Exam" ColumnName="General_Exam" />
+          <ScalarProperty Name="Virilization" ColumnName="Virilization" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PR" ColumnName="PR" />
+          <ScalarProperty Name="VAS" ColumnName="VAS" />
+          <ScalarProperty Name="Varicocele" ColumnName="Varicocele" />
+          <ScalarProperty Name="Testis" ColumnName="Testis" />
+          <ScalarProperty Name="Epididymis" ColumnName="Epididymis" />
+          <ScalarProperty Name="Semen_Analysis" ColumnName="Semen_Analysis" />
+          <ScalarProperty Name="SR_FSH" ColumnName="SR_FSH" />
+          <ScalarProperty Name="LH" ColumnName="LH" />
+          <ScalarProperty Name="Testosterone" ColumnName="Testosterone" />
+          <ScalarProperty Name="Prolactin" ColumnName="Prolactin" />
+          <ScalarProperty Name="Testi_Biopsy" ColumnName="Testi_Biopsy" />
+          <ScalarProperty Name="Others" ColumnName="Others" />
+          <ScalarProperty Name="Treatment_Given" ColumnName="Treatment_Given" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+          <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+          <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Doctors_List">
+      <EntityTypeMapping TypeName="UROCareModel.Doctors_List">
+        <MappingFragment StoreEntitySet="Doctors_List">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Doctor_Name" ColumnName="Doctor_Name" />
+          <ScalarProperty Name="At_Post" ColumnName="At_Post" />
+          <ScalarProperty Name="Taluka" ColumnName="Taluka" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Birth_Dte" ColumnName="Birth_Dte" />
+          <ScalarProperty Name="Dr_Email" ColumnName="Dr_Email" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+          <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+          <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESWLs">
+      <EntityTypeMapping TypeName="UROCareModel.ESWL">
+        <MappingFragment StoreEntitySet="ESWL">
+          <ScalarProperty Name="ESWL_ID" ColumnName="ESWL_ID" />
+          <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+          <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+          <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+          <ScalarProperty Name="SR_No" ColumnName="SR_No" />
+          <ScalarProperty Name="ESWL_Dte" ColumnName="ESWL_Dte" />
+          <ScalarProperty Name="ESWL_Size" ColumnName="ESWL_Size" />
+          <ScalarProperty Name="Side" ColumnName="Side" />
+          <ScalarProperty Name="Site" ColumnName="Site" />
+          <ScalarProperty Name="Shock_Waves" ColumnName="Shock_Waves" />
+          <ScalarProperty Name="ESWL_Level" ColumnName="ESWL_Level" />
+          <ScalarProperty Name="Fluroscopy" ColumnName="Fluroscopy" />
+          <ScalarProperty Name="Analgesic" ColumnName="Analgesic" />
+          <ScalarProperty Name="IV_Fluids" ColumnName="IV_Fluids" />
+          <ScalarProperty Name="Complications" ColumnName="Complications" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+          <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+          <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Follow_Up">
+      <EntityTypeMapping TypeName="UROCareModel.Follow_Up">
+        <MappingFragment StoreEntitySet="Follow_Up">
+          <ScalarProperty Name="Followup_ID" ColumnName="Followup_ID" />
+          <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+          <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+          <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+          <ScalarProperty Name="SR_No" ColumnName="SR_No" />
+          <ScalarProperty Name="Follow_Dte" ColumnName="Follow_Dte" />
+          <ScalarProperty Name="Complaints" ColumnName="Complaints" />
+          <ScalarProperty Name="Evaluation" ColumnName="Evaluation" />
+          <ScalarProperty Name="Treatment" ColumnName="Treatment" />
+          <ScalarProperty Name="Next_Dte" ColumnName="Next_Dte" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+          <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+          <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Investigations">
+      <EntityTypeMapping TypeName="UROCareModel.Investigation">
+        <MappingFragment StoreEntitySet="Investigation">
+          <ScalarProperty Name="Investigation_ID" ColumnName="Investigation_ID" />
+          <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+          <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+          <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+          <ScalarProperty Name="Urine" ColumnName="Urine" />
+          <ScalarProperty Name="HB" ColumnName="HB" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="DC" ColumnName="DC" />
+          <ScalarProperty Name="SR_NA_Plus" ColumnName="SR_NA_Plus" />
+          <ScalarProperty Name="SR_K_Plus" ColumnName="SR_K_Plus" />
+          <ScalarProperty Name="SR_CA_Plus" ColumnName="SR_CA_Plus" />
+          <ScalarProperty Name="SR_Uric_Acid" ColumnName="SR_Uric_Acid" />
+          <ScalarProperty Name="HIV" ColumnName="HIV" />
+          <ScalarProperty Name="SR_Creat" ColumnName="SR_Creat" />
+          <ScalarProperty Name="HBS_AG" ColumnName="HBS_AG" />
+          <ScalarProperty Name="BUL" ColumnName="BUL" />
+          <ScalarProperty Name="ESR" ColumnName="ESR" />
+          <ScalarProperty Name="Urine_Chyle" ColumnName="Urine_Chyle" />
+          <ScalarProperty Name="BSL" ColumnName="BSL" />
+          <ScalarProperty Name="USG" ColumnName="USG" />
+          <ScalarProperty Name="KUB" ColumnName="KUB" />
+          <ScalarProperty Name="IVP" ColumnName="IVP" />
+          <ScalarProperty Name="RGU" ColumnName="RGU" />
+          <ScalarProperty Name="MCU" ColumnName="MCU" />
+          <ScalarProperty Name="NCHCT" ColumnName="NCHCT" />
+          <ScalarProperty Name="DTPA_Reno" ColumnName="DTPA_Reno" />
+          <ScalarProperty Name="TRUS" ColumnName="TRUS" />
+          <ScalarProperty Name="Sr_PSA" ColumnName="Sr_PSA" />
+          <ScalarProperty Name="CT_Scan" ColumnName="CT_Scan" />
+          <ScalarProperty Name="Urine_CS" ColumnName="Urine_CS" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="PH" ColumnName="PH" />
+          <ScalarProperty Name="Calcium" ColumnName="Calcium" />
+          <ScalarProperty Name="Uric_Acid" ColumnName="Uric_Acid" />
+          <ScalarProperty Name="Sodium" ColumnName="Sodium" />
+          <ScalarProperty Name="Oxalate" ColumnName="Oxalate" />
+          <ScalarProperty Name="Citrate" ColumnName="Citrate" />
+          <ScalarProperty Name="Sulfate" ColumnName="Sulfate" />
+          <ScalarProperty Name="Phosphorous" ColumnName="Phosphorous" />
+          <ScalarProperty Name="Stone_Analysis" ColumnName="Stone_Analysis" />
+          <ScalarProperty Name="Bone_Scan" ColumnName="Bone_Scan" />
+          <ScalarProperty Name="MRI" ColumnName="MRI" />
+          <ScalarProperty Name="Others" ColumnName="Others" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+          <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+          <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IPDs">
+      <EntityTypeMapping TypeName="UROCareModel.IPD">
+        <MappingFragment StoreEntitySet="IPD">
+          <ScalarProperty Name="IPD_ID" ColumnName="IPD_ID" />
+          <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+          <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+          <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+          <ScalarProperty Name="SR_No" ColumnName="SR_No" />
+          <ScalarProperty Name="IPD_No" ColumnName="IPD_No" />
+          <ScalarProperty Name="Admission_Dte" ColumnName="Admission_Dte" />
+          <ScalarProperty Name="Discharge_Dte" ColumnName="Discharge_Dte" />
+          <ScalarProperty Name="Complaints" ColumnName="Complaints" />
+          <ScalarProperty Name="Advice" ColumnName="Advice" />
+          <ScalarProperty Name="Followup_Dte" ColumnName="Followup_Dte" />
+          <ScalarProperty Name="IPD_Diagnosis" ColumnName="IPD_Diagnosis" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+          <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+          <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Operation_Dtls">
+      <EntityTypeMapping TypeName="UROCareModel.Operation_Dtls">
+        <MappingFragment StoreEntitySet="Operation_Dtls">
+          <ScalarProperty Name="Operation_ID" ColumnName="Operation_ID" />
+          <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+          <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+          <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+          <ScalarProperty Name="SR_No" ColumnName="SR_No" />
+          <ScalarProperty Name="Operation_Dte" ColumnName="Operation_Dte" />
+          <ScalarProperty Name="Anesthesia" ColumnName="Anesthesia" />
+          <ScalarProperty Name="Anaesthesiologist" ColumnName="Anaesthesiologist" />
+          <ScalarProperty Name="Opern_Procedure" ColumnName="Opern_Procedure" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Created_Dte" ColumnName="Created_Dte" />
+          <ScalarProperty Name="Modified_By" ColumnName="Modified_By" />
+          <ScalarProperty Name="Modified_Dte" ColumnName="Modified_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Param_Dtls">
+      <EntityTypeMapping TypeName="UROCareModel.Param_Dtls">
+        <MappingFragment StoreEntitySet="Param_Dtls">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Param_ID" ColumnName="Param_ID" />
+          <ScalarProperty Name="Param_Name" ColumnName="Param_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Param_Master">
+      <EntityTypeMapping TypeName="UROCareModel.Param_Master">
+        <MappingFragment StoreEntitySet="Param_Master">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Param_Id" ColumnName="Param_Id" />
+          <ScalarProperty Name="Param_Value" ColumnName="Param_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patient_Examination">
+      <EntityTypeMapping TypeName="UROCareModel.Patient_Examination">
+        <MappingFragment StoreEntitySet="Patient_Examination">
+          <ScalarProperty Name="Examination_ID" ColumnName="Examination_ID" />
+          <ScalarProperty Name="Patiend_ID" ColumnName="Patiend_ID" />
+          <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+          <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+          <ScalarProperty Name="G_E" ColumnName="G_E" />
+          <ScalarProperty Name="Pulse" ColumnName="Pulse" />
+          <ScalarProperty Name="BP" ColumnName="BP" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Abdomen" ColumnName="Abdomen" />
+          <ScalarProperty Name="Genitalia" ColumnName="Genitalia" />
+          <ScalarProperty Name="Anal_Tone" ColumnName="Anal_Tone" />
+          <ScalarProperty Name="BCR" ColumnName="BCR" />
+          <ScalarProperty Name="Prostate" ColumnName="Prostate" />
+          <ScalarProperty Name="PR_Others" ColumnName="PR_Others" />
+          <ScalarProperty Name="P_S" ColumnName="P_S" />
+          <ScalarProperty Name="P_V" ColumnName="P_V" />
+          <ScalarProperty Name="CNS" ColumnName="CNS" />
+          <ScalarProperty Name="CVS" ColumnName="CVS" />
+          <ScalarProperty Name="R_S" ColumnName="R_S" />
+          <ScalarProperty Name="Others" ColumnName="Others" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+          <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+          <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patient_Info">
+      <EntityTypeMapping TypeName="UROCareModel.Patient_Info">
+        <MappingFragment StoreEntitySet="Patient_Info">
+          <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+          <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+          <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+          <ScalarProperty Name="Reg_Date" ColumnName="Reg_Date" />
+          <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+          <ScalarProperty Name="Patient_Name" ColumnName="Patient_Name" />
+          <ScalarProperty Name="Age_Yr" ColumnName="Age_Yr" />
+          <ScalarProperty Name="Age_Mnth" ColumnName="Age_Mnth" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="DR_No" ColumnName="DR_No" />
+          <ScalarProperty Name="At_Post" ColumnName="At_Post" />
+          <ScalarProperty Name="Town" ColumnName="Town" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="OPD_Diagnosis" ColumnName="OPD_Diagnosis" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+          <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+          <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prescription_Template">
+      <EntityTypeMapping TypeName="UROCareModel.Prescription_Template">
+        <MappingFragment StoreEntitySet="Prescription_Template">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Template_Name" ColumnName="Template_Name" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Created_Dte" ColumnName="Created_Dte" />
+          <ScalarProperty Name="Modified_By" ColumnName="Modified_By" />
+          <ScalarProperty Name="Modified_Dte" ColumnName="Modified_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Treatement_Dtls">
+      <EntityTypeMapping TypeName="UROCareModel.Treatement_Dtls">
+        <MappingFragment StoreEntitySet="Treatement_Dtls">
+          <ScalarProperty Name="Treatment_ID" ColumnName="Treatment_ID" />
+          <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+          <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+          <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+          <ScalarProperty Name="SR_No" ColumnName="SR_No" />
+          <ScalarProperty Name="Treatment_Dte" ColumnName="Treatment_Dte" />
+          <ScalarProperty Name="Treatment_Given" ColumnName="Treatment_Given" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+          <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+          <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Treatment_Advised">
+      <EntityTypeMapping TypeName="UROCareModel.Treatment_Advised">
+        <MappingFragment StoreEntitySet="Treatment_Advised">
+          <ScalarProperty Name="Treatment_Advised_ID" ColumnName="Treatment_Advised_ID" />
+          <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+          <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+          <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+          <ScalarProperty Name="Treatment_Adv" ColumnName="Treatment_Adv" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+          <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+          <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UDS">
+      <EntityTypeMapping TypeName="UROCareModel.UD">
+        <MappingFragment StoreEntitySet="UDS">
+          <ScalarProperty Name="UDS_ID" ColumnName="UDS_ID" />
+          <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+          <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+          <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+          <ScalarProperty Name="Complaints" ColumnName="Complaints" />
+          <ScalarProperty Name="Assoc_Illness" ColumnName="Assoc_Illness" />
+          <ScalarProperty Name="Anal_Tone" ColumnName="Anal_Tone" />
+          <ScalarProperty Name="BCR" ColumnName="BCR" />
+          <ScalarProperty Name="Exam_Other" ColumnName="Exam_Other" />
+          <ScalarProperty Name="Peak_Flow_Rate" ColumnName="Peak_Flow_Rate" />
+          <ScalarProperty Name="Voided_Volume" ColumnName="Voided_Volume" />
+          <ScalarProperty Name="Residual_Volume" ColumnName="Residual_Volume" />
+          <ScalarProperty Name="Uroflow_Rmks" ColumnName="Uroflow_Rmks" />
+          <ScalarProperty Name="Filling_Rate" ColumnName="Filling_Rate" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="Compliance" ColumnName="Compliance" />
+          <ScalarProperty Name="Stability" ColumnName="Stability" />
+          <ScalarProperty Name="Sensation" ColumnName="Sensation" />
+          <ScalarProperty Name="DLPP" ColumnName="DLPP" />
+          <ScalarProperty Name="VLPP" ColumnName="VLPP" />
+          <ScalarProperty Name="Stress_Inc" ColumnName="Stress_Inc" />
+          <ScalarProperty Name="Fill_Other" ColumnName="Fill_Other" />
+          <ScalarProperty Name="Fill_Rmks" ColumnName="Fill_Rmks" />
+          <ScalarProperty Name="Detrusor_Press" ColumnName="Detrusor_Press" />
+          <ScalarProperty Name="VoidPhase_Flow_Rate" ColumnName="VoidPhase_Flow_Rate" />
+          <ScalarProperty Name="Sph_Activity" ColumnName="Sph_Activity" />
+          <ScalarProperty Name="Residual_Urine" ColumnName="Residual_Urine" />
+          <ScalarProperty Name="Void_Other" ColumnName="Void_Other" />
+          <ScalarProperty Name="Void_Rmks" ColumnName="Void_Rmks" />
+          <ScalarProperty Name="Conclusion" ColumnName="Conclusion" />
+          <ScalarProperty Name="Advise" ColumnName="Advise" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+          <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+          <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Urology_History">
+      <EntityTypeMapping TypeName="UROCareModel.Urology_History">
+        <MappingFragment StoreEntitySet="Urology_History">
+          <ScalarProperty Name="History_ID" ColumnName="History_ID" />
+          <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+          <ScalarProperty Name="Gu_No" ColumnName="Gu_No" />
+          <ScalarProperty Name="Gu_Year" ColumnName="Gu_Year" />
+          <ScalarProperty Name="Chief_Compl" ColumnName="Chief_Compl" />
+          <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+          <ScalarProperty Name="Hesitancy" ColumnName="Hesitancy" />
+          <ScalarProperty Name="Nocturia" ColumnName="Nocturia" />
+          <ScalarProperty Name="Poor_Stream" ColumnName="Poor_Stream" />
+          <ScalarProperty Name="Urgency" ColumnName="Urgency" />
+          <ScalarProperty Name="Intermittency" ColumnName="Intermittency" />
+          <ScalarProperty Name="Dysuria" ColumnName="Dysuria" />
+          <ScalarProperty Name="Straining" ColumnName="Straining" />
+          <ScalarProperty Name="Pyuria" ColumnName="Pyuria" />
+          <ScalarProperty Name="Sense_Incompl_Void" ColumnName="Sense_Incompl_Void" />
+          <ScalarProperty Name="Lithiuria" ColumnName="Lithiuria" />
+          <ScalarProperty Name="Terminal_Dribbling" ColumnName="Terminal_Dribbling" />
+          <ScalarProperty Name="Chyluria" ColumnName="Chyluria" />
+          <ScalarProperty Name="Urge_Inc" ColumnName="Urge_Inc" />
+          <ScalarProperty Name="Fever" ColumnName="Fever" />
+          <ScalarProperty Name="Stress_Inc" ColumnName="Stress_Inc" />
+          <ScalarProperty Name="IPSS" ColumnName="IPSS" />
+          <ScalarProperty Name="BPI" ColumnName="BPI" />
+          <ScalarProperty Name="Pain" ColumnName="Pain" />
+          <ScalarProperty Name="Others" ColumnName="Others" />
+          <ScalarProperty Name="Medication" ColumnName="Medication" />
+          <ScalarProperty Name="Personal" ColumnName="Personal" />
+          <ScalarProperty Name="Surgery" ColumnName="Surgery" />
+          <ScalarProperty Name="MH" ColumnName="MH" />
+          <ScalarProperty Name="Allergies" ColumnName="Allergies" />
+          <ScalarProperty Name="OB_GY" ColumnName="OB_GY" />
+          <ScalarProperty Name="Past" ColumnName="Past" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="Hematuria" ColumnName="Hematuria" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+          <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+          <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_Master">
+      <EntityTypeMapping TypeName="UROCareModel.User_Master">
+        <MappingFragment StoreEntitySet="User_Master">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_Pwd" ColumnName="User_Pwd" />
+          <ScalarProperty Name="Active_User" ColumnName="Active_User" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Create_Dte" ColumnName="Create_Dte" />
+          <ScalarProperty Name="Modify_By" ColumnName="Modify_By" />
+          <ScalarProperty Name="Modify_Dte" ColumnName="Modify_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XRayImages">
+      <EntityTypeMapping TypeName="UROCareModel.XRayImage">
+        <MappingFragment StoreEntitySet="XRayImages">
+          <ScalarProperty Name="Image_ID" ColumnName="Image_ID" />
+          <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+          <ScalarProperty Name="GU_No" ColumnName="GU_No" />
+          <ScalarProperty Name="GU_Year" ColumnName="GU_Year" />
+          <ScalarProperty Name="Sr_No" ColumnName="Sr_No" />
+          <ScalarProperty Name="Image_Type" ColumnName="Image_Type" />
+          <ScalarProperty Name="Image_Date" ColumnName="Image_Date" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Image_Captured" ColumnName="Image_Captured" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Created_Dte" ColumnName="Created_Dte" />
+          <ScalarProperty Name="Modified_By" ColumnName="Modified_By" />
+          <ScalarProperty Name="Modified_Dte" ColumnName="Modified_Dte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

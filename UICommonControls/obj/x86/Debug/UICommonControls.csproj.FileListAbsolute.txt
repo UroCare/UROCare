@@ -1,0 +1,14 @@
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCareOld\UICommonControls\bin\x86\Debug\CommonControls.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCareOld\UICommonControls\bin\x86\Debug\CommonControls.pdb
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCareOld\UICommonControls\obj\x86\Debug\SHCPL.CommonControls.SHCPLDatePicker.resources
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCareOld\UICommonControls\obj\x86\Debug\SHCPL.CommonControls.Strings.resources
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCareOld\UICommonControls\obj\x86\Debug\UICommonControls.csproj.GenerateResource.Cache
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCareOld\UICommonControls\obj\x86\Debug\CommonControls.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCareOld\UICommonControls\obj\x86\Debug\CommonControls.pdb
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UICommonControls\bin\x86\Debug\CommonControls.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UICommonControls\bin\x86\Debug\CommonControls.pdb
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UICommonControls\obj\x86\Debug\SHC.UROCare.UICommonControls.SHCPLDatePicker.resources
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UICommonControls\obj\x86\Debug\SHC.UROCare.UICommonControls.Strings.resources
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UICommonControls\obj\x86\Debug\UICommonControls.csproj.GenerateResource.Cache
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UICommonControls\obj\x86\Debug\CommonControls.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UICommonControls\obj\x86\Debug\CommonControls.pdb

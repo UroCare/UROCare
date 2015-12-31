@@ -1,0 +1,7 @@
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UIFramework\bin\x86\Debug\UIFramework.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UIFramework\bin\x86\Debug\UIFramework.pdb
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UIFramework\bin\x86\Debug\Utilities.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UIFramework\bin\x86\Debug\Utilities.pdb
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UIFramework\obj\x86\Debug\UIFramework.csprojResolveAssemblyReference.cache
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UIFramework\obj\x86\Debug\UIFramework.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UIFramework\obj\x86\Debug\UIFramework.pdb

@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3756BAF6-B0CA-4C81-AA1C-1B3EA99351CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SHC.UROCare.UI</RootNamespace>
+    <AssemblyName>UROCare</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>UROCare.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PureComponents.NicePanel.fw11">
+      <HintPath>..\ThirdParty\PureComponents\PureComponents.NicePanel.fw11.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUROCare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUROCare.designer.cs">
+      <DependentUpon>AboutUROCare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeUI\HomeNodeContext.cs" />
+    <Compile Include="HomeUI\HomeNodeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeUI\HomeNodeControl.Designer.cs">
+      <DependentUpon>HomeNodeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeUI\HomeNodeFactory.cs" />
+    <Compile Include="IPresenterBase.cs" />
+    <Compile Include="LettersUI\LetterNodeFactory.cs" />
+    <Compile Include="LettersUI\LettersNodeContext.cs" />
+    <Compile Include="LettersUI\LettersNodeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LettersUI\LettersNodeControl.Designer.cs">
+      <DependentUpon>LettersNodeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientsUI\AndrologyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\AndrologyControl.Designer.cs">
+      <DependentUpon>AndrologyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientsUI\IView.cs" />
+    <Compile Include="PatientsUI\PrescriptionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\PrescriptionControl.Designer.cs">
+      <DependentUpon>PrescriptionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientsUI\IAndrologyView.cs" />
+    <Compile Include="PatientsUI\IIPDView.cs" />
+    <Compile Include="PatientsUI\IPDControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\IPDControl.Designer.cs">
+      <DependentUpon>IPDControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientsUI\TreatmentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\TreatmentControl.Designer.cs">
+      <DependentUpon>TreatmentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientsUI\XRayControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\XRayControl.Designer.cs">
+      <DependentUpon>XRayControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientsUI\FollowupControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\FollowupControl.Designer.cs">
+      <DependentUpon>FollowupControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientsUI\IOperationView.cs" />
+    <Compile Include="PatientsUI\ITreatmentView.cs" />
+    <Compile Include="PatientsUI\IInvestigations.cs" />
+    <Compile Include="PatientsUI\InvestigationsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\InvestigationsControl.Designer.cs">
+      <DependentUpon>InvestigationsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientsUI\IUDSView.cs" />
+    <Compile Include="PatientsUI\UDSControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\UDSControl.Designer.cs">
+      <DependentUpon>UDSControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientsUI\IESWLView.cs" />
+    <Compile Include="PatientsUI\ESWLControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\ESWLControl.Designer.cs">
+      <DependentUpon>ESWLControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIPresenter\PatientInformationPresenter.cs" />
+    <Compile Include="UIPresenter\PatientNodePresenter.cs" />
+    <Compile Include="UIPresenter\UrologyHistoryPresenter.cs" />
+    <Compile Include="PatientsUI\IPatientExaminationView.cs" />
+    <Compile Include="PatientsUI\IPatientInformationView.cs" />
+    <Compile Include="PatientsUI\IPatientNodeView.cs" />
+    <Compile Include="PatientsUI\IUrologyHistoryView.cs" />
+    <Compile Include="PatientsUI\ChildControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\OperationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\OperationControl.Designer.cs">
+      <DependentUpon>OperationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientsUI\PatientContext.cs" />
+    <Compile Include="PatientsUI\PatientExaminationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\PatientExaminationControl.Designer.cs">
+      <DependentUpon>PatientExaminationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientsUI\PatientInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\PatientInformationControl.Designer.cs">
+      <DependentUpon>PatientInformationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientsUI\PatientNodeContext.cs" />
+    <Compile Include="PatientsUI\PatientNodeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\PatientNodeControl.Designer.cs">
+      <DependentUpon>PatientNodeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientsUI\PatientNodeFactory.cs" />
+    <Compile Include="PatientsUI\UrologyHistoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientsUI\UrologyHistoryControl.Designer.cs">
+      <DependentUpon>UrologyHistoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIPresenter\PatientExaminationPresenter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportsUI\ReportNodeContext.cs" />
+    <Compile Include="ReportsUI\ReportNodeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsUI\ReportNodeControl.Designer.cs">
+      <DependentUpon>ReportNodeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsUI\ReportNodeFactory.cs" />
+    <Compile Include="SetupUI\SetupNodeContext.cs" />
+    <Compile Include="SetupUI\SetupNodeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetupUI\SetupNodeControl.Designer.cs">
+      <DependentUpon>SetupNodeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupUI\SetupNodeFactory.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutUROCare.resx">
+      <DependentUpon>AboutUROCare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeUI\HomeNodeControl.resx">
+      <DependentUpon>HomeNodeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LettersUI\LettersNodeControl.resx">
+      <DependentUpon>LettersNodeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsUI\AndrologyControl.resx">
+      <DependentUpon>AndrologyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsUI\PrescriptionControl.resx">
+      <DependentUpon>PrescriptionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsUI\IPDControl.resx">
+      <DependentUpon>IPDControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsUI\TreatmentControl.resx">
+      <DependentUpon>TreatmentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsUI\XRayControl.resx">
+      <DependentUpon>XRayControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsUI\FollowupControl.resx">
+      <DependentUpon>FollowupControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsUI\InvestigationsControl.resx">
+      <DependentUpon>InvestigationsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsUI\UDSControl.resx">
+      <DependentUpon>UDSControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsUI\ESWLControl.resx">
+      <DependentUpon>ESWLControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsUI\OperationControl.resx">
+      <DependentUpon>OperationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsUI\PatientExaminationControl.resx">
+      <DependentUpon>PatientExaminationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsUI\PatientInformationControl.resx">
+      <DependentUpon>PatientInformationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsUI\PatientNodeControl.resx">
+      <DependentUpon>PatientNodeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsUI\UrologyHistoryControl.resx">
+      <DependentUpon>UrologyHistoryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportsUI\ReportNodeControl.resx">
+      <DependentUpon>ReportNodeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupUI\SetupNodeControl.resx">
+      <DependentUpon>SetupNodeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UICommonControls\UICommonControls.csproj">
+      <Project>{CA8DAED3-2151-46B8-BA11-F621851F8443}</Project>
+      <Name>UICommonControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UIFramework\UIFramework.csproj">
+      <Project>{7A057B7A-D3F7-4107-A745-F578678E3208}</Project>
+      <Name>UIFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UROCareBusinessObjects\UROCareBusinessObjects.csproj">
+      <Project>{55E244B6-28C7-46CA-9957-01EC832F7FA9}</Project>
+      <Name>UROCareBusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{864A9A45-4F2A-4F5D-BC22-92755C05C374}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Medical_Symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UroCare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UROCare.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UROCare1.png" />
+    <Content Include="UROCare.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,13 @@
+﻿<Window x:Class="SHCPL.WPFCommonControls.Gadgets.TodayAppointmentsSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TodayAppointmentsSettings" Height="300" Width="300" ShowInTaskbar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Today's Appointment" HorizontalAlignment="Center" FontSize="20" Background="Gray"/>
+        
+    </Grid>
+</Window>

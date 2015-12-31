@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="UroCare">
+</Property><Property Name="Solution File" Value="C:\UroCare\UroCare\UroCare.sln">
+</Property><Property Name="Date" Value="19 January 2012">
+</Property><Property Name="Time" Value="23:21:43">
+</Property></Properties><Event ErrorLevel="0" Project="WebCamSupport" Source="..\WebCamSupport\WebCamSupport.csproj" Description="Project file successfully backed up as C:\UroCare\UroCare\Backup\WebCamSupport.csproj">
+</Event><Event ErrorLevel="0" Project="WebCamSupport" Source="..\WebCamSupport\Form1.cs" Description="File successfully backed up as C:\UroCare\UroCare\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="WebCamSupport" Source="..\WebCamSupport\Form1.Designer.cs" Description="File successfully backed up as C:\UroCare\UroCare\Backup\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="WebCamSupport" Source="..\WebCamSupport\Helper.cs" Description="File successfully backed up as C:\UroCare\UroCare\Backup\Helper.cs">
+</Event><Event ErrorLevel="0" Project="WebCamSupport" Source="..\WebCamSupport\Program.cs" Description="File successfully backed up as C:\UroCare\UroCare\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="WebCamSupport" Source="..\WebCamSupport\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\UroCare\UroCare\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="WebCamSupport" Source="..\WebCamSupport\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\UroCare\UroCare\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="WebCamSupport" Source="..\WebCamSupport\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\UroCare\UroCare\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="WebCamSupport" Source="..\WebCamSupport\WebCam.cs" Description="File successfully backed up as C:\UroCare\UroCare\Backup\WebCam.cs">
+</Event><Event ErrorLevel="0" Project="WebCamSupport" Source="..\WebCamSupport\Properties\Settings.settings" Description="File successfully backed up as C:\UroCare\UroCare\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="WebCamSupport" Source="..\WebCamSupport\Form1.resx" Description="File successfully backed up as C:\UroCare\UroCare\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="WebCamSupport" Source="..\WebCamSupport\Properties\Resources.resx" Description="File successfully backed up as C:\UroCare\UroCare\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="WebCamSupport" Source="..\WebCamSupport\WebCamSupport.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WebCamSupport" Source="..\WebCamSupport\WebCamSupport.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WebCamSupport" Source="..\WebCamSupport\WebCamSupport.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

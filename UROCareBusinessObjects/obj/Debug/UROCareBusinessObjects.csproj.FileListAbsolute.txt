@@ -1,0 +1,14 @@
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\bin\Debug\UROCareBusinessObjects.dll.config
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\bin\Debug\UROCareBusinessObjects.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\bin\Debug\UROCareBusinessObjects.pdb
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\bin\Debug\EntityFramework.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\bin\Debug\UROCareDataModel.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\bin\Debug\Utilities.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\bin\Debug\UROCareDataModel.pdb
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\bin\Debug\Utilities.pdb
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\bin\Debug\EntityFramework.xml
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\obj\Debug\UROCareBusinessObjects.csprojResolveAssemblyReference.cache
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\obj\Debug\UROCareBusinessObjects.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\obj\Debug\UROCareBusinessObjects.pdb

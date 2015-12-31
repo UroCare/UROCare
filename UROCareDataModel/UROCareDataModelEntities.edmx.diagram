@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="52e68615376e4b48aaff8023da31e277" Name="Diagram1">
+        <EntityTypeShape EntityType="UROCareModel.Andrology" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.Doctors_List" Width="1.5" PointX="0.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.ESWL" Width="1.5" PointX="5.25" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.Follow_Up" Width="1.5" PointX="5.25" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.Investigation" Width="1.5" PointX="5.25" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.IPD" Width="1.5" PointX="5.25" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.Operation_Dtls" Width="1.5" PointX="8.25" PointY="40.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.Param_Dtls" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.Param_Master" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.Patient_Examination" Width="1.5" PointX="5.25" PointY="47.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.Patient_Info" Width="1.5" PointX="3" PointY="38.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.Prescription_Template" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.Treatement_Dtls" Width="1.5" PointX="5.25" PointY="54" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.Treatment_Advised" Width="1.5" PointX="5.25" PointY="58" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.UD" Width="1.5" PointX="5.25" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.Urology_History" Width="1.5" PointX="5.25" PointY="70.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.User_Master" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UROCareModel.XRayImage" Width="1.5" PointX="5.25" PointY="79.75" IsExpanded="true" />
+        <AssociationConnector Association="UROCareModel.FK_Andrology_Patient_Info1" ManuallyRouted="false" />
+        <AssociationConnector Association="UROCareModel.FK_Patient_Info_Doctors_List" ManuallyRouted="false" />
+        <AssociationConnector Association="UROCareModel.Operation_Dtls_Doctors_ListOperation_Dtls" ManuallyRouted="false" />
+        <AssociationConnector Association="UROCareModel.FK_ESWL_Patient_Info1" ManuallyRouted="false" />
+        <AssociationConnector Association="UROCareModel.FK_Follow_Up_Patient_Info" ManuallyRouted="false" />
+        <AssociationConnector Association="UROCareModel.FK_Investigation_Patient_Info1" ManuallyRouted="false" />
+        <AssociationConnector Association="UROCareModel.FK_IPD_Patient_Info1" ManuallyRouted="false" />
+        <AssociationConnector Association="UROCareModel.FK_Operation_Dtls_Patient_Info1" ManuallyRouted="false" />
+        <AssociationConnector Association="UROCareModel.FK_Patient_Examination_Patient_Info1" ManuallyRouted="false" />
+        <AssociationConnector Association="UROCareModel.FK_Treatement_Dtls_Patient_Info1" ManuallyRouted="false" />
+        <AssociationConnector Association="UROCareModel.FK_Treatment_Advised_Patient_Info1" ManuallyRouted="false" />
+        <AssociationConnector Association="UROCareModel.FK_UDS_Patient_Info1" ManuallyRouted="false" />
+        <AssociationConnector Association="UROCareModel.FK_Urology_History_Patient_Info1" ManuallyRouted="false" />
+        <AssociationConnector Association="UROCareModel.FK_XRayImages_Patient_Info" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

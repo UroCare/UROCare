@@ -13,7 +13,7 @@ namespace SHC.UROCare.UROCareDataModel
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class UROCareEntities : DbContext
+    public partial class UROCareEntities : DbContext,IUROCareEntities
     {
         public UROCareEntities()
             : base("name=UROCareEntities")

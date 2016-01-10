@@ -1,161 +1,181 @@
-﻿using System;
-using System.Collections;
+﻿ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data.Entity;
-using System.Data.Entity.Core.Objects;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
-using System.Text;
+using System.Linq.Expressions;
+using System.Threading;
 using System.Threading.Tasks;
-
-namespace TestCommon
-{
-
-    public partial class MockObjectSet<T> : IDbSet<T> where T : class
-    {
-        ObservableCollection<T> _data;
-        IQueryable _query;
-
-        public MockObjectSet()
-        {
-            _data = new ObservableCollection<T>();
-            _query = _data.AsQueryable();
-        }
-
-        public virtual T Find(params object[] keyValues)
-        {
-            throw new NotImplementedException("Derive from MockIbjectSet<T> and override Find");
-        }
-
-        public T Add(T item)
-        {
-            _data.Add(item);
-            return item;
-        }
-
-        public T Remove(T item)
-        {
-            _data.Remove(item);
-            return item;
-        }
-
-        public T Attach(T item)
-        {
-            _data.Add(item);
-            return item;
-        }
-
-        public T Detach(T item)
-        {
-            _data.Remove(item);
-            return item;
-        }
-
-        public T Create()
-        {
-            return Activator.CreateInstance<T>();
-        }
-
-        public TDerivedEntity Create<TDerivedEntity>() where TDerivedEntity : class, T
-        {
-            return Activator.CreateInstance<TDerivedEntity>();
-        }
-
-        public ObservableCollection<T> Local
-        {
-            get { return _data; }
-        }
-
-        Type IQueryable.ElementType
-        {
-            get { return _query.ElementType; }
-        }
-
-        System.Linq.Expressions.Expression IQueryable.Expression
-        {
-            get { return _query.Expression; }
-        }
-
-        IQueryProvider IQueryable.Provider
-        {
-            get { return _query.Provider; }
-        }
-
-        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
-        {
-            return _data.GetEnumerator();
-        }
-
-        IEnumerator<T> IEnumerable<T>.GetEnumerator()
-        {
-            return _data.GetEnumerator();
-        }
-    }
-}
-
-    //public partial class MockObjectSet<T> : IObjectSet<T> where T : class
-    //{
-    //    private readonly IList<T> collection = new List<T>();
-
-    //    #region IObjectSet<T> Members
-
-    //    public void AddObject(T entity)
-    //    {
-    //        collection.Add(entity);
-    //    }
-
-    //    public void Attach(T entity)
-    //    {
-    //        collection.Add(entity);
-    //    }
-
-    //    public void DeleteObject(T entity)
-    //    {
-    //        collection.Remove(entity);
-    //    }
-
-    //    public void Detach(T entity)
-    //    {
-    //        collection.Remove(entity);
-    //    }
-
-    //    #endregion
-
-    //    #region IEnumerable<T> Members
-
-    //    public IEnumerator<T> GetEnumerator()
-    //    {
-    //        return collection.GetEnumerator();
-    //    }
-
-    //    #endregion
-
-    //    #region IEnumerable Members
-
-    //    IEnumerator IEnumerable.GetEnumerator()
-    //    {
-    //        return collection.GetEnumerator();
-    //    }
-
-    //    #endregion
-
-    //    #region IQueryable<T> Members
-
-    //    public Type ElementType
-    //    {
-    //        get { return typeof(T); }
-    //    }
-
-    //    public System.Linq.Expressions.Expression Expression
-    //    {
-    //        get { return collection.AsQueryable<T>().Expression; }
-    //    }
-
-    //    public IQueryProvider Provider
-    //    {
-    //        get { return collection.AsQueryable<T>().Provider; }
-    //    }
-
-    //    #endregion
-    //}
+public class MockObjectSet<TEntity> : DbSet<TEntity>, IQueryable, IEnumerable<TEntity>, IDbAsyncEnumerable<TEntity> 
+        where TEntity : class 
+    { 
+        ObservableCollection<TEntity> _data; 
+        IQueryable _query; 
+ 
+        public MockObjectSet() 
+        { 
+            _data = new ObservableCollection<TEntity>(); 
+            _query = _data.AsQueryable(); 
+        } 
+ 
+        public override TEntity Add(TEntity item) 
+        { 
+            _data.Add(item); 
+            return item; 
+        } 
+ 
+        public override TEntity Remove(TEntity item) 
+        { 
+            _data.Remove(item); 
+            return item; 
+        } 
+ 
+        public override TEntity Attach(TEntity item) 
+        { 
+            _data.Add(item); 
+            return item; 
+        } 
+ 
+        public override TEntity Create() 
+        { 
+            return Activator.CreateInstance<TEntity>(); 
+        } 
+ 
+        public override TDerivedEntity Create<TDerivedEntity>() 
+        { 
+            return Activator.CreateInstance<TDerivedEntity>(); 
+        } 
+ 
+        public override ObservableCollection<TEntity> Local 
+        { 
+            get { return _data; } 
+        } 
+ 
+        Type IQueryable.ElementType 
+        { 
+            get { return _query.ElementType; } 
+        } 
+ 
+        Expression IQueryable.Expression 
+        { 
+            get { return _query.Expression; } 
+        } 
+ 
+        IQueryProvider IQueryable.Provider 
+        { 
+            get { return new TestDbAsyncQueryProvider<TEntity>(_query.Provider); } 
+        } 
+ 
+        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() 
+        { 
+            return _data.GetEnumerator(); 
+        } 
+ 
+        IEnumerator<TEntity> IEnumerable<TEntity>.GetEnumerator() 
+        { 
+            return _data.GetEnumerator(); 
+        } 
+ 
+        IDbAsyncEnumerator<TEntity> IDbAsyncEnumerable<TEntity>.GetAsyncEnumerator() 
+        { 
+            return new TestDbAsyncEnumerator<TEntity>(_data.GetEnumerator()); 
+        } 
+    } 
+ 
+    internal class TestDbAsyncQueryProvider<TEntity> : IDbAsyncQueryProvider 
+    { 
+        private readonly IQueryProvider _inner; 
+ 
+        internal TestDbAsyncQueryProvider(IQueryProvider inner) 
+        { 
+            _inner = inner; 
+        } 
+ 
+        public IQueryable CreateQuery(Expression expression) 
+        { 
+            return new TestDbAsyncEnumerable<TEntity>(expression); 
+        } 
+ 
+        public IQueryable<TElement> CreateQuery<TElement>(Expression expression) 
+        { 
+            return new TestDbAsyncEnumerable<TElement>(expression); 
+        } 
+ 
+        public object Execute(Expression expression) 
+        { 
+            return _inner.Execute(expression); 
+        } 
+ 
+        public TResult Execute<TResult>(Expression expression) 
+        { 
+            return _inner.Execute<TResult>(expression); 
+        } 
+ 
+        public Task<object> ExecuteAsync(Expression expression, CancellationToken cancellationToken) 
+        { 
+            return Task.FromResult(Execute(expression)); 
+        } 
+ 
+        public Task<TResult> ExecuteAsync<TResult>(Expression expression, CancellationToken cancellationToken) 
+        { 
+            return Task.FromResult(Execute<TResult>(expression)); 
+        } 
+    } 
+ 
+    internal class TestDbAsyncEnumerable<T> : EnumerableQuery<T>, IDbAsyncEnumerable<T>, IQueryable<T> 
+    { 
+        public TestDbAsyncEnumerable(IEnumerable<T> enumerable) 
+            : base(enumerable) 
+        { } 
+ 
+        public TestDbAsyncEnumerable(Expression expression) 
+            : base(expression) 
+        { } 
+ 
+        public IDbAsyncEnumerator<T> GetAsyncEnumerator() 
+        { 
+            return new TestDbAsyncEnumerator<T>(this.AsEnumerable().GetEnumerator()); 
+        } 
+ 
+        IDbAsyncEnumerator IDbAsyncEnumerable.GetAsyncEnumerator() 
+        { 
+            return GetAsyncEnumerator(); 
+        } 
+ 
+        IQueryProvider IQueryable.Provider 
+        { 
+            get { return new TestDbAsyncQueryProvider<T>(this); } 
+        } 
+    } 
+ 
+    internal class TestDbAsyncEnumerator<T> : IDbAsyncEnumerator<T> 
+    { 
+        private readonly IEnumerator<T> _inner; 
+ 
+        public TestDbAsyncEnumerator(IEnumerator<T> inner) 
+        { 
+            _inner = inner; 
+        } 
+ 
+        public void Dispose() 
+        { 
+            _inner.Dispose(); 
+        } 
+ 
+        public Task<bool> MoveNextAsync(CancellationToken cancellationToken) 
+        { 
+            return Task.FromResult(_inner.MoveNext()); 
+        } 
+ 
+        public T Current 
+        { 
+            get { return _inner.Current; } 
+        } 
+ 
+        object IDbAsyncEnumerator.Current 
+        { 
+            get { return Current; } 
+        } 
+    } 
 

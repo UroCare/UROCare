@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 
 namespace SHC.UROCare.UROCareBusinessObjects
@@ -13,10 +14,16 @@ namespace SHC.UROCare.UROCareBusinessObjects
 
         public static IUROCareEntities GetDataContext()
         {
-            dataContext = new UROCareEntities(); 
-            
+            dataContext = (IUROCareEntities)Thread.GetData(Thread.GetNamedDataSlot("dataContext"));
+            if (null == dataContext)
+            {
+                dataContext = new UROCareEntities();
+                Thread.SetData(Thread.GetNamedDataSlot("dataContext"),dataContext);
+            }
             return dataContext;
         }
+
+        
 
         public void SetTestDataContext(IUROCareEntities testDataContext)
         {

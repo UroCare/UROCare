@@ -21,7 +21,7 @@ namespace SHC.UROCare.URCareBusinessObjectsTest
         [TestInitialize]
         public void Setup()
         {
-            dataAccessLayer.SetTestDataContext(TestObjectFactory.GetMockedDataContext());
+            TestObjectFactory.SetFakedDataContext();
             dataContext = DataAccessLayer.GetDataContext();
         }
         #endregion
@@ -47,7 +47,7 @@ namespace SHC.UROCare.URCareBusinessObjectsTest
         [TestMethod]
         public void FillByIdGivenValidUserReturnsSameUser()
         {
-            dataContext.User_Master.AddObject(GetTestUser());
+            dataContext.User_Master.Add(GetTestUser());
             UserBO testUser = new UserBO();
             testUser.FillById("abc");
             Assert.AreEqual("abc", testUser.UserId);
@@ -57,7 +57,7 @@ namespace SHC.UROCare.URCareBusinessObjectsTest
         [ExpectedException(typeof(NoRecordFoundException))]
         public void FillByIdGivenUserIDDoNotExistsReturnsEmptyUser()
         {
-            dataContext.User_Master.AddObject(GetTestUser());
+            dataContext.User_Master.Add(GetTestUser());
             UserBO testUser = new UserBO();
             testUser.FillById("nilesh");
             Assert.IsNull(testUser.UserId);
@@ -66,7 +66,7 @@ namespace SHC.UROCare.URCareBusinessObjectsTest
         [TestMethod]
         public void IsExistsGivenInvalidUserIDReturnsFalse()
         {
-            dataContext.User_Master.AddObject(GetTestUser());
+            dataContext.User_Master.Add(GetTestUser());
             UserBO userBusinessObject = new UserBO();
             Assert.IsFalse(userBusinessObject.IsExists("nilesh"));
         }
@@ -76,7 +76,7 @@ namespace SHC.UROCare.URCareBusinessObjectsTest
         {
           
             IUROCareEntities dataContext = DataAccessLayer.GetDataContext();
-            dataContext.User_Master.AddObject(GetTestUser());
+            dataContext.User_Master.Add(GetTestUser());
 
             UserBO userBusinessObject = new UserBO();
             Assert.IsTrue(userBusinessObject.IsExists("abc"));

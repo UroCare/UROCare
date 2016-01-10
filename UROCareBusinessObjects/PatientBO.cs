@@ -154,13 +154,13 @@ namespace SHC.UROCare.UROCareBusinessObjects
             using (IUROCareEntities dataContext = DataAccessLayer.GetDataContext())
             {
                 
-                var restult = dataContext.Patient_Info.FirstOrDefault(patient => patient.Gu_No.Equals(guNo) && patient.Gu_Year.Equals(guYear));
+                var result = dataContext.Patient_Info.FirstOrDefault(patient => patient.Gu_No.Equals(guNo) && patient.Gu_Year.Equals(guYear));
                 
-                if (restult == null)
+                if (result == null)
                 {
                     ExceptionManager.Throw(new NoRecordFoundException());
                 }
-                MapDatabaseValueToObject(restult);
+                MapDatabaseValueToObject(result);
             }
         }
 

@@ -25,7 +25,7 @@ namespace SHC.UROCare.URCareBusinessObjectsTest
         [TestInitialize()]
          public void Setup()
          {
-             dataAccessLayer.SetTestDataContext(TestObjectFactory.GetMockedDataContext());
+             TestObjectFactory.SetFakedDataContext();
              dataContext = DataAccessLayer.GetDataContext();
          }
         
@@ -36,7 +36,7 @@ namespace SHC.UROCare.URCareBusinessObjectsTest
         [ExpectedException(typeof(NoRecordFoundException))]
         public void FillByGivenGuNoGUYearReturnsNoRecordException()
         {
-            dataContext.Patient_Info.AddObject(GetTestPatient());
+            dataContext.Patient_Info.Add(GetTestPatient());
             PatientBO patient = new PatientBO();
             patient.FillBy(0,2015);            
         }
@@ -44,7 +44,7 @@ namespace SHC.UROCare.URCareBusinessObjectsTest
         [TestMethod]
         public void FillByGivenGuNoGUYearReturnsPatientNotNull()
         {
-            dataContext.Patient_Info.AddObject(GetTestPatient());
+            dataContext.Patient_Info.Add(GetTestPatient());
             PatientBO patient = new PatientBO();
             patient.FillBy(1, 2015);
             Assert.IsNotNull(patient);

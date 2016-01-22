@@ -16,3 +16,14 @@ C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\MigrateData\bin\x86\
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\MigrateData\bin\x86\Debug\Utilities.pdb
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\MigrateData\obj\x86\Debug\MigrateData.exe
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\MigrateData\obj\x86\Debug\MigrateData.pdb
+C:\UROCare\UROCare\MigrateData\bin\x86\Debug\MigrateData.exe.config
+C:\UROCare\UROCare\MigrateData\bin\x86\Debug\MigrateData.exe
+C:\UROCare\UROCare\MigrateData\bin\x86\Debug\MigrateData.pdb
+C:\UROCare\UROCare\MigrateData\bin\x86\Debug\Utilities.dll
+C:\UROCare\UROCare\MigrateData\bin\x86\Debug\Utilities.pdb
+C:\UROCare\UROCare\MigrateData\obj\x86\Debug\MigrateData.csprojResolveAssemblyReference.cache
+C:\UROCare\UROCare\MigrateData\obj\x86\Debug\MigrateData.DataMigrationForm.resources
+C:\UROCare\UROCare\MigrateData\obj\x86\Debug\MigrateData.Strings.resources
+C:\UROCare\UROCare\MigrateData\obj\x86\Debug\MigrateData.csproj.GenerateResource.Cache
+C:\UROCare\UROCare\MigrateData\obj\x86\Debug\MigrateData.exe
+C:\UROCare\UROCare\MigrateData\obj\x86\Debug\MigrateData.pdb

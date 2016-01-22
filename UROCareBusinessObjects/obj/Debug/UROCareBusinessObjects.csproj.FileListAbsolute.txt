@@ -12,3 +12,17 @@ C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjec
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\obj\Debug\UROCareBusinessObjects.csprojResolveAssemblyReference.cache
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\obj\Debug\UROCareBusinessObjects.dll
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareBusinessObjects\obj\Debug\UROCareBusinessObjects.pdb
+C:\UROCare\UROCare\UROCareBusinessObjects\bin\Debug\UROCareBusinessObjects.dll.config
+C:\UROCare\UROCare\UROCareBusinessObjects\bin\Debug\UROCareBusinessObjects.dll
+C:\UROCare\UROCare\UROCareBusinessObjects\bin\Debug\UROCareBusinessObjects.pdb
+C:\UROCare\UROCare\UROCareBusinessObjects\bin\Debug\EntityFramework.dll
+C:\UROCare\UROCare\UROCareBusinessObjects\bin\Debug\EntityFramework.SqlServer.dll
+C:\UROCare\UROCare\UROCareBusinessObjects\bin\Debug\UROCareDataModel.dll
+C:\UROCare\UROCare\UROCareBusinessObjects\bin\Debug\Utilities.dll
+C:\UROCare\UROCare\UROCareBusinessObjects\bin\Debug\UROCareDataModel.pdb
+C:\UROCare\UROCare\UROCareBusinessObjects\bin\Debug\Utilities.pdb
+C:\UROCare\UROCare\UROCareBusinessObjects\bin\Debug\EntityFramework.xml
+C:\UROCare\UROCare\UROCareBusinessObjects\bin\Debug\EntityFramework.SqlServer.xml
+C:\UROCare\UROCare\UROCareBusinessObjects\obj\Debug\UROCareBusinessObjects.csprojResolveAssemblyReference.cache
+C:\UROCare\UROCare\UROCareBusinessObjects\obj\Debug\UROCareBusinessObjects.dll
+C:\UROCare\UROCare\UROCareBusinessObjects\obj\Debug\UROCareBusinessObjects.pdb

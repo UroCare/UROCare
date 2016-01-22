@@ -8,3 +8,13 @@ C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareDataModel\bin
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareDataModel\obj\Debug\UROCareDataModel.dll
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareDataModel\obj\Debug\UROCareDataModel.pdb
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UROCareDataModel\obj\Debug\UROCareDataModel.csprojResolveAssemblyReference.cache
+C:\UROCare\UROCare\UROCareDataModel\bin\Debug\UROCareDataModel.dll.config
+C:\UROCare\UROCare\UROCareDataModel\bin\Debug\UROCareDataModel.dll
+C:\UROCare\UROCare\UROCareDataModel\bin\Debug\UROCareDataModel.pdb
+C:\UROCare\UROCare\UROCareDataModel\bin\Debug\EntityFramework.dll
+C:\UROCare\UROCare\UROCareDataModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\UROCare\UROCare\UROCareDataModel\bin\Debug\EntityFramework.xml
+C:\UROCare\UROCare\UROCareDataModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\UROCare\UROCare\UROCareDataModel\obj\Debug\UROCareDataModel.csprojResolveAssemblyReference.cache
+C:\UROCare\UROCare\UROCareDataModel\obj\Debug\UROCareDataModel.dll
+C:\UROCare\UROCare\UROCareDataModel\obj\Debug\UROCareDataModel.pdb

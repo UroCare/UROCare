@@ -1,6 +1,7 @@
 ﻿using SHC.UROCare.UROCareDataModel;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -15,7 +16,7 @@ namespace SHC.UROCare.UROCareBusinessObjects
         public static IUROCareEntities GetDataContext()
         {
             dataContext = (IUROCareEntities)Thread.GetData(Thread.GetNamedDataSlot("dataContext"));
-            if (null == dataContext)
+            if (null == dataContext||dataContext.ObjectContext.Connection.State!=ConnectionState.Open)
             {
                 dataContext = new UROCareEntities();
                 Thread.SetData(Thread.GetNamedDataSlot("dataContext"),dataContext);

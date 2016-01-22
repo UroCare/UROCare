@@ -5,3 +5,11 @@ C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UICommonControls\obj
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UICommonControls\obj\Debug\UICommonControls.csproj.GenerateResource.Cache
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UICommonControls\obj\Debug\CommonControls.dll
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\UICommonControls\obj\Debug\CommonControls.pdb
+C:\UROCare\UROCare\UICommonControls\bin\Debug\CommonControls.dll
+C:\UROCare\UROCare\UICommonControls\bin\Debug\CommonControls.pdb
+C:\UROCare\UROCare\UICommonControls\obj\Debug\UICommonControls.csprojResolveAssemblyReference.cache
+C:\UROCare\UROCare\UICommonControls\obj\Debug\SHC.UROCare.UICommonControls.SHCPLDatePicker.resources
+C:\UROCare\UROCare\UICommonControls\obj\Debug\SHC.UROCare.UICommonControls.Strings.resources
+C:\UROCare\UROCare\UICommonControls\obj\Debug\UICommonControls.csproj.GenerateResource.Cache
+C:\UROCare\UROCare\UICommonControls\obj\Debug\CommonControls.dll
+C:\UROCare\UROCare\UICommonControls\obj\Debug\CommonControls.pdb

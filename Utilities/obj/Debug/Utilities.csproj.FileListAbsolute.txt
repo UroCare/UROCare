@@ -2,3 +2,8 @@ C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\Utilities\bin\Debug\
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\Utilities\bin\Debug\Utilities.pdb
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\Utilities\obj\Debug\Utilities.dll
 C:\Users\ns43550\Documents\NS43550\Projects\Current\UROCare\Utilities\obj\Debug\Utilities.pdb
+C:\UROCare\UROCare\Utilities\bin\Debug\Utilities.dll
+C:\UROCare\UROCare\Utilities\bin\Debug\Utilities.pdb
+C:\UROCare\UROCare\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache
+C:\UROCare\UROCare\Utilities\obj\Debug\Utilities.dll
+C:\UROCare\UROCare\Utilities\obj\Debug\Utilities.pdb

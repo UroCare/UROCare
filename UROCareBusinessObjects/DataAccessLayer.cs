@@ -16,7 +16,7 @@ namespace SHC.UROCare.UROCareBusinessObjects
         public static IUROCareEntities GetDataContext()
         {
             dataContext = (IUROCareEntities)Thread.GetData(Thread.GetNamedDataSlot("dataContext"));
-            if (null == dataContext||dataContext.ObjectContext.Connection.State!=ConnectionState.Open)
+           if (null == dataContext||(null!=dataContext.ObjectContext && dataContext.ObjectContext.Connection.State!=ConnectionState.Open))
             {
                 dataContext = new UROCareEntities();
                 Thread.SetData(Thread.GetNamedDataSlot("dataContext"),dataContext);

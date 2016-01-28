@@ -18,3 +18,13 @@ C:\UROCare\UROCare\UROCareDataModel\bin\Debug\EntityFramework.SqlServer.xml
 C:\UROCare\UROCare\UROCareDataModel\obj\Debug\UROCareDataModel.csprojResolveAssemblyReference.cache
 C:\UROCare\UROCare\UROCareDataModel\obj\Debug\UROCareDataModel.dll
 C:\UROCare\UROCare\UROCareDataModel\obj\Debug\UROCareDataModel.pdb
+C:\Users\ns43550\Documents\NS43550\Projects\Current\GIT Repository\UROCare\UROCareDataModel\bin\Debug\UROCareDataModel.dll.config
+C:\Users\ns43550\Documents\NS43550\Projects\Current\GIT Repository\UROCare\UROCareDataModel\bin\Debug\UROCareDataModel.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\GIT Repository\UROCare\UROCareDataModel\bin\Debug\UROCareDataModel.pdb
+C:\Users\ns43550\Documents\NS43550\Projects\Current\GIT Repository\UROCare\UROCareDataModel\bin\Debug\EntityFramework.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\GIT Repository\UROCare\UROCareDataModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\GIT Repository\UROCare\UROCareDataModel\bin\Debug\EntityFramework.xml
+C:\Users\ns43550\Documents\NS43550\Projects\Current\GIT Repository\UROCare\UROCareDataModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ns43550\Documents\NS43550\Projects\Current\GIT Repository\UROCare\UROCareDataModel\obj\Debug\UROCareDataModel.csprojResolveAssemblyReference.cache
+C:\Users\ns43550\Documents\NS43550\Projects\Current\GIT Repository\UROCare\UROCareDataModel\obj\Debug\UROCareDataModel.dll
+C:\Users\ns43550\Documents\NS43550\Projects\Current\GIT Repository\UROCare\UROCareDataModel\obj\Debug\UROCareDataModel.pdb

@@ -43,5 +43,6 @@ namespace SHC.UROCare.UROCareDataModel
         public DbSet<Urology_History> Urology_History { get; set; }
         public DbSet<User_Master> User_Master { get; set; }
         public DbSet<XRayImage> XRayImages { get; set; }
+
     }
 }

@@ -23,7 +23,7 @@ namespace SHC.UROCare.UROCareDataModel
         DbSet<Urology_History> Urology_History { get; set; }
         DbSet<User_Master> User_Master { get; set; }
         DbSet<XRayImage> XRayImages { get; set; }
-
+        bool IsDisposed { get; set; }
         int SaveChanges();
     }
 }

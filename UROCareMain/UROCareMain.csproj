@@ -349,6 +349,10 @@
       <Project>{55E244B6-28C7-46CA-9957-01EC832F7FA9}</Project>
       <Name>UROCareBusinessObjects</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UROCareDataModel\UROCareDataModel.csproj">
+      <Project>{324ae1ef-f415-4e55-8e45-b4ac11e1ac36}</Project>
+      <Name>UROCareDataModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Utilities\Utilities.csproj">
       <Project>{864A9A45-4F2A-4F5D-BC22-92755C05C374}</Project>
       <Name>Utilities</Name>

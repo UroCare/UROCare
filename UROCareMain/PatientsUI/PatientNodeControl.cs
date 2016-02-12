@@ -101,9 +101,8 @@ namespace SHC.UROCare.UI
             {
                 controlToAdd = methodToGetControl();
                 _childControls.Add(key, controlToAdd);
-                
-                string[] guNumber = _guNumber.Split('/');
-                controlToAdd.PopulateControl(Convert.ToInt32(guNumber[0]), Convert.ToInt32(guNumber[1]));                
+
+                controlToAdd.PopulateControl(GetSelectedPatient());                
             }           
             if (_parentContainerPanel.Controls.Count > 0 && !(_parentContainerPanel.Controls[0] == controlToAdd))
             {
@@ -127,8 +126,8 @@ namespace SHC.UROCare.UI
             foreach (var patient in patientList)
             {
                 ListViewItem item = new ListViewItem(patient.GUId);
-                item.ToolTipText = string.Format("{0}\n{1}", patient.AtPost, patient.Town);
-                item.SubItems.Add(string.Format("{0} {1}", patient.Salutation, patient.PatientName));
+                item.ToolTipText = string.Format("{0} {1}Y {2}M\n{3}\n{4}", patient.Sex,patient.AgeYear,patient.AgeMonths, patient.AtPost, patient.Town);
+                item.SubItems.Add(string.Format("{0} {1}", patient.Salutation, patient.PatientName));                
                 item.Tag = patient;
                 _patientsList.Items.Add(item);
             }
@@ -140,13 +139,26 @@ namespace SHC.UROCare.UI
         /// </summary>
         private void LoadPatientInfoControl()
         {
-            string[] guNumber = GUNumber.Split('/');
-
             foreach (KeyValuePair<string, ChildControl> keyValuePair in _childControls)
-            {                
-                keyValuePair.Value.PopulateControl(Convert.ToInt32(guNumber[0]), Convert.ToInt32(guNumber[1]));
+            {
+                keyValuePair.Value.PopulateControl(GetSelectedPatient());
             }
             AddControlToParentContainerPanel("PatientInfo", () => new PatientInformationControl());
+        }
+
+        /// <summary>
+        /// Get selected patient object.
+        /// </summary>
+        /// <returns></returns>
+        private PatientBO GetSelectedPatient()
+        {
+            PatientBO selectedPatient = new PatientBO();
+            if(_patientsList.SelectedItems.Count != 0)
+            {
+                selectedPatient = _patientsList.SelectedItems[0].Tag as PatientBO;
+            }
+
+            return selectedPatient;
         }
 
         #endregion
@@ -171,11 +183,6 @@ namespace SHC.UROCare.UI
         /// <param name="e">Event argument</param>
         private void PatientSelectionChange(object sender, EventArgs e)
         {
-            if (_patientsList.SelectedItems.Count == 0)
-            {
-                return;
-            }
-            GUNumber = _patientsList.SelectedItems[0].Text;
             LoadPatientInfoControl();
         }
 
@@ -329,6 +336,7 @@ namespace SHC.UROCare.UI
         private void ListButtonClicked(object sender, EventArgs e)
         {
             FillPatientList();
+            NewToolButtonClick(sender, e);
         }
 
         #endregion     

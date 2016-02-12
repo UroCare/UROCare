@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using SHC.UROCare.UROCareDataModel;
 using System.Threading;
 
-namespace SHC.UROCare.URCareBusinessObjectsTest
+namespace SHC.UROCare.TestObjects
 {
     public class TestObjectFactory
     {

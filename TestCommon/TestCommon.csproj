@@ -57,6 +57,7 @@
     <Compile Include="MockObjectSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestObjectFactory.cs" />
+    <Compile Include="TestDataModelObjects.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

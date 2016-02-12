@@ -7,7 +7,7 @@ using SHC.UROCare.UROCareBusinessObjects;
 using SHC.UROCare.UROCareDataModel;
 using SHC.UROCare.Utilities;
 
-namespace SHC.UROCare.URCareBusinessObjectsTest
+namespace SHC.UROCare.TestObjects
 {
     [TestClass]
     public class UserBOTests

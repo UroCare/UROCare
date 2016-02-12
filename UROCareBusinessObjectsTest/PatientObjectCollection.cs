@@ -4,14 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace SHC.UROCare.URCareBusinessObjectsTest
+namespace SHC.UROCare.TestObjects
 {
     [TestClass]
     public class PatientObjectCollection
     {
-        [TestMethod]
-        public void TestMethod1()
-        {
-        }
+      
     }
 }

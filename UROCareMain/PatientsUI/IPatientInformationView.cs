@@ -85,7 +85,11 @@ namespace SHC.UROCare.UI
         /// </summary>
         string Phone { get; set; }
 
+        /// <summary>
+        /// Get or set OPDDiagnosis
+        /// </summary>
         string OPDDiagnosis { get; set; }
+
         /// <summary>
         /// Gets or sets Saluation of the patient.
         /// </summary>

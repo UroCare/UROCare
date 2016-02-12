@@ -12,7 +12,7 @@ namespace SHC.UROCare.UI
 
         private readonly PatientBO _patient;
         private readonly IPatientInformationView _patientHeaderView;
-
+        
         #endregion
 
         #region Constructors
@@ -74,7 +74,8 @@ namespace SHC.UROCare.UI
             _patientHeaderView.Phone = _patient.PhoneNumber;
             _patientHeaderView.Mobile = _patient.Mobile;
             _patientHeaderView.Ocupation = _patient.Occupation;
-            _patientHeaderView.ReferalDoctor = _patient.ReferenceDoctor;           
+            _patientHeaderView.ReferalDoctor = _patient.ReferenceDoctor.DoctorName;
+            _patientHeaderView.OPDDiagnosis = _patient.OPDDiagnosis;
         }
 
         /// <summary>
@@ -136,9 +137,53 @@ namespace SHC.UROCare.UI
         public void InitializeView()
         {
             _patientHeaderView.SexCombo = Sexes;
-            InitializePatientInformation();
+            InitializePatientInformation();            
         }
 
+        /// <summary>
+        /// Populates data
+        /// </summary>
+        /// <param name="patient">Patient to populate</param>
+        public void PopulateData(PatientBO patient)
+        {
+            if (patient.GUNo == 0)
+            {
+                InitializeView();
+            }
+            else
+            {
+                _patient.Copy(patient);
+                InitViewFromModel();
+            }            
+        }
+
+        /// <summary>
+        /// Clears Control Value
+        /// </summary>
+        public void ClearControls()
+        {
+        
+        }
+
+        /// <summary>
+        /// Get referal doctors list
+        /// </summary>
+        /// <returns>List of doctors business objects</returns>
+        public DoctorsListObjectCollection GetReferalDoctorsList()
+        {
+            DoctorsListObjectCollection doctorsListCollection = new DoctorsListObjectCollection();
+            doctorsListCollection.Clear();
+            doctorsListCollection.Fill();
+            return doctorsListCollection;
+        }
+
+        #endregion       
+
+        #region Private Methods
+
+        /// <summary>
+        /// Initializes control
+        /// </summary>
         private void InitializePatientInformation()
         {
             _patientHeaderView.Salutation = "Mr";
@@ -155,26 +200,9 @@ namespace SHC.UROCare.UI
             _patientHeaderView.Phone = string.Empty;
             _patientHeaderView.ReferalDoctor = string.Empty;
             _patientHeaderView.State = string.Empty;
-            _patientHeaderView.Town = string.Empty;            
+            _patientHeaderView.Town = string.Empty;
         }
-
-        public void PopulateData(int guNumber, int guYear)
-        {
-            if (guNumber == 0)
-            {
-                InitializeView();
-            }
-            else
-            {
-                _patient.FillBy(guNumber, guYear);
-                InitViewFromModel();
-            }            
-        }
-
-        public void ClearControls()
-        {
-        
-        }
-        #endregion       
+     
+        #endregion
     }
 }

@@ -7,7 +7,7 @@ using SHC.UROCare.UROCareBusinessObjects;
 using SHC.UROCare.UROCareDataModel;
 using SHC.UROCare.Utilities;
 
-namespace SHC.UROCare.URCareBusinessObjectsTest
+namespace SHC.UROCare.TestObjects
 {
     /// <summary>
     /// test method for Patient business object
@@ -36,7 +36,7 @@ namespace SHC.UROCare.URCareBusinessObjectsTest
         [ExpectedException(typeof(NoRecordFoundException))]
         public void FillByGivenGuNoGUYearReturnsNoRecordException()
         {
-            dataContext.Patient_Info.Add(GetTestPatient());
+            dataContext.Patient_Info.Add(TestDataModelObjects.GetTestPatient());
             PatientBO patient = new PatientBO();
             patient.FillBy(0,2015);            
         }
@@ -44,7 +44,7 @@ namespace SHC.UROCare.URCareBusinessObjectsTest
         [TestMethod]
         public void FillByGivenGuNoGUYearReturnsPatientNotNull()
         {
-            dataContext.Patient_Info.Add(GetTestPatient());
+            dataContext.Patient_Info.Add(TestDataModelObjects.GetTestPatient());
             PatientBO patient = new PatientBO();
             patient.FillBy(1, 2015);
             Assert.IsNotNull(patient);
@@ -54,7 +54,7 @@ namespace SHC.UROCare.URCareBusinessObjectsTest
         public void MapDatabaseValueToObjectGivenPatientInfoObjectMapsValueCorrectly()
         {
             PatientBO resultData = new PatientBO();
-            Patient_Info actualData = GetTestPatient();
+            Patient_Info actualData = TestDataModelObjects.GetTestPatient();
             resultData.MapDatabaseValueToObject(actualData);
             Assert.AreEqual(actualData.Gu_No, resultData.GUNo);
             Assert.AreEqual(actualData.Gu_Year, resultData.GUYear);
@@ -70,38 +70,44 @@ namespace SHC.UROCare.URCareBusinessObjectsTest
             Assert.AreEqual(actualData.Age_Mnth, resultData.AgeMonths);
             Assert.AreEqual((SexEnum)actualData.Sex, resultData.Sex);
             Assert.AreEqual(actualData.Occupation, resultData.Occupation);
+            Assert.AreEqual(actualData.Doctors_List.ID, resultData.ReferenceDoctor.DoctorId);
 
+            Assert.AreEqual(actualData.Create_Dte, resultData.CreatedDate);
+            Assert.AreEqual(actualData.Created_By, resultData.CreatedBy);
+            Assert.AreEqual(actualData.Modify_By, resultData.ModifiedBy);
+            Assert.AreEqual(actualData.Modify_Dte, resultData.ModifiedDate);
 
         }
 
-        #endregion 
-
-        #region Private Methods
-
-        /// <summary>
-        /// Get test patient
-        /// </summary>
-        /// <returns>Returns patient info object</returns>
-        private Patient_Info GetTestPatient()
+        [TestMethod]
+        public void CopyGivenPatientInfoToOtherObjectSuccessfully()
         {
-            Patient_Info testPatient = new Patient_Info();
-            testPatient.Gu_No = 1;
-            testPatient.Gu_Year = 2015;
-            testPatient.Salutation = "Mr";
-            testPatient.Patient_Name = "nilesh";
-            testPatient.At_Post = "Atul Nagar";
-            testPatient.Town = "Pune";
-            testPatient.District ="Pune";
-            testPatient.State = "Maharashtra";
-            testPatient.Phone = "66425646";
-            testPatient.Mobile = "9881230729";
-            testPatient.Age_Yr = 33;
-            testPatient.Age_Mnth = 11;
-            testPatient.Sex = 0;
-            testPatient.Occupation= "service";
-            testPatient.Doctors_List = new Doctors_List();
+            PatientBO originalData = new PatientBO();
+            PatientBO resultObject = new PatientBO();
+            originalData.MapDatabaseValueToObject(TestDataModelObjects.GetTestPatient());
+            resultObject.Copy(originalData);
 
-            return testPatient;
+            Assert.AreEqual(originalData.GUNo, resultObject.GUNo);
+            Assert.AreEqual(originalData.GUYear, resultObject.GUYear);
+            Assert.AreEqual(originalData.Salutation, resultObject.Salutation);
+            Assert.AreEqual(originalData.PatientName, resultObject.PatientName);
+            Assert.AreEqual(originalData.AtPost, resultObject.AtPost);
+            Assert.AreEqual(originalData.Town, resultObject.Town);
+            Assert.AreEqual(originalData.District, resultObject.District);
+            Assert.AreEqual(originalData.State, resultObject.State);
+            Assert.AreEqual(originalData.PhoneNumber, resultObject.PhoneNumber);
+            Assert.AreEqual(originalData.Mobile, resultObject.Mobile);
+            Assert.AreEqual(originalData.AgeYear, resultObject.AgeYear);
+            Assert.AreEqual(originalData.AgeMonths, resultObject.AgeMonths);
+            Assert.AreEqual(originalData.Sex, resultObject.Sex);
+            Assert.AreEqual(originalData.Occupation, resultObject.Occupation);
+            Assert.AreEqual(originalData.ReferenceDoctor.DoctorId, resultObject.ReferenceDoctor.DoctorId);
+
+            Assert.AreEqual(originalData.CreatedBy, resultObject.CreatedBy);
+            Assert.AreEqual(originalData.CreatedDate, resultObject.CreatedDate);
+            Assert.AreEqual(originalData.ModifiedBy, resultObject.ModifiedBy);
+            Assert.AreEqual(originalData.ModifiedDate, resultObject.ModifiedDate);
+
         }
 
         #endregion        

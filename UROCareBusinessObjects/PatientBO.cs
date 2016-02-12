@@ -22,6 +22,12 @@ namespace SHC.UROCare.UROCareBusinessObjects
     /// </summary>
     public class PatientBO : IPersistable<Patient_Info>
     {
+        #region Private Members
+        
+        DoctorsListBO _referenceDoctor = new DoctorsListBO();
+
+        #endregion
+
         #region Public properties.
 
         /// <summary>
@@ -83,8 +89,18 @@ namespace SHC.UROCare.UROCareBusinessObjects
         /// <summary>
         ///   Gets or sets the doctor who referred this patient.
         /// </summary>
-        public string ReferenceDoctor { get; set; }
-
+        public DoctorsListBO ReferenceDoctor 
+        { 
+            get
+            {
+                return _referenceDoctor;
+            }
+            set
+            {
+                _referenceDoctor = value;
+            }
+        }
+        
         /// <summary>
         /// Gets or sets at post information of patient. 
         /// </summary>
@@ -164,20 +180,67 @@ namespace SHC.UROCare.UROCareBusinessObjects
             }
         }
 
+        /// <summary>
+        /// Copies value from patient buisness object.
+        /// </summary>
+        /// <param name="patientCopy">Patient object to copy</param>
+        public void Copy(PatientBO patientCopy )
+        {
+            if (this.Equals(patientCopy))
+            {
+                return;
+            }
+            this.GUNo = patientCopy.GUNo;
+            this.GUYear = patientCopy.GUYear;
+            this.RegistrationDate = patientCopy.RegistrationDate;
+            this.Salutation = patientCopy.Salutation;
+            this.PatientName = patientCopy.PatientName;
+            this.AgeYear = patientCopy.AgeYear;
+            this.AgeMonths = patientCopy.AgeMonths;
+            this.Sex = patientCopy.Sex;
+            this.Occupation = patientCopy.Occupation;
+            this.ReferenceDoctor = patientCopy.ReferenceDoctor;
+            this.AtPost = patientCopy.AtPost;
+            this.Town = patientCopy.Town;
+            this.District = patientCopy.District;
+            this.State = patientCopy.State;
+            this.PhoneNumber = patientCopy.PhoneNumber;
+            this.Mobile = patientCopy.Mobile;
+            this.OPDDiagnosis = patientCopy.OPDDiagnosis;
+
+            this.CreatedBy = patientCopy.CreatedBy;
+            this.CreatedDate = patientCopy.CreatedDate;
+            this.ModifiedBy = patientCopy.ModifiedBy;
+            this.ModifiedDate = patientCopy.ModifiedDate;           
+        }
+
         #endregion
 
         #region IPersistable Imlementation
 
+        /// <summary>
+        /// Map values from busiess object to data base entity
+        /// </summary>
+        /// <param name="databaseObject">Database object</param>
         public void MapFromObjectToDatabaseEntity(Patient_Info databaseObject)
         {
 
         }
 
+        /// <summary>
+        /// Save object
+        /// </summary>
+        /// <param name="dataContext">Data context</param>
+        /// <returns>Count of record saved</returns>
         public int Save(IUROCareEntities dataContext)
         {
             return 0;
         }
 
+        /// <summary>
+        /// Save
+        /// </summary>
+        /// <returns>Count of record saved</returns>
         public int Save()
         {
             int result = -1;
@@ -189,6 +252,10 @@ namespace SHC.UROCare.UROCareBusinessObjects
             return result;
         }
 
+        /// <summary>
+        /// Maps database values to business object
+        /// </summary>
+        /// <param name="databaseObject">DB object</param>
         public void MapDatabaseValueToObject(Patient_Info databaseObject)
         {
             this.GUNo = databaseObject.Gu_No;
@@ -200,20 +267,36 @@ namespace SHC.UROCare.UROCareBusinessObjects
             this.AgeMonths = databaseObject.Age_Mnth.GetValueOrDefault(0);
             this.Sex = (SexEnum)databaseObject.Sex;
             this.Occupation = databaseObject.Occupation;
-            this.ReferenceDoctor = (databaseObject.Doctors_List!=null)?databaseObject.Doctors_List.Doctor_Name:string.Empty;
             this.AtPost = databaseObject.At_Post;
             this.Town = databaseObject.Town;
             this.District = databaseObject.District;
             this.State = databaseObject.State;
             this.PhoneNumber = databaseObject.Phone;
             this.Mobile = databaseObject.Mobile;
-            this.OPDDiagnosis = databaseObject.OPD_Diagnosis;            
+            this.OPDDiagnosis = databaseObject.OPD_Diagnosis;
+
+            this.ReferenceDoctor = GetReferenceDoctor(databaseObject.Doctors_List);
 
             this.CreatedBy = databaseObject.Created_By;
             this.CreatedDate = databaseObject.Create_Dte;
             this.ModifiedBy = databaseObject.Modify_By;
             this.ModifiedDate = databaseObject.Modify_Dte;           
         }    
+
+        #endregion
+
+        #region Private Methods
+
+        /// <summary>
+        /// Get reference doctors business object
+        /// </summary>
+        /// <returns>ReferenceDoctor</returns>
+        private DoctorsListBO GetReferenceDoctor(Doctors_List doctor)
+        {
+            DoctorsListBO referenceDoctor = new DoctorsListBO();
+            referenceDoctor.MapDatabaseValueToObject(doctor);
+            return referenceDoctor;
+        }
 
         #endregion
     }

@@ -326,7 +326,16 @@ namespace SHC.UROCare.UI
         private void InitializeControl()
         {
             _registrationDate.Focus();
+            InitializeReferalDoctorsList();
             _patientInformationPresenter.InitializeView();
+
+        }
+
+        /// <summary>
+        /// Initialized referal doctors list.
+        /// </summary>
+        private void InitializeReferalDoctorsList()
+        {
 
         }
 
@@ -351,11 +360,10 @@ namespace SHC.UROCare.UI
         /// <summary>
         /// Populates patient information control
         /// </summary>
-        /// <param name="guNo">GU No</param>
-        /// <param name="guYear">GU Year</param>
-        public override void PopulateControl(int guNo, int guYear)
+        /// <param name="patient">Patient</param>
+        public override void PopulateControl(PatientBO patient)
         {
-            _patientInformationPresenter.PopulateData(guNo, guYear);
+            _patientInformationPresenter.PopulateData(patient);
         }
 
         #endregion

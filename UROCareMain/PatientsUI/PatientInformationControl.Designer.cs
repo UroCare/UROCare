@@ -221,8 +221,8 @@
             // 
             // _ipdDiagnosis
             // 
-            this._ipdDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this._ipdDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._ipdDiagnosis.Location = new System.Drawing.Point(101, 54);
             this._ipdDiagnosis.MaxLength = 150;
             this._ipdDiagnosis.Multiline = true;
@@ -277,38 +277,6 @@
             this._referalDoctorComboBox.DefaultText = "Please select one...";
             this._referalDoctorComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._referalDoctorComboBox.FormattingEnabled = true;
-            this._referalDoctorComboBox.Items.AddRange(new object[] {
-            "Andhra Pradesh",
-            "Arunachal Pradesh",
-            "Assam",
-            "Bihar",
-            "Chattishgarh",
-            "Goa",
-            "Gujrat",
-            "Haryana",
-            "Himachal Pradesh",
-            "Jammu & Kashmir",
-            "Jharkhand",
-            "Karnataka",
-            "Kerala",
-            "Madhya Pradesh",
-            "Maharashtra",
-            "Manipur",
-            "Meghalaya",
-            "Mizoram",
-            "Nagaland",
-            "Odisha",
-            "Punjab",
-            "Rajasthan",
-            "Sikkim",
-            "Tamil Nadu",
-            "Telangana",
-            "Tripura",
-            "Uttar Pradesh",
-            "Uttarakhand",
-            "West Bangal",
-            "",
-            ""});
             this._referalDoctorComboBox.LimitToList = true;
             this._referalDoctorComboBox.Location = new System.Drawing.Point(93, 120);
             this._referalDoctorComboBox.Name = "_referalDoctorComboBox";
@@ -343,8 +311,8 @@
             // 
             // _monthsLabel
             // 
-            this._monthsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this._monthsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._monthsLabel.AutoSize = true;
             this._monthsLabel.Location = new System.Drawing.Point(258, 31);
             this._monthsLabel.Name = "_monthsLabel";
@@ -362,8 +330,8 @@
             // 
             // _yearLabel
             // 
-            this._yearLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this._yearLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._yearLabel.AutoSize = true;
             this._yearLabel.Location = new System.Drawing.Point(141, 31);
             this._yearLabel.Name = "_yearLabel";
@@ -419,8 +387,8 @@
             // 
             // _opdDiagnosis
             // 
-            this._opdDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this._opdDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._opdDiagnosis.Location = new System.Drawing.Point(101, 19);
             this._opdDiagnosis.MaxLength = 150;
             this._opdDiagnosis.Multiline = true;

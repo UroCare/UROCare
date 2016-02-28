@@ -58,8 +58,9 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoctorsListObjectCollectionTests.cs" />
     <Compile Include="PatientBOTests.cs" />
-    <Compile Include="PatientObjectCollection.cs" />
+    <Compile Include="PatientObjectCollectionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DoctorsListBOTests.cs" />
     <Compile Include="UserBOTests.cs">

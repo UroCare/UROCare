@@ -44,18 +44,21 @@ namespace SHC.UROCare.TestObjects
         [TestMethod]
         public void FillByGivenGuNoGUYearReturnsPatientNotNull()
         {
-            dataContext.Patient_Info.Add(TestDataModelObjects.GetTestPatient());
+            Patient_Info dbPatient = TestDataModelObjects.GetTestPatient();
+            dataContext.Patient_Info.Add(dbPatient);
             PatientBO patient = new PatientBO();
-            patient.FillBy(1, 2015);
+            patient.FillBy(dbPatient.Gu_No, dbPatient.Gu_Year);
             Assert.IsNotNull(patient);
         }
 
         [TestMethod]
         public void MapDatabaseValueToObjectGivenPatientInfoObjectMapsValueCorrectly()
         {
-            PatientBO resultData = new PatientBO();
             Patient_Info actualData = TestDataModelObjects.GetTestPatient();
+
+            PatientBO resultData = new PatientBO();            
             resultData.MapDatabaseValueToObject(actualData);
+
             Assert.AreEqual(actualData.Gu_No, resultData.GUNo);
             Assert.AreEqual(actualData.Gu_Year, resultData.GUYear);
             Assert.AreEqual(actualData.Salutation, resultData.Salutation);
@@ -83,8 +86,9 @@ namespace SHC.UROCare.TestObjects
         public void CopyGivenPatientInfoToOtherObjectSuccessfully()
         {
             PatientBO originalData = new PatientBO();
-            PatientBO resultObject = new PatientBO();
             originalData.MapDatabaseValueToObject(TestDataModelObjects.GetTestPatient());
+
+            PatientBO resultObject = new PatientBO();            
             resultObject.Copy(originalData);
 
             Assert.AreEqual(originalData.GUNo, resultObject.GUNo);

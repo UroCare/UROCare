@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using SHC.UROCare.UIFramework;
 using SHC.UROCare.UROCareBusinessObjects;
+using SHC.UROCare.UICommonControls;
 
 namespace SHC.UROCare.UI
 {
@@ -260,15 +261,15 @@ namespace SHC.UROCare.UI
         /// <summary>
         /// Gets or sets Referal doctor.
         /// </summary>
-        public string ReferalDoctor
+        public DoctorsListBO ReferalDoctor
         {
             get
             {
-                return _referalDoctorComboBox.SelectedValue.ToString();
+                return (_referalDoctorComboBox.SelectedItem as ComboBoxItem).Value as DoctorsListBO;
             }
             set
             {
-                _referalDoctorComboBox.SelectedItem = value;
+                _referalDoctorComboBox.SelectedItem = GetSelectedReferalDoctor(value); 
             }
         }
 
@@ -286,57 +287,27 @@ namespace SHC.UROCare.UI
                 _opdDiagnosis.Text = value;
             }
         }
-                
+         
+        /// <summary>
+        /// Sets sex combo box
+        /// </summary>
         public List<SexEnum> SexCombo
         {
-            //get
-            //{
-            //    return _sexComboBox.DataSource as List<SexEnum>;
-            //}
             set
             {
                 _sexComboBox.DataSource = value;
             }
         }
 
-        #endregion
-
-        #region Public Methods
-
-        
-        #endregion
-     
-        #region Private methods
-
         /// <summary>
-        /// Process recommended colors
+        /// Sets referal doctors comb box
         /// </summary>
-        private void ProcessRecommendedColors()
+        public List<ComboBoxItem> ReferalDoctorList
         {
-            RecommendedColors colors = UIFrameWorkClass.Instance.GetRecommendedColors();
-            BackColor = colors.BackColor;
-            _mainPanel.BackColor = BackColor;
-            _registrationDetails.BackColor = BackColor;
-            _contactGroup.BackColor = BackColor;
-        }
-
-        /// <summary>
-        /// Initialize controls
-        /// </summary>
-        private void InitializeControl()
-        {
-            _registrationDate.Focus();
-            InitializeReferalDoctorsList();
-            _patientInformationPresenter.InitializeView();
-
-        }
-
-        /// <summary>
-        /// Initialized referal doctors list.
-        /// </summary>
-        private void InitializeReferalDoctorsList()
-        {
-
+            set
+            {
+                _referalDoctorComboBox.DataSource = value;                
+            }
         }
 
         #endregion
@@ -367,6 +338,49 @@ namespace SHC.UROCare.UI
         }
 
         #endregion
-        
-    }
+
+        #region Private methods
+
+        /// <summary>
+        /// Process recommended colors
+        /// </summary>
+        private void ProcessRecommendedColors()
+        {
+            RecommendedColors colors = UIFrameWorkClass.Instance.GetRecommendedColors();
+            BackColor = colors.BackColor;
+            _mainPanel.BackColor = BackColor;
+            _registrationDetails.BackColor = BackColor;
+            _contactGroup.BackColor = BackColor;
+        }
+
+        /// <summary>
+        /// Initialize controls
+        /// </summary>
+        private void InitializeControl()
+        {
+            _registrationDate.Focus();
+            _patientInformationPresenter.InitializeView();
+        }
+
+        /// <summary>
+        /// Get referal doctors list.
+        /// </summary>
+        private ComboBoxItem GetSelectedReferalDoctor(DoctorsListBO value)
+        {
+            var selectedItem = _referalDoctorComboBox.Items[0];
+
+            foreach (ComboBoxItem item in _referalDoctorComboBox.Items)
+            {
+                if (item.ID == value.DoctorId)
+                {
+                    selectedItem = item;
+                    break;
+                }
+            }
+            
+            return selectedItem as ComboBoxItem;
+        }
+
+        #endregion
+     }
 }

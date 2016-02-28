@@ -54,4 +54,27 @@ namespace SHC.UROCare.UICommonControls
             }
         }
     }
+
+    /// <summary>
+    /// Combo box item
+    /// </summary>
+    public class ComboBoxItem
+    {
+        public int ID { get; set; }
+        public string Text { get; set; }
+        public object Value { get; set; }
+
+
+        public override string ToString()
+        {
+            return Text;
+        }
+
+        public ComboBoxItem(int id, Func<String> textProperty, Object objectValue)
+        {
+            ID = id;
+            Text = textProperty();
+            Value = objectValue;            
+        }
+    } 
 }

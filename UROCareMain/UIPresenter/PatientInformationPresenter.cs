@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using SHC.UROCare.UROCareBusinessObjects;
 using SHC.UROCare.Utilities;
 using System.Globalization;
+using SHC.UROCare.UICommonControls;
 
 namespace SHC.UROCare.UI
 {
@@ -12,7 +13,7 @@ namespace SHC.UROCare.UI
 
         private readonly PatientBO _patient;
         private readonly IPatientInformationView _patientHeaderView;
-        
+      
         #endregion
 
         #region Constructors
@@ -45,6 +46,9 @@ namespace SHC.UROCare.UI
             _patient = patient;
         }
 
+        /// <summary>
+        /// Default contructor
+        /// </summary>
         protected PatientInformationPresenter()
         {
         }
@@ -74,7 +78,7 @@ namespace SHC.UROCare.UI
             _patientHeaderView.Phone = _patient.PhoneNumber;
             _patientHeaderView.Mobile = _patient.Mobile;
             _patientHeaderView.Ocupation = _patient.Occupation;
-            _patientHeaderView.ReferalDoctor = _patient.ReferenceDoctor.DoctorName;
+            _patientHeaderView.ReferalDoctor = _patient.ReferenceDoctor;
             _patientHeaderView.OPDDiagnosis = _patient.OPDDiagnosis;
         }
 
@@ -137,6 +141,7 @@ namespace SHC.UROCare.UI
         public void InitializeView()
         {
             _patientHeaderView.SexCombo = Sexes;
+            _patientHeaderView.ReferalDoctorList = ReferalDoctors();
             InitializePatientInformation();            
         }
 
@@ -168,13 +173,19 @@ namespace SHC.UROCare.UI
         /// <summary>
         /// Get referal doctors list
         /// </summary>
-        /// <returns>List of doctors business objects</returns>
-        public DoctorsListObjectCollection GetReferalDoctorsList()
+        /// <returns>List of combo items</returns>
+        public List<ComboBoxItem> ReferalDoctors()
         {
+            List<ComboBoxItem> referalDoctors = new List<ComboBoxItem>();
             DoctorsListObjectCollection doctorsListCollection = new DoctorsListObjectCollection();
-            doctorsListCollection.Clear();
             doctorsListCollection.Fill();
-            return doctorsListCollection;
+
+            referalDoctors.Add(new ComboBoxItem(0,() => Strings.PleaseSelectOne, new DoctorsListBO()));
+            foreach (DoctorsListBO doctor in doctorsListCollection)
+            {
+                referalDoctors.Add(new ComboBoxItem(doctor.DoctorId,() => doctor.DoctorName, doctor));
+            }
+            return referalDoctors;
         }
 
         #endregion       
@@ -198,7 +209,7 @@ namespace SHC.UROCare.UI
             _patientHeaderView.Ocupation = string.Empty;
             _patientHeaderView.PatientName = string.Empty;
             _patientHeaderView.Phone = string.Empty;
-            _patientHeaderView.ReferalDoctor = string.Empty;
+            _patientHeaderView.ReferalDoctor = new DoctorsListBO();
             _patientHeaderView.State = string.Empty;
             _patientHeaderView.Town = string.Empty;
         }

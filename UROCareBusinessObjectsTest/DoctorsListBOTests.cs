@@ -50,5 +50,13 @@ namespace SHC.UROCare.TestObjects
             Assert.AreEqual(actualData.Modify_By, resultData.ModifiedBy);
             Assert.AreEqual(actualData.Modify_Dte, resultData.ModifiedDate);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void MapDatabaseValueToObjectGivenDoctorsListObjectNullThrowsArgementNullException()
+        {
+            DoctorsListBO resultData = new DoctorsListBO();
+            resultData.MapDatabaseValueToObject(null);    
+        }
     }
 }

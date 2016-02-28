@@ -4,11 +4,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SHC.UROCare.UROCareDataModel;
+using System.Security.Cryptography;
 
 namespace SHC.UROCare.TestObjects
 {
     public static class TestDataModelObjects
     {
+        #region Private Methods
+
+        public static int GetRandomNumber(int max)
+        {
+            Random getrandom = new Random();
+            object syncLock = new object();
+            lock (syncLock)
+            { // synchronize
+                return getrandom.Next(1, max);
+            }
+        }
+
+
+        private static string GetRandomString(int length)
+        {
+            System.Byte[] seedBuffer = new System.Byte[4];
+            using (var rngCryptoServiceProvider = new RNGCryptoServiceProvider())
+            {
+                rngCryptoServiceProvider.GetBytes(seedBuffer);
+                string chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                Random random = new System.Random(System.BitConverter.ToInt32(seedBuffer, 0));
+                return new System.String(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
+            }
+        } 
+
+
+        #endregion
         /// <summary>
         /// Get test patient
         /// </summary>
@@ -16,16 +44,16 @@ namespace SHC.UROCare.TestObjects
         public static Patient_Info GetTestPatient()
         {
             Patient_Info testPatient = new Patient_Info();
-            testPatient.Gu_No = 1;
-            testPatient.Gu_Year = 2015;
+            testPatient.Gu_No = GetRandomNumber(2);
+            testPatient.Gu_Year = GetRandomNumber(4);
             testPatient.Salutation = "Mr";
-            testPatient.Patient_Name = "nilesh";
-            testPatient.At_Post = "Atul Nagar";
+            testPatient.Patient_Name = GetRandomString(8);
+            testPatient.At_Post = GetRandomString(15);
             testPatient.Town = "Pune";
             testPatient.District = "Pune";
             testPatient.State = "Maharashtra";
-            testPatient.Phone = "66425646";
-            testPatient.Mobile = "9881230729";
+            testPatient.Phone = GetRandomNumber(4).ToString();
+            testPatient.Mobile = GetRandomNumber(4).ToString();
             testPatient.Age_Yr = 33;
             testPatient.Age_Mnth = 11;
             testPatient.Sex = 0;
@@ -49,13 +77,13 @@ namespace SHC.UROCare.TestObjects
         public static Doctors_List GetTestDoctor()
         {
             Doctors_List testDoctor = new Doctors_List();
-            testDoctor.ID = 1;
-            testDoctor.Doctor_Name = "testDoctor";
-            testDoctor.At_Post = "Ganesh Vihar";
-            testDoctor.Taluka = "Amravati";
+            testDoctor.ID = GetRandomNumber(2);
+            testDoctor.Doctor_Name = GetRandomString(8);
+            testDoctor.At_Post = GetRandomString(15);
+            testDoctor.Taluka = GetRandomString(10);
             testDoctor.District = "Amravati";
-            testDoctor.Phone = "66425646";
-            testDoctor.Mobile = "9881230729";
+            testDoctor.Phone =  GetRandomNumber(4).ToString();
+            testDoctor.Mobile = GetRandomNumber(4).ToString();
             testDoctor.Birth_Dte = DateTime.Today;
             testDoctor.Dr_Email = "aaa@aaa.com";
            

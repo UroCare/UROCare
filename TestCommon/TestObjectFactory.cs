@@ -13,9 +13,10 @@ namespace SHC.UROCare.TestObjects
         {
             
             IUROCareEntities uroCareEntity = A.Fake<IUROCareEntities>();
-            A.CallTo(() => uroCareEntity.User_Master).Returns(new MockObjectSet<User_Master>());
-            
+            A.CallTo(() => uroCareEntity.User_Master).Returns(new MockObjectSet<User_Master>());            
             A.CallTo(() => uroCareEntity.Patient_Info).Returns(new MockObjectSet<Patient_Info>());
+            A.CallTo(() => uroCareEntity.Doctors_List).Returns(new MockObjectSet<Doctors_List>());
+
             return uroCareEntity;
         }
 

@@ -258,29 +258,29 @@ namespace SHC.UROCare.UROCareBusinessObjects
         /// <param name="databaseObject">DB object</param>
         public void MapDatabaseValueToObject(Patient_Info databaseObject)
         {
-            this.GUNo = databaseObject.Gu_No;
-            this.GUYear = databaseObject.Gu_Year;
-            this.RegistrationDate = databaseObject.Reg_Date;
-            this.Salutation = databaseObject.Salutation;
-            this.PatientName = databaseObject.Patient_Name;
-            this.AgeYear = databaseObject.Age_Yr.GetValueOrDefault(0);
-            this.AgeMonths = databaseObject.Age_Mnth.GetValueOrDefault(0);
-            this.Sex = (SexEnum)databaseObject.Sex;
-            this.Occupation = databaseObject.Occupation;
-            this.AtPost = databaseObject.At_Post;
-            this.Town = databaseObject.Town;
-            this.District = databaseObject.District;
-            this.State = databaseObject.State;
-            this.PhoneNumber = databaseObject.Phone;
-            this.Mobile = databaseObject.Mobile;
-            this.OPDDiagnosis = databaseObject.OPD_Diagnosis;
+            GUNo = databaseObject.Gu_No;
+            GUYear = databaseObject.Gu_Year;
+            RegistrationDate = databaseObject.Reg_Date;
+            Salutation = databaseObject.Salutation;
+            PatientName = databaseObject.Patient_Name;
+            AgeYear = databaseObject.Age_Yr.GetValueOrDefault(0);
+            AgeMonths = databaseObject.Age_Mnth.GetValueOrDefault(0);
+            Sex = (SexEnum)databaseObject.Sex;
+            Occupation = databaseObject.Occupation;
+            AtPost = databaseObject.At_Post;
+            Town = databaseObject.Town;
+            District = databaseObject.District;
+            State = databaseObject.State;
+            PhoneNumber = databaseObject.Phone;
+            Mobile = databaseObject.Mobile;
+            OPDDiagnosis = databaseObject.OPD_Diagnosis;
 
-            this.ReferenceDoctor = GetReferenceDoctor(databaseObject.Doctors_List);
+            ReferenceDoctor = GetReferenceDoctor(databaseObject.Doctors_List);
 
-            this.CreatedBy = databaseObject.Created_By;
-            this.CreatedDate = databaseObject.Create_Dte;
-            this.ModifiedBy = databaseObject.Modify_By;
-            this.ModifiedDate = databaseObject.Modify_Dte;           
+            CreatedBy = databaseObject.Created_By;
+            CreatedDate = databaseObject.Create_Dte;
+            ModifiedBy = databaseObject.Modify_By;
+            ModifiedDate = databaseObject.Modify_Dte;           
         }    
 
         #endregion
@@ -294,7 +294,10 @@ namespace SHC.UROCare.UROCareBusinessObjects
         private DoctorsListBO GetReferenceDoctor(Doctors_List doctor)
         {
             DoctorsListBO referenceDoctor = new DoctorsListBO();
-            referenceDoctor.MapDatabaseValueToObject(doctor);
+            if (doctor != null)
+            {
+                referenceDoctor.MapDatabaseValueToObject(doctor);
+            }
             return referenceDoctor;
         }
 

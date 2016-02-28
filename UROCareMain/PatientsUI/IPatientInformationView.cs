@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using SHC.UROCare.UROCareBusinessObjects;
+using SHC.UROCare.UICommonControls;
 
 namespace SHC.UROCare.UI
 {
@@ -63,7 +64,7 @@ namespace SHC.UROCare.UI
         /// <summary>
         /// Gets or sets Referal doctor.
         /// </summary>
-        string ReferalDoctor { get; set; }
+        DoctorsListBO ReferalDoctor { get; set; }
 
         /// <summary>
         /// Gets or sets AtPost of the patient.
@@ -95,6 +96,14 @@ namespace SHC.UROCare.UI
         /// </summary>
         string Salutation { get; set; }
 
+        /// <summary>
+        /// Sex combo box
+        /// </summary>
         List<SexEnum> SexCombo { set; }
+
+        /// <summary>
+        /// Referal doctorls list
+        /// </summary>
+        List<ComboBoxItem> ReferalDoctorList { set; }
     }
 }

@@ -106,22 +106,31 @@ namespace SHC.UROCare.UROCareBusinessObjects
             return result;
         }
 
-        public void MapDatabaseValueToObject(Doctors_List databaseObject)
+        public void MapDatabaseValueToObject(Doctors_List doctor)
         {
-            this.DoctorId = databaseObject.ID;
-            this.DoctorName = databaseObject.Doctor_Name;
-            this.AtPost = databaseObject.At_Post;
-            this.Taluka = databaseObject.Taluka;
-            this.District = databaseObject.District;
-            this.PhoneNumber = databaseObject.Phone;
-            this.MobileNumber = databaseObject.Mobile;
-            this.BirthDate = databaseObject.Birth_Dte.GetValueOrDefault();
-            this.Email = databaseObject.Dr_Email;
+            if (doctor == null)
+            {
+                throw (new ArgumentNullException("doctor"));
+            }
+            DoctorId = doctor.ID;
+            DoctorName = doctor.Doctor_Name;
+            AtPost = doctor.At_Post;
+            Taluka = doctor.Taluka;
+            District = doctor.District;
+            PhoneNumber = doctor.Phone;
+            MobileNumber = doctor.Mobile;
+            BirthDate = doctor.Birth_Dte.GetValueOrDefault();
+            Email = doctor.Dr_Email;
            
-            this.CreatedBy = databaseObject.Created_By;
-            this.CreatedDate = databaseObject.Create_Dte;
-            this.ModifiedBy = databaseObject.Modify_By;
-            this.ModifiedDate = databaseObject.Modify_Dte;
+            CreatedBy = doctor.Created_By;
+            CreatedDate = doctor.Create_Dte;
+            ModifiedBy = doctor.Modify_By;
+            ModifiedDate = doctor.Modify_Dte;
+        }
+
+        public override string ToString()
+        {
+            return this.DoctorName;
         }
 
         #endregion
@@ -133,6 +142,7 @@ namespace SHC.UROCare.UROCareBusinessObjects
 
         public override void Fill()
         {
+            Clear();
             using (var dataContext = DataAccessLayer.GetDataContext())
             {
                 FillCollection(dataContext.Doctors_List);

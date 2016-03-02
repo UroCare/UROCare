@@ -142,7 +142,6 @@ namespace SHC.UROCare.UROCareBusinessObjects
 
         public override void Fill()
         {
-            Clear();
             using (var dataContext = DataAccessLayer.GetDataContext())
             {
                 FillCollection(dataContext.Doctors_List);

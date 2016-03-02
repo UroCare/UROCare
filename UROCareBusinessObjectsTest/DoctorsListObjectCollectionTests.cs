@@ -13,14 +13,16 @@ using FakeItEasy;
 namespace SHC.UROCare.TestObjects
 {
     /// <summary>
-    /// Summary description for DoctorsListObjectCollection
+    /// Test for DoctorsListObjectCollection
     /// </summary>
     [TestClass]
     public class DoctorsListObjectCollectionTests
     {
         #region Private Variables
+
         DataAccessLayer dataAccessLayer = new DataAccessLayer();
         IUROCareEntities dataContext;
+
         #endregion
 
         #region Test attributes
@@ -35,6 +37,7 @@ namespace SHC.UROCare.TestObjects
         #endregion
 
         #region Test Methods
+
         [TestMethod]
         public void FillWhenNoRecordsFoundReturnsValue()
         {

@@ -89,6 +89,7 @@
     <Compile Include="AutoCompleteComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ComboBoxItem.cs" />
     <Compile Include="CustomComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -142,6 +143,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\calendar_icon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UROCareDataModel\UROCareDataModel.csproj">
+      <Project>{324ae1ef-f415-4e55-8e45-b4ac11e1ac36}</Project>
+      <Name>UROCareDataModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

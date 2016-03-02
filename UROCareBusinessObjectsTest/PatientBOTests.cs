@@ -16,8 +16,10 @@ namespace SHC.UROCare.TestObjects
     public class PatientBOTests
     {
         #region Private Variables
+
         DataAccessLayer dataAccessLayer = new DataAccessLayer();
         IUROCareEntities dataContext;
+
         #endregion
 
         #region Test attributes
@@ -32,6 +34,7 @@ namespace SHC.UROCare.TestObjects
         #endregion
 
         #region Test Methods
+
         [TestMethod]
         [ExpectedException(typeof(NoRecordFoundException))]
         public void FillByGivenGuNoGUYearReturnsNoRecordException()
@@ -42,13 +45,16 @@ namespace SHC.UROCare.TestObjects
         }
 
         [TestMethod]
-        public void FillByGivenGuNoGUYearReturnsPatientNotNull()
+        public void FillByGivenGuNoGUYearReturnsCorrectPatientObject()
         {
             Patient_Info dbPatient = TestDataModelObjects.GetTestPatient();
             dataContext.Patient_Info.Add(dbPatient);
+
             PatientBO patient = new PatientBO();
             patient.FillBy(dbPatient.Gu_No, dbPatient.Gu_Year);
-            Assert.IsNotNull(patient);
+
+            Assert.IsTrue(patient.GUNo == dbPatient.Gu_No);
+            Assert.IsTrue(patient.GUYear == dbPatient.Gu_Year);           
         }
 
         [TestMethod]

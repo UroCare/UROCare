@@ -11,6 +11,7 @@ namespace SHC.UROCare.UROCareBusinessObjects
     {
         protected void FillCollection(IEnumerable<K> databaseEntitiesCollection)
         {
+            Clear();
             foreach (var databaseEntity in databaseEntitiesCollection)
             {
                 T businessObject = new T();

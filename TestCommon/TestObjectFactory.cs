@@ -1,7 +1,6 @@
 ﻿using System;
 using FakeItEasy;
 using System.Collections.Generic;
-
 using SHC.UROCare.UROCareDataModel;
 using System.Threading;
 

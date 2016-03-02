@@ -275,7 +275,7 @@ namespace SHC.UROCare.UROCareBusinessObjects
             Mobile = databaseObject.Mobile;
             OPDDiagnosis = databaseObject.OPD_Diagnosis;
 
-            ReferenceDoctor = GetReferenceDoctor(databaseObject.Doctors_List);
+            ReferenceDoctor = (databaseObject.Doctors_List!=null)? GetReferenceDoctor(databaseObject.Doctors_List):new DoctorsListBO();
 
             CreatedBy = databaseObject.Created_By;
             CreatedDate = databaseObject.Create_Dte;
@@ -294,10 +294,7 @@ namespace SHC.UROCare.UROCareBusinessObjects
         private DoctorsListBO GetReferenceDoctor(Doctors_List doctor)
         {
             DoctorsListBO referenceDoctor = new DoctorsListBO();
-            if (doctor != null)
-            {
-                referenceDoctor.MapDatabaseValueToObject(doctor);
-            }
+            referenceDoctor.MapDatabaseValueToObject(doctor);
             return referenceDoctor;
         }
 

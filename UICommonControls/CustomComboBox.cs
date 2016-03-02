@@ -14,12 +14,19 @@ namespace SHC.UROCare.UICommonControls
 
         #endregion
 
+        #region Constructor
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public CustomComboBox()
         {
             SuspendLayout();
             DefaultText = Strings.PleaseSelectOne;
             ResumeLayout(true);
         }
+
+        #endregion
 
         #region Public properties
 
@@ -41,6 +48,8 @@ namespace SHC.UROCare.UICommonControls
 
         #endregion
 
+        #region Events
+
         /// <summary>
         /// Raises the <see cref="E:System.Windows.Forms.ComboBox.SelectedIndexChanged"/> event.
         /// </summary>
@@ -53,28 +62,7 @@ namespace SHC.UROCare.UICommonControls
                 Text = DefaultText;
             }
         }
-    }
 
-    /// <summary>
-    /// Combo box item
-    /// </summary>
-    public class ComboBoxItem
-    {
-        public int ID { get; set; }
-        public string Text { get; set; }
-        public object Value { get; set; }
-
-
-        public override string ToString()
-        {
-            return Text;
-        }
-
-        public ComboBoxItem(int id, Func<String> textProperty, Object objectValue)
-        {
-            ID = id;
-            Text = textProperty();
-            Value = objectValue;            
-        }
-    } 
+        #endregion
+    }   
 }

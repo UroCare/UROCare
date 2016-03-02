@@ -7,6 +7,9 @@ using SHC.UROCare.UICommonControls;
 
 namespace SHC.UROCare.UI
 {
+    /// <summary>
+    /// Presenter class for patient information
+    /// </summary>
     public class PatientInformationPresenter : IPresenterBase<IPatientInformationView,PatientBO>
     {
         #region Private fields

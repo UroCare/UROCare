@@ -10,10 +10,14 @@ using System.ServiceModel.Web;
 namespace UROCareServices.ServiceContracts
 {
     [ServiceContract]
-    interface IUserService
+    public interface IUserService
     {
         [OperationContract]
-        [WebInvoke (Method="Get", UriTemplate="users")]
+        [WebGet(UriTemplate="users",ResponseFormat=WebMessageFormat.Json)]
         List<User> getUsers();
+        
+        [OperationContract]
+        [WebGet(UriTemplate = "users/{userId}", ResponseFormat = WebMessageFormat.Json)]
+        User getUserById(String userId);
     }
 }

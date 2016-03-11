@@ -12,5 +12,10 @@ namespace UROCareServices.DataContracts
     {
         [DataMember]
         public String Name { get; set; }
+        [DataMember]
+        public String UserId { get; set; }
+        [DataMember]
+        public String Password { get; set; }
+
     }
 }

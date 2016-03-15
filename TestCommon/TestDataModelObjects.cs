@@ -48,6 +48,7 @@ namespace SHC.UROCare.TestObjects
         public static Patient_Info GetTestPatient()
         {
             Patient_Info testPatient = new Patient_Info();
+            testPatient.Reg_Date = DateTime.Today;
             testPatient.Gu_No = GetRandomNumber(2);
             testPatient.Gu_Year = GetRandomNumber(4);
             testPatient.Salutation = "Mr";

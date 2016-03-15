@@ -127,12 +127,7 @@ namespace SHC.UROCare.UROCareBusinessObjects
             ModifiedBy = doctor.Modify_By;
             ModifiedDate = doctor.Modify_Dte;
         }
-
-        public override string ToString()
-        {
-            return this.DoctorName;
-        }
-
+        
         #endregion
     }
 

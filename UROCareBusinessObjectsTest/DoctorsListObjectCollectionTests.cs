@@ -39,7 +39,7 @@ namespace SHC.UROCare.TestObjects
         #region Test Methods
 
         [TestMethod]
-        public void FillWhenNoRecordsFoundReturnsValue()
+        public void FillWhenGivenDoctorsReturnsValueCorrectly()
         {
             dataContext.Doctors_List.Add(TestDataModelObjects.GetTestDoctor());
             dataContext.Doctors_List.Add(TestDataModelObjects.GetTestDoctor());   
@@ -50,7 +50,7 @@ namespace SHC.UROCare.TestObjects
         }
 
         [TestMethod]
-        public void FillWhenNoRecordsFoundReturnsCounjtZero()
+        public void FillWhenNoDoctorFoundReturnsCountZero()
         {
             DoctorsListObjectCollection resultData = new DoctorsListObjectCollection();
             resultData.Fill();

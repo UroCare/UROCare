@@ -59,6 +59,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DoctorsListBO.cs" />
     <Compile Include="RolesBO.cs" />
+    <Compile Include="UrologicalHistoryBO.cs" />
     <Compile Include="UserBO.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -67,7 +67,7 @@ namespace SHC.UROCare.UI
         {
             //_patientHeaderView.PatientImage = 
             _patientHeaderView.GUId = string.Format("{0}/{1}",_patient.GUNo,_patient.GUYear);
-            _patientHeaderView.RegisterationDate = _patient.RegistrationDate.ToString("dd/MM/yyyy", CultureInfo.CurrentCulture);
+            _patientHeaderView.RegistrationDate = _patient.RegistrationDate;
 
             _patientHeaderView.Salutation = _patient.Salutation;
             _patientHeaderView.PatientName = _patient.PatientName;
@@ -77,10 +77,10 @@ namespace SHC.UROCare.UI
             _patientHeaderView.State = _patient.State;
             _patientHeaderView.Sex = _patient.Sex;
             _patientHeaderView.AgeMonths = _patient.AgeMonths;
-            _patientHeaderView.AgeYears = _patient.AgeYear;
+            _patientHeaderView.AgeYear = _patient.AgeYear;
             _patientHeaderView.Phone = _patient.PhoneNumber;
             _patientHeaderView.Mobile = _patient.Mobile;
-            _patientHeaderView.Ocupation = _patient.Occupation;
+            _patientHeaderView.Occupation = _patient.Occupation;
             _patientHeaderView.ReferalDoctor = _patient.ReferenceDoctor;
             _patientHeaderView.OPDDiagnosis = _patient.OPDDiagnosis;
         }
@@ -122,7 +122,7 @@ namespace SHC.UROCare.UI
         /// <summary>
         /// Gets sexes
         /// </summary>
-        public List<SexEnum> Sexes
+        public List<SexEnum> SexList
         {
             get
             {
@@ -143,7 +143,7 @@ namespace SHC.UROCare.UI
         /// </summary>
         public void InitializeView()
         {
-            _patientHeaderView.SexCombo = Sexes;
+            _patientHeaderView.SexCombo = SexList;
             _patientHeaderView.ReferalDoctorList = ReferalDoctors();
             InitializePatientInformation();            
         }
@@ -201,20 +201,22 @@ namespace SHC.UROCare.UI
         private void InitializePatientInformation()
         {
             _patientHeaderView.Salutation = "Mr";
+            _patientHeaderView.PatientName = string.Empty;
             _patientHeaderView.GUId = string.Format("0000/{0}", DateTime.Today.Year);
-            _patientHeaderView.RegisterationDate = DateTime.Today.ToString("dd/MM/yyyy", CultureInfo.CurrentCulture);
+            _patientHeaderView.RegistrationDate = DateTime.Today;
             _patientHeaderView.State = "Maharashtra";
             _patientHeaderView.AgeMonths = 0;
-            _patientHeaderView.AgeYears = 0;
+            _patientHeaderView.AgeYear = 0;
             _patientHeaderView.AtPost = string.Empty;
+            _patientHeaderView.Town = string.Empty;
             _patientHeaderView.District = string.Empty;
             _patientHeaderView.Mobile = string.Empty;
-            _patientHeaderView.Ocupation = string.Empty;
-            _patientHeaderView.PatientName = string.Empty;
             _patientHeaderView.Phone = string.Empty;
+            _patientHeaderView.Occupation = string.Empty;
+            _patientHeaderView.Sex = SexEnum.Male;
             _patientHeaderView.ReferalDoctor = new DoctorsListBO();
-            _patientHeaderView.State = string.Empty;
             _patientHeaderView.Town = string.Empty;
+            _patientHeaderView.OPDDiagnosis = string.Empty;
         }
      
         #endregion

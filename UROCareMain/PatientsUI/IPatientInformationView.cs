@@ -12,14 +12,9 @@ namespace SHC.UROCare.UI
     public interface IPatientInformationView : IView
     {
         /// <summary>
-        /// Gets or sets patient name.
+        /// Gets or sets Registration date of the patient.
         /// </summary>
-        string PatientName { get; set; }
-
-        /// <summary>
-        /// Gets or sets town name of patient
-        /// </summary>
-        string Town { get; set; }
+        DateTime RegistrationDate { get; set; }
 
         /// <summary>
         /// Gets or sets GUID of patient.
@@ -32,44 +27,24 @@ namespace SHC.UROCare.UI
         Image PatientImage { get; set; }
 
         /// <summary>
-        /// Gets or sets mobile number of patient.
+        /// Gets or sets Saluation of the patient.
         /// </summary>
-        string Mobile { get; set; }
+        string Salutation { get; set; }
 
         /// <summary>
-        /// Gets or sets Sex of the patient 
+        /// Gets or sets patient name.
         /// </summary>
-        SexEnum Sex { get; set; }
-
-        /// <summary>
-        /// Gets or sets Occupation of the patient.
-        /// </summary>
-        string Ocupation { get; set; }
-
-        /// <summary>
-        /// Gets or sets Registration date of the patient.
-        /// </summary>
-        string RegisterationDate { get; set; }
-
-        /// <summary>
-        /// Gets age years of the patient.
-        /// </summary>
-        int AgeYears { get; set; }
-
-        /// <summary>
-        /// Gets or sets AgeMonths of the patient.
-        /// </summary>
-        int AgeMonths { get; set; }
-
-        /// <summary>
-        /// Gets or sets Referal doctor.
-        /// </summary>
-        DoctorsListBO ReferalDoctor { get; set; }
+        string PatientName { get; set; }
 
         /// <summary>
         /// Gets or sets AtPost of the patient.
         /// </summary>
         string AtPost { get; set; }
+
+        /// <summary>
+        /// Gets or sets town name of patient
+        /// </summary>
+        string Town { get; set; }
 
         /// <summary>
         /// Gets or sets District  of the patient.
@@ -87,14 +62,39 @@ namespace SHC.UROCare.UI
         string Phone { get; set; }
 
         /// <summary>
+        /// Gets or sets mobile number of patient.
+        /// </summary>
+        string Mobile { get; set; }
+
+        /// <summary>
+        /// Gets or sets Sex of the patient 
+        /// </summary>
+        SexEnum Sex { get; set; }
+
+        /// <summary>
+        /// Gets or sets Occupation of the patient.
+        /// </summary>
+        string Occupation { get; set; }
+
+        /// <summary>
+        /// Gets age years of the patient.
+        /// </summary>
+        int AgeYear { get; set; }
+
+        /// <summary>
+        /// Gets or sets AgeMonths of the patient.
+        /// </summary>
+        short AgeMonths { get; set; }
+
+        /// <summary>
+        /// Gets or sets Referal doctor.
+        /// </summary>
+        DoctorsListBO ReferalDoctor { get; set; }
+
+        /// <summary>
         /// Get or set OPDDiagnosis
         /// </summary>
         string OPDDiagnosis { get; set; }
-
-        /// <summary>
-        /// Gets or sets Saluation of the patient.
-        /// </summary>
-        string Salutation { get; set; }
 
         /// <summary>
         /// Sex combo box

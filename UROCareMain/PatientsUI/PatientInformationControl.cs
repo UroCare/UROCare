@@ -51,15 +51,15 @@ namespace SHC.UROCare.UI
         /// <summary>
         /// Gets or sets Registration date of the patient.
         /// </summary>
-        public string RegisterationDate
+        public DateTime RegistrationDate
         {
             get
             {
-                return _registrationDate.Text;
+                return Convert.ToDateTime(_registrationDate.Text);
             }
             set
             {
-                _registrationDate.Text = value;
+                _registrationDate.Text = value.ToString("dd/mm/yyyy");
             }
         }
 
@@ -160,7 +160,7 @@ namespace SHC.UROCare.UI
         {
             get
             {
-                return _state.SelectedText;
+                return _state.SelectedItem.ToString();
             }
             set
             {
@@ -201,7 +201,7 @@ namespace SHC.UROCare.UI
         /// <summary>
         /// Gets age years of the patient.
         /// </summary>
-        public int AgeYears
+        public int AgeYear
         {
             get
             {
@@ -216,11 +216,11 @@ namespace SHC.UROCare.UI
         /// <summary>
         /// Gets or sets AgeMonths of the patient.
         /// </summary>
-        public int AgeMonths
+        public short AgeMonths
         {
             get
             {
-                return (int)_months.Value;
+                return (short) _months.Value;
             }
             set
             {
@@ -246,7 +246,7 @@ namespace SHC.UROCare.UI
         /// <summary>
         /// Gets or sets Occupation of the patient.
         /// </summary>
-        public string Ocupation
+        public string Occupation
         {
             get
             {

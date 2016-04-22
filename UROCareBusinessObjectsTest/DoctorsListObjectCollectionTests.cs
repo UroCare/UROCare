@@ -20,7 +20,6 @@ namespace SHC.UROCare.TestObjects
     {
         #region Private Variables
 
-        DataAccessLayer dataAccessLayer = new DataAccessLayer();
         IUROCareEntities dataContext;
 
         #endregion

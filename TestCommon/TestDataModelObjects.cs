@@ -100,6 +100,31 @@ namespace SHC.UROCare.TestObjects
             return testDoctor;
         }
 
+        /// <summary>
+        /// Get test urology history object
+        /// </summary>
+        /// <returns>Returns urology history data object</returns>
+        public static Doctors_List GetTestUrologyHistory()
+        {
+            Doctors_List testDoctor = new Doctors_List();
+            testDoctor.ID = GetRandomNumber(2);
+            testDoctor.Doctor_Name = GetRandomString(8);
+            testDoctor.At_Post = GetRandomString(15);
+            testDoctor.Taluka = GetRandomString(10);
+            testDoctor.District = GetRandomString(4);
+            testDoctor.Phone = GetRandomNumber(4).ToString();
+            testDoctor.Mobile = GetRandomNumber(4).ToString();
+            testDoctor.Birth_Dte = DateTime.Today;
+            testDoctor.Dr_Email = string.Format("{0}@aaaa.com", GetRandomString(4));
+
+            testDoctor.Created_By = "created user";
+            testDoctor.Create_Dte = DateTime.Today;
+            testDoctor.Modify_By = "modified user";
+            testDoctor.Modify_Dte = DateTime.Today;
+
+            return testDoctor;
+        }
+
         #endregion
     }
 }

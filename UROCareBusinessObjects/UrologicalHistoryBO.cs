@@ -14,14 +14,18 @@ namespace SHC.UROCare.UROCareBusinessObjects
     /// </summary>
     /// <typeparam name="Urology_History">Urology History</typeparam>
     public class UrologicalHistoryBO : IPersistable<Urology_History>
-    {
-        
+    {        
         #region Public Properties
 
         /// <summary>
         /// Get or Set History Id
         /// </summary>
         public int HistoryId { get; set; }
+
+        /// <summary>
+        /// Get or Set Patient Id
+        /// </summary>
+        public int PatientId { get; set; }
 
         /// <summary>
         /// Get or Set GUNo
@@ -238,7 +242,41 @@ namespace SHC.UROCare.UROCareBusinessObjects
             {
                 throw (new ArgumentNullException("urologyHistory"));
             }
-         
+
+            HistoryId = urologyHistory.History_ID;
+            PatientId = urologyHistory.Patient_ID;
+            GUNo = urologyHistory.Gu_No;
+            GUYear = urologyHistory.Gu_Year;
+            ChiefComplaints = urologyHistory.Chief_Compl;
+            Frequency = urologyHistory.Frequency;
+            Hesitancy = urologyHistory.Hesitancy;
+            Nocturia = urologyHistory.Nocturia;
+            PoorStream = urologyHistory.Poor_Stream;
+            Urgency = urologyHistory.Urgency;
+            Intermittency = urologyHistory.Intermittency;
+            Dysuria = urologyHistory.Dysuria;
+            Straining = urologyHistory.Straining;
+            Pyuria = urologyHistory.Pyuria;
+            SenseIncomplVoid = urologyHistory.Sense_Incompl_Void;
+            Lithiuria = urologyHistory.Lithiuria;
+            TerminalDribbling = urologyHistory.Terminal_Dribbling;
+            Chyluria = urologyHistory.Chyluria;
+            UrgeInc = urologyHistory.Urge_Inc;
+            Fever = urologyHistory.Fever;
+            StressInc = urologyHistory.Stress_Inc;
+            IPSS = urologyHistory.IPSS;
+            BPI = urologyHistory.BPI;
+            Pain = urologyHistory.Pain;
+            Others = urologyHistory.Others;
+            Medication = urologyHistory.Medication;
+            Personal = urologyHistory.Personal;
+            Surgery = urologyHistory.Surgery;
+            MH = urologyHistory.MH;
+            Allergies = urologyHistory.Allergies;
+            OBGY = urologyHistory.OB_GY;
+            Past = urologyHistory.Past;
+            Family = urologyHistory.Family;
+            Hematuria = urologyHistory.Hematuria;
 
             CreatedBy = urologyHistory.Created_By;
             CreatedDate = urologyHistory.Create_Dte;

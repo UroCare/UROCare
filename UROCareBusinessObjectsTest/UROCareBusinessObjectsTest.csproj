@@ -63,6 +63,7 @@
     <Compile Include="PatientObjectCollectionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DoctorsListBOTests.cs" />
+    <Compile Include="UrologicalHistoryBOTests.cs" />
     <Compile Include="UserBOTests.cs">
       <SubType>Code</SubType>
     </Compile>

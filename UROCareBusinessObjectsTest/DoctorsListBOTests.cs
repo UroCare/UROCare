@@ -28,6 +28,8 @@ namespace SHC.UROCare.TestObjects
 
         #endregion
 
+        #region Test Methods
+
         [TestMethod]
         public void MapDatabaseValueToObjectGivenDoctorsListObjectMapsValueCorrectly()
         {
@@ -56,7 +58,9 @@ namespace SHC.UROCare.TestObjects
         public void MapDatabaseValueToObjectGivenDoctorsListObjectNullThrowsArgementNullException()
         {
             DoctorsListBO resultData = new DoctorsListBO();
-            resultData.MapDatabaseValueToObject(null);    
+            resultData.MapDatabaseValueToObject(null);
         }
+
+        #endregion
     }
 }

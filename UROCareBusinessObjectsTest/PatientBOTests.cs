@@ -80,6 +80,7 @@ namespace SHC.UROCare.TestObjects
             Assert.AreEqual((SexEnum)actualData.Sex, resultData.Sex);
             Assert.AreEqual(actualData.Occupation, resultData.Occupation);
             Assert.AreEqual(actualData.Doctors_List.ID, resultData.ReferenceDoctor.DoctorId);
+            Assert.AreEqual(actualData.Urology_History.First().History_ID, resultData.UrologyHistory.HistoryId);
 
             Assert.AreEqual(actualData.Create_Dte, resultData.CreatedDate);
             Assert.AreEqual(actualData.Created_By, resultData.CreatedBy);
@@ -112,6 +113,7 @@ namespace SHC.UROCare.TestObjects
             Assert.AreEqual(originalData.Sex, resultObject.Sex);
             Assert.AreEqual(originalData.Occupation, resultObject.Occupation);
             Assert.AreEqual(originalData.ReferenceDoctor.DoctorId, resultObject.ReferenceDoctor.DoctorId);
+            Assert.AreEqual(originalData.UrologyHistory.HistoryId, resultObject.UrologyHistory.HistoryId);
 
             Assert.AreEqual(originalData.CreatedBy, resultObject.CreatedBy);
             Assert.AreEqual(originalData.CreatedDate, resultObject.CreatedDate);

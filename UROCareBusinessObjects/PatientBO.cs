@@ -25,6 +25,7 @@ namespace SHC.UROCare.UROCareBusinessObjects
         #region Private Members
         
         DoctorsListBO _referenceDoctor = new DoctorsListBO();
+        UrologicalHistoryBO _urologyHistory = new UrologicalHistoryBO();
 
         #endregion
 
@@ -100,7 +101,22 @@ namespace SHC.UROCare.UROCareBusinessObjects
                 _referenceDoctor = value;
             }
         }
-        
+
+        /// <summary>
+        /// Get or set urology history.
+        /// </summary>
+        public UrologicalHistoryBO UrologyHistory
+        {
+            get
+            {
+                return _urologyHistory;
+            }
+            set
+            {
+                _urologyHistory = value;
+            }
+        }
+
         /// <summary>
         /// Gets or sets at post information of patient. 
         /// </summary>
@@ -199,7 +215,6 @@ namespace SHC.UROCare.UROCareBusinessObjects
             this.AgeMonths = patientCopy.AgeMonths;
             this.Sex = patientCopy.Sex;
             this.Occupation = patientCopy.Occupation;
-            this.ReferenceDoctor = patientCopy.ReferenceDoctor;
             this.AtPost = patientCopy.AtPost;
             this.Town = patientCopy.Town;
             this.District = patientCopy.District;
@@ -207,6 +222,9 @@ namespace SHC.UROCare.UROCareBusinessObjects
             this.PhoneNumber = patientCopy.PhoneNumber;
             this.Mobile = patientCopy.Mobile;
             this.OPDDiagnosis = patientCopy.OPDDiagnosis;
+
+            this.ReferenceDoctor = patientCopy.ReferenceDoctor;
+            this.UrologyHistory = patientCopy.UrologyHistory;
 
             this.CreatedBy = patientCopy.CreatedBy;
             this.CreatedDate = patientCopy.CreatedDate;
@@ -276,6 +294,7 @@ namespace SHC.UROCare.UROCareBusinessObjects
             OPDDiagnosis = databaseObject.OPD_Diagnosis;
 
             ReferenceDoctor = (databaseObject.Doctors_List!=null)? GetReferenceDoctor(databaseObject.Doctors_List):new DoctorsListBO();
+            UrologyHistory = GetUrologyHistory(databaseObject.Urology_History);
 
             CreatedBy = databaseObject.Created_By;
             CreatedDate = databaseObject.Create_Dte;
@@ -298,6 +317,19 @@ namespace SHC.UROCare.UROCareBusinessObjects
             return referenceDoctor;
         }
 
+        private UrologicalHistoryBO GetUrologyHistory(ICollection<Urology_History> urologyHistory)
+        {
+            var resultData = new UrologicalHistoryBO();
+
+            if (urologyHistory == null || urologyHistory.Count != 1)
+            {
+                throw (new ArgumentException("urologyHistory"));
+            }
+
+            resultData.MapDatabaseValueToObject(urologyHistory.First());
+
+            return resultData;
+        }
         #endregion
     }
 

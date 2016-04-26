@@ -64,6 +64,7 @@ namespace SHC.UROCare.TestObjects
             testPatient.Sex = 0;
             testPatient.Occupation = GetRandomString(4);
             testPatient.Doctors_List = GetTestDoctor();
+            testPatient.Urology_History.Add(GetTestUrologyHistory());
 
             testPatient.OPD_Diagnosis = GetRandomString(14);
 
@@ -78,7 +79,7 @@ namespace SHC.UROCare.TestObjects
         /// <summary>
         /// Get test doctor
         /// </summary>
-        /// <returns>Returns patient info object</returns>
+        /// <returns>Returns doctors list object</returns>
         public static Doctors_List GetTestDoctor()
         {
             Doctors_List testDoctor = new Doctors_List();
@@ -104,25 +105,50 @@ namespace SHC.UROCare.TestObjects
         /// Get test urology history object
         /// </summary>
         /// <returns>Returns urology history data object</returns>
-        public static Doctors_List GetTestUrologyHistory()
+        public static Urology_History GetTestUrologyHistory()
         {
-            Doctors_List testDoctor = new Doctors_List();
-            testDoctor.ID = GetRandomNumber(2);
-            testDoctor.Doctor_Name = GetRandomString(8);
-            testDoctor.At_Post = GetRandomString(15);
-            testDoctor.Taluka = GetRandomString(10);
-            testDoctor.District = GetRandomString(4);
-            testDoctor.Phone = GetRandomNumber(4).ToString();
-            testDoctor.Mobile = GetRandomNumber(4).ToString();
-            testDoctor.Birth_Dte = DateTime.Today;
-            testDoctor.Dr_Email = string.Format("{0}@aaaa.com", GetRandomString(4));
+            Urology_History urologyHistory = new Urology_History();
+            urologyHistory.History_ID = GetRandomNumber(2);
+            urologyHistory.Patient_ID = GetRandomNumber(2);
+            urologyHistory.Gu_No = GetRandomNumber(2);
+            urologyHistory.Gu_Year = GetRandomNumber(4);
+            urologyHistory.Chief_Compl = GetRandomString(2);
+            urologyHistory.Frequency = GetRandomString(2);
+            urologyHistory.Hesitancy = GetRandomString(2);
+            urologyHistory.Nocturia = GetRandomString(2);
+            urologyHistory.Poor_Stream = GetRandomString(2);
+            urologyHistory.Urgency = GetRandomString(2);
+            urologyHistory.Intermittency = GetRandomString(2);
+            urologyHistory.Dysuria = GetRandomString(2);
+            urologyHistory.Straining = GetRandomString(2);
+            urologyHistory.Pyuria = GetRandomString(2);
+            urologyHistory.Sense_Incompl_Void = GetRandomString(2);
+            urologyHistory.Lithiuria = GetRandomString(2);
+            urologyHistory.Terminal_Dribbling = GetRandomString(2);
+            urologyHistory.Chyluria = GetRandomString(2);
+            urologyHistory.Urge_Inc = GetRandomString(2);
+            urologyHistory.Fever = GetRandomString(2);
+            urologyHistory.Stress_Inc = GetRandomString(2);
+            urologyHistory.IPSS = GetRandomString(2);
+            urologyHistory.BPI = GetRandomString(2);
+            urologyHistory.Pain = GetRandomString(2);
+            urologyHistory.Others = GetRandomString(2);
+            urologyHistory.Medication = GetRandomString(2);
+            urologyHistory.Personal = GetRandomString(2);
+            urologyHistory.Surgery = GetRandomString(2);
+            urologyHistory.MH = GetRandomString(2);
+            urologyHistory.Allergies = GetRandomString(2);
+            urologyHistory.OB_GY = GetRandomString(2);
+            urologyHistory.Past = GetRandomString(2);
+            urologyHistory.Family = GetRandomString(2);
+            urologyHistory.Hematuria = GetRandomString(2);
 
-            testDoctor.Created_By = "created user";
-            testDoctor.Create_Dte = DateTime.Today;
-            testDoctor.Modify_By = "modified user";
-            testDoctor.Modify_Dte = DateTime.Today;
+            urologyHistory.Created_By = "created user";
+            urologyHistory.Create_Dte = DateTime.Today;
+            urologyHistory.Modify_By = "modified user";
+            urologyHistory.Modify_Dte = DateTime.Today;
 
-            return testDoctor;
+            return urologyHistory;
         }
 
         #endregion

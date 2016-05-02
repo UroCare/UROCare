@@ -64,7 +64,7 @@ namespace SHC.UROCare.TestObjects
             testPatient.Sex = 0;
             testPatient.Occupation = GetRandomString(4);
             testPatient.Doctors_List = GetTestDoctor();
-            testPatient.Urology_History.Add(GetTestUrologyHistory());
+            testPatient.Urology_History= GetTestUrologyHistory();
 
             testPatient.OPD_Diagnosis = GetRandomString(14);
 
@@ -105,7 +105,7 @@ namespace SHC.UROCare.TestObjects
         /// Get test urology history object
         /// </summary>
         /// <returns>Returns urology history data object</returns>
-        public static Urology_History GetTestUrologyHistory()
+        public static List<Urology_History> GetTestUrologyHistory()
         {
             Urology_History urologyHistory = new Urology_History();
             urologyHistory.History_ID = GetRandomNumber(2);
@@ -148,7 +148,9 @@ namespace SHC.UROCare.TestObjects
             urologyHistory.Modify_By = "modified user";
             urologyHistory.Modify_Dte = DateTime.Today;
 
-            return urologyHistory;
+            List<Urology_History> result = new List<Urology_History>();
+            result.Add(urologyHistory);
+            return result;
         }
 
         #endregion

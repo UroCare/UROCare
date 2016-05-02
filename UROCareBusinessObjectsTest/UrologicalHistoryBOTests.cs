@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SHC.UROCare.UROCareBusinessObjects;
 using SHC.UROCare.UROCareDataModel;
 using SHC.UROCare.Utilities;
+using System.Collections.Generic;
 
 namespace SHC.UROCare.TestObjects
 {
@@ -31,16 +32,19 @@ namespace SHC.UROCare.TestObjects
         [ExpectedException(typeof(ArgumentNullException))]
         public void MapDatabaseValueToObjectGivenUrologicalHistoryNullThrowsArgementNullException()
         {
-            UrologicalHistoryBO resultData = new UrologicalHistoryBO();
+            UrologyHistoryBO resultData = new UrologyHistoryBO();
             resultData.MapDatabaseValueToObject(null);
         }
 
         [TestMethod]
         public void MapDatabaseValueToObjectGivenUrologicalHistoryMapsValueCorrectly()
         {
-            UrologicalHistoryBO actualData = new UrologicalHistoryBO();
-            Urology_History expectedData = TestDataModelObjects.GetTestUrologyHistory();
+            List<Urology_History> urologicalHistoryData = TestDataModelObjects.GetTestUrologyHistory();
+            Urology_History expectedData = urologicalHistoryData[0];
+
+            UrologyHistoryBO actualData = new UrologyHistoryBO();
             actualData.MapDatabaseValueToObject(expectedData);
+
             Assert.AreEqual(expectedData.History_ID, actualData.HistoryId);
             Assert.AreEqual(expectedData.Patient_ID, actualData.PatientId);
             Assert.AreEqual(expectedData.Gu_No, actualData.GUNo);

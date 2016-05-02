@@ -122,6 +122,41 @@ namespace SHC.UROCare.TestObjects
 
         }
 
+        [TestMethod]
+        public void UrologyHistoryPropertyGivenNoValueReturnsNewObject()
+        {
+            PatientBO resultObject = new PatientBO();
+            Assert.AreEqual(resultObject.UrologyHistory.HistoryId, 0);
+        }
+
+        [TestMethod]
+        public void UrologyHistoryPropertyGivenHistoryObjectReturnsValueCorrectly()
+        {
+            Patient_Info dbPatient = TestDataModelObjects.GetTestPatient();
+
+            PatientBO originalData = new PatientBO();
+            originalData.MapDatabaseValueToObject(dbPatient);
+
+            Assert.AreEqual(originalData.UrologyHistory.HistoryId, dbPatient.Urology_History.First().History_ID);
+        }
+
+        [TestMethod]
+        public void UrologyHistoryPropertyGivenHistoryObjectSetValueToZeroIndexOnly()
+        {
+            Patient_Info dbPatient = TestDataModelObjects.GetTestPatient();
+            
+            PatientBO originalData = new PatientBO();
+            originalData.MapDatabaseValueToObject(dbPatient);
+
+            Assert.AreEqual(originalData.UrologyHistory.HistoryId, dbPatient.Urology_History.First().History_ID);
+
+            UrologyHistoryBO secondObject = TestBusinessObjectFactory.GetUrologyHistory();
+            
+            originalData.UrologyHistory = secondObject;
+
+            Assert.AreEqual(originalData.UrologyHistory.HistoryId, secondObject.HistoryId);
+        }
+
         #endregion        
     }    
 }

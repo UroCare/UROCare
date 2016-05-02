@@ -13,7 +13,7 @@ namespace SHC.UROCare.UROCareBusinessObjects
     /// Business object for urological history
     /// </summary>
     /// <typeparam name="Urology_History">Urology History</typeparam>
-    public class UrologicalHistoryBO : IPersistable<Urology_History>
+    public class UrologyHistoryBO : IPersistable<Urology_History>
     {        
         #region Public Properties
 
@@ -220,22 +220,10 @@ namespace SHC.UROCare.UROCareBusinessObjects
 
         }
 
-        public int Save(IUROCareEntities dataContext)
-        {
-            return 0;
-        }
-
-        public int Save()
-        {
-            int result = -1;
-            using (var dataContext = DataAccessLayer.GetDataContext())
-            {
-                Save(dataContext);
-                result = dataContext.SaveChanges();
-            }
-            return result;
-        }
-
+        /// <summary>
+        /// Map database values to business object
+        /// </summary>
+        /// <param name="urologyHistory">Database object</param>
         public void MapDatabaseValueToObject(Urology_History urologyHistory)
         {
             if (urologyHistory == null)
@@ -284,6 +272,42 @@ namespace SHC.UROCare.UROCareBusinessObjects
             ModifiedDate = urologyHistory.Modify_Dte;
         }
 
+        /// <summary>
+        /// Save
+        /// </summary>
+        /// <param name="dataContext">Data Context</param>
+        /// <returns>Count</returns>
+        public int Save(IUROCareEntities dataContext)
+        {
+            return 0;
+        }
+
+        /// <summary>
+        /// Save
+        /// </summary>
+        /// <returns>Count</returns>
+        public int Save()
+        {
+            int result = -1;
+            using (var dataContext = DataAccessLayer.GetDataContext())
+            {
+                Save(dataContext);
+                result = dataContext.SaveChanges();
+            }
+            return result;
+        }
+           
         #endregion
+    }
+
+    /// <summary>
+    /// Collection object for urology history business object.
+    /// </summary>
+    public class UrologyHistoryObjectCollection : BusinessObjectCollection<UrologyHistoryBO, Urology_History>
+    {
+        public override void Fill()
+        {
+            
+        }
     }
 }

@@ -67,8 +67,8 @@ namespace SHC.UROCare.UI.Presenter.Tests
             Assert.AreEqual(testPatient.AgeYear, patientInformationView.AgeYear);
             Assert.AreEqual(testPatient.AgeMonths, patientInformationView.AgeMonths);
             Assert.AreEqual(testPatient.ReferenceDoctor.DoctorId, patientInformationView.ReferalDoctor.DoctorId);
-            Assert.AreEqual(testPatient.OPDDiagnosis, patientInformationView.OPDDiagnosis);
 
+            Assert.AreEqual(testPatient.OPDDiagnosis, patientInformationView.OPDDiagnosis);
         }
 
         [TestMethod]

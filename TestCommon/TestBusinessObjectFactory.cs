@@ -70,6 +70,53 @@ namespace SHC.UROCare.TestObjects
             return testDoctor;
         }
 
+        public static UrologyHistoryBO GetUrologyHistory()
+        {
+            UrologyHistoryBO urologyHistory = new UrologyHistoryBO();
+
+            urologyHistory.HistoryId = TestDataModelObjects.GetRandomNumber(2);
+            urologyHistory.PatientId = TestDataModelObjects.GetRandomNumber(2);
+            urologyHistory.GUNo = TestDataModelObjects.GetRandomNumber(2);
+            urologyHistory.GUYear = TestDataModelObjects.GetRandomNumber(4);
+            urologyHistory.ChiefComplaints = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Frequency = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Hesitancy = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Nocturia = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.PoorStream = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Urgency = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Intermittency = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Dysuria = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Straining = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Pyuria = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.SenseIncomplVoid = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Lithiuria = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.TerminalDribbling = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Chyluria = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.UrgeInc = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Fever = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.StressInc = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.IPSS = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.BPI = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Pain = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Others = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Medication = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Personal = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Surgery = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.MH = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Allergies = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.OBGY = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Past = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Family = TestDataModelObjects.GetRandomString(4);
+            urologyHistory.Hematuria = TestDataModelObjects.GetRandomString(4);
+
+            urologyHistory.CreatedBy = "created user";
+            urologyHistory.CreatedDate = DateTime.Today;
+            urologyHistory.ModifiedBy = "modified user";
+            urologyHistory.ModifiedDate = DateTime.Today;
+
+            return urologyHistory;
+
+        }
         #endregion
     }
 }

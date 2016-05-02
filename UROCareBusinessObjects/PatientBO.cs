@@ -25,8 +25,8 @@ namespace SHC.UROCare.UROCareBusinessObjects
         #region Private Members
         
         DoctorsListBO _referenceDoctor = new DoctorsListBO();
-        UrologicalHistoryBO _urologyHistory = new UrologicalHistoryBO();
-
+        UrologyHistoryObjectCollection _urologyHistory = new UrologyHistoryObjectCollection();
+        
         #endregion
 
         #region Public properties.
@@ -105,15 +105,15 @@ namespace SHC.UROCare.UROCareBusinessObjects
         /// <summary>
         /// Get or set urology history.
         /// </summary>
-        public UrologicalHistoryBO UrologyHistory
+        public UrologyHistoryBO UrologyHistory
         {
             get
             {
-                return _urologyHistory;
+                return (_urologyHistory.Count>0) ? _urologyHistory[0]: new UrologyHistoryBO();
             }
             set
             {
-                _urologyHistory = value;
+                _urologyHistory.Insert(0,value);
             }
         }
 
@@ -293,8 +293,9 @@ namespace SHC.UROCare.UROCareBusinessObjects
             Mobile = databaseObject.Mobile;
             OPDDiagnosis = databaseObject.OPD_Diagnosis;
 
-            ReferenceDoctor = (databaseObject.Doctors_List!=null)? GetReferenceDoctor(databaseObject.Doctors_List):new DoctorsListBO();
-            UrologyHistory = GetUrologyHistory(databaseObject.Urology_History);
+            ReferenceDoctor = GetReferenceDoctor(databaseObject.Doctors_List);
+            _urologyHistory.FillFromCollection(databaseObject.Urology_History);
+            
 
             CreatedBy = databaseObject.Created_By;
             CreatedDate = databaseObject.Create_Dte;
@@ -312,24 +313,14 @@ namespace SHC.UROCare.UROCareBusinessObjects
         /// <returns>ReferenceDoctor</returns>
         private DoctorsListBO GetReferenceDoctor(Doctors_List doctor)
         {
-            DoctorsListBO referenceDoctor = new DoctorsListBO();
-            referenceDoctor.MapDatabaseValueToObject(doctor);
+            var referenceDoctor = new DoctorsListBO();
+            if (doctor != null)
+            {
+                referenceDoctor.MapDatabaseValueToObject(doctor);
+            }
             return referenceDoctor;
         }
-
-        private UrologicalHistoryBO GetUrologyHistory(ICollection<Urology_History> urologyHistory)
-        {
-            var resultData = new UrologicalHistoryBO();
-
-            if (urologyHistory == null || urologyHistory.Count != 1)
-            {
-                throw (new ArgumentException("urologyHistory"));
-            }
-
-            resultData.MapDatabaseValueToObject(urologyHistory.First());
-
-            return resultData;
-        }
+        
         #endregion
     }
 

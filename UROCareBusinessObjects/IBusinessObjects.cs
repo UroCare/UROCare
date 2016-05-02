@@ -10,16 +10,15 @@ namespace SHC.UROCare.UROCareBusinessObjects
 {
     public interface IBusinessObject
     {
+       
     }
 
-    public interface IPersistable<TEntity>
+    public interface IPersistable<TEntity> : IBusinessObject
     {
-
         void MapDatabaseValueToObject(TEntity databaseEntity);
-
         void MapFromObjectToDatabaseEntity(TEntity databaseEntity);
 
         int Save(IUROCareEntities dataContext);
-        int Save();       
-    } 
+        int Save();   
+    }   
 }

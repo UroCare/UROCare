@@ -26,6 +26,8 @@ namespace SHC.UROCare.UROCareBusinessObjects
         
         DoctorsListBO _referenceDoctor = new DoctorsListBO();
         UrologicalHistoryBO _urologyHistory = new UrologicalHistoryBO();
+        UrologicalHistoryObjectCollection _urologicalHistories=new UrologicalHistoryObjectCollection();
+        
 
         #endregion
 

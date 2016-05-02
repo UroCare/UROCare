@@ -1,11 +1,8 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SHC.UROCare.UROCareBusinessObjects;
 using SHC.UROCare.UROCareDataModel;
 using SHC.UROCare.Utilities;
+using System;
 
 namespace SHC.UROCare.TestObjects
 {
@@ -13,18 +10,22 @@ namespace SHC.UROCare.TestObjects
     public class UserBOTests
     {
         #region Private Variables
-        DataAccessLayer dataAccessLayer = new DataAccessLayer();
-        IUROCareEntities dataContext;
-        #endregion
+
+        private DataAccessLayer dataAccessLayer = new DataAccessLayer();
+        private IUROCareEntities dataContext;
+
+        #endregion Private Variables
 
         #region Test Attributes
+
         [TestInitialize]
         public void Setup()
         {
             TestObjectFactory.SetFakedDataContext();
             dataContext = DataAccessLayer.GetDataContext();
         }
-        #endregion
+
+        #endregion Test Attributes
 
         #region Test Methods
 
@@ -74,7 +75,6 @@ namespace SHC.UROCare.TestObjects
         [TestMethod]
         public void IsExistsGivenValidUserIDReturnsTrue()
         {
-          
             IUROCareEntities dataContext = DataAccessLayer.GetDataContext();
             dataContext.User_Master.Add(GetTestUser());
 
@@ -82,7 +82,7 @@ namespace SHC.UROCare.TestObjects
             Assert.IsTrue(userBusinessObject.IsExists("abc"));
         }
 
-        #endregion
+        #endregion Test Methods
 
         #region Private Methods
 
@@ -91,13 +91,13 @@ namespace SHC.UROCare.TestObjects
         /// </summary>
         /// <returns>User master object</returns>
         private User_Master GetTestUser()
-         {
+        {
             User_Master testUser = new User_Master();
             testUser.User_Id = "abc";
             testUser.User_Name = "afd fs f sdfs aads";
             return testUser;
-         }
+        }
 
-        #endregion
+        #endregion Private Methods
     }
 }

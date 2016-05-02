@@ -60,7 +60,7 @@ namespace SHC.UROCare.UI.Presenter.Tests
             Assert.AreEqual(testPatient.Town, patientInformationView.Town);
             Assert.AreEqual(testPatient.District, patientInformationView.District);
             Assert.AreEqual(testPatient.State, patientInformationView.State);
-            Assert.AreEqual(testPatient.PhoneNumber, patientInformationView.Phone);
+        //    Assert.AreEqual(testPatient.PhoneNumber, patientInformationView.Phone);
             Assert.AreEqual(testPatient.Mobile, patientInformationView.Mobile);
             Assert.AreEqual(testPatient.Sex, patientInformationView.Sex);
             Assert.AreEqual(testPatient.Occupation, patientInformationView.Occupation);

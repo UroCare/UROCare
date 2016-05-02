@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Data;
 using System.Reflection;
 
@@ -48,6 +45,7 @@ namespace SHC.UROCare.UROCareBusinessObjects
                 //Setting column names as Property names
                 dataTable.Columns.Add(prop.Name);
             }
+
             foreach (T item in this)
             {
                 var values = new object[Props.Length];

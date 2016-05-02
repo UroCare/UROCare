@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using SHC.UROCare.Utilities;
 using SHC.UROCare.UROCareDataModel;
+using AutoMapper;
 
 namespace SHC.UROCare.UROCareBusinessObjects
 {
@@ -242,48 +243,72 @@ namespace SHC.UROCare.UROCareBusinessObjects
             {
                 throw (new ArgumentNullException("urologyHistory"));
             }
+     
+            MapperConfiguration _config = new MapperConfiguration(cfg => {
+                cfg.SourceMemberNamingConvention = new LowerUnderscoreNamingConvention();
+                cfg.DestinationMemberNamingConvention = new PascalCaseNamingConvention();
+                cfg.CreateMap<Urology_History, UrologicalHistoryBO>().
+                    ForMember(x=>x.ChiefComplaints,y=>y.MapFrom(member=>member.Chief_Compl)).
+                    ForMember(x=>x.OBGY,y=>y.MapFrom(member=>member.OB_GY)).
+                    ForMember(x=>x.CreatedDate,y=>y.MapFrom(member=>member.Create_Dte)).
+                    ForMember(x=>x.ModifiedBy,y=>y.MapFrom(member=>member.Modify_By)).
+                    ForMember(x=>x.ModifiedDate,y=>y.MapFrom(member=>member.Modify_Dte));
+            });
+            IMapper maper = _config.CreateMapper();
+            _config.AssertConfigurationIsValid();
+            maper.Map(urologyHistory, this);
+            //HistoryId = urologyHistory.History_ID;
+            //PatientId = urologyHistory.Patient_ID;
+            //GUNo = urologyHistory.Gu_No;
+            //GUYear = urologyHistory.Gu_Year;
+            //ChiefComplaints = urologyHistory.Chief_Compl;
+            //Frequency = urologyHistory.Frequency;
+            //Hesitancy = urologyHistory.Hesitancy;
+            //Nocturia = urologyHistory.Nocturia;
+            //PoorStream = urologyHistory.Poor_Stream;
+            //Urgency = urologyHistory.Urgency;
+            //Intermittency = urologyHistory.Intermittency;
+            //Dysuria = urologyHistory.Dysuria;
+            //Straining = urologyHistory.Straining;
+            //Pyuria = urologyHistory.Pyuria;
+            //SenseIncomplVoid = urologyHistory.Sense_Incompl_Void;
+            //Lithiuria = urologyHistory.Lithiuria;
+            //TerminalDribbling = urologyHistory.Terminal_Dribbling;
+            //Chyluria = urologyHistory.Chyluria;
+            //UrgeInc = urologyHistory.Urge_Inc;
+            //Fever = urologyHistory.Fever;
+            //StressInc = urologyHistory.Stress_Inc;
+            //IPSS = urologyHistory.IPSS;
+            //BPI = urologyHistory.BPI;
+            //Pain = urologyHistory.Pain;
+            //Others = urologyHistory.Others;
+            //Medication = urologyHistory.Medication;
+            //Personal = urologyHistory.Personal;
+            //Surgery = urologyHistory.Surgery;
+            //MH = urologyHistory.MH;
+            //Allergies = urologyHistory.Allergies;
+            //OBGY = urologyHistory.OB_GY;
+            //Past = urologyHistory.Past;
+            //Family = urologyHistory.Family;
+            //Hematuria = urologyHistory.Hematuria;
 
-            HistoryId = urologyHistory.History_ID;
-            PatientId = urologyHistory.Patient_ID;
-            GUNo = urologyHistory.Gu_No;
-            GUYear = urologyHistory.Gu_Year;
-            ChiefComplaints = urologyHistory.Chief_Compl;
-            Frequency = urologyHistory.Frequency;
-            Hesitancy = urologyHistory.Hesitancy;
-            Nocturia = urologyHistory.Nocturia;
-            PoorStream = urologyHistory.Poor_Stream;
-            Urgency = urologyHistory.Urgency;
-            Intermittency = urologyHistory.Intermittency;
-            Dysuria = urologyHistory.Dysuria;
-            Straining = urologyHistory.Straining;
-            Pyuria = urologyHistory.Pyuria;
-            SenseIncomplVoid = urologyHistory.Sense_Incompl_Void;
-            Lithiuria = urologyHistory.Lithiuria;
-            TerminalDribbling = urologyHistory.Terminal_Dribbling;
-            Chyluria = urologyHistory.Chyluria;
-            UrgeInc = urologyHistory.Urge_Inc;
-            Fever = urologyHistory.Fever;
-            StressInc = urologyHistory.Stress_Inc;
-            IPSS = urologyHistory.IPSS;
-            BPI = urologyHistory.BPI;
-            Pain = urologyHistory.Pain;
-            Others = urologyHistory.Others;
-            Medication = urologyHistory.Medication;
-            Personal = urologyHistory.Personal;
-            Surgery = urologyHistory.Surgery;
-            MH = urologyHistory.MH;
-            Allergies = urologyHistory.Allergies;
-            OBGY = urologyHistory.OB_GY;
-            Past = urologyHistory.Past;
-            Family = urologyHistory.Family;
-            Hematuria = urologyHistory.Hematuria;
-
-            CreatedBy = urologyHistory.Created_By;
-            CreatedDate = urologyHistory.Create_Dte;
-            ModifiedBy = urologyHistory.Modify_By;
-            ModifiedDate = urologyHistory.Modify_Dte;
+            //CreatedBy = urologyHistory.Created_By;
+            //CreatedDate = urologyHistory.Create_Dte;
+            //ModifiedBy = urologyHistory.Modify_By;
+            //ModifiedDate = urologyHistory.Modify_Dte;
         }
 
         #endregion
+    }
+
+    public class UrologicalHistoryObjectCollection : BusinessObjectCollection<UrologicalHistoryBO, Urology_History>
+    {
+        public override void Fill()
+        {
+            using (IUROCareEntities dataContext = DataAccessLayer.GetDataContext())
+            {
+                FillCollection(dataContext.Urology_History);
+            }
+        }
     }
 }

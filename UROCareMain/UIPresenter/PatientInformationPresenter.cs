@@ -4,6 +4,7 @@ using SHC.UROCare.UROCareBusinessObjects;
 using SHC.UROCare.Utilities;
 using System.Globalization;
 using SHC.UROCare.UICommonControls;
+using AutoMapper;
 
 namespace SHC.UROCare.UI
 {
@@ -16,7 +17,11 @@ namespace SHC.UROCare.UI
 
         private readonly PatientBO _patient;
         private readonly IPatientInformationView _patientHeaderView;
-      
+        MapperConfiguration _config=new MapperConfiguration(cfg=>cfg.CreateMap<PatientBO,IPatientInformationView>().  ForMember(x => x.Phone, y => y.MapFrom(member => member.PhoneNumber))
+             .ForMember(x => x.ReferalDoctor, y => y.MapFrom(member => member.ReferenceDoctor)).
+            ReverseMap());
+        IMapper _mapper;
+        
         #endregion
 
         #region Constructors
@@ -45,6 +50,11 @@ namespace SHC.UROCare.UI
             {
                 ExceptionManager.Throw(new ArgumentNullException("patient"));
             }
+           
+            //_config.AssertConfigurationIsValid();
+            _mapper=_config.CreateMapper();
+            
+            
             _patientHeaderView = patientHeaderView;
             _patient = patient;
         }
@@ -65,24 +75,7 @@ namespace SHC.UROCare.UI
         /// </summary>
         public void InitViewFromModel()
         {
-            //_patientHeaderView.PatientImage = 
-            _patientHeaderView.GUId = string.Format("{0}/{1}",_patient.GUNo,_patient.GUYear);
-            _patientHeaderView.RegistrationDate = _patient.RegistrationDate;
-
-            _patientHeaderView.Salutation = _patient.Salutation;
-            _patientHeaderView.PatientName = _patient.PatientName;
-            _patientHeaderView.AtPost = _patient.AtPost;
-            _patientHeaderView.Town = _patient.Town;
-            _patientHeaderView.District = _patient.District;
-            _patientHeaderView.State = _patient.State;
-            _patientHeaderView.Sex = _patient.Sex;
-            _patientHeaderView.AgeMonths = _patient.AgeMonths;
-            _patientHeaderView.AgeYear = _patient.AgeYear;
-            _patientHeaderView.Phone = _patient.PhoneNumber;
-            _patientHeaderView.Mobile = _patient.Mobile;
-            _patientHeaderView.Occupation = _patient.Occupation;
-            _patientHeaderView.ReferalDoctor = _patient.ReferenceDoctor;
-            _patientHeaderView.OPDDiagnosis = _patient.OPDDiagnosis;
+            _mapper.Map(_patient, _patientHeaderView);
         }
 
         /// <summary>
